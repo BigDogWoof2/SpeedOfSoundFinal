@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,7 +16,9 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] int baseNoteScore;
 
-    [SerializeField] int multiplier;
+    [SerializeField] int gear;
+
+    [SerializeField] int gearLevel;
 
     [SerializeField] int currentScore;
 
@@ -33,14 +36,15 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         baseNoteScore = 50;
-        multiplier = 1;
+        gear = 1;
         currentScore = 0;
+        gearLevel = 0;
     }
 
     void Update()
     {
         scoreText.text = currentScore.ToString();
-        multText.text = multiplier.ToString();
+        multText.text = gear.ToString();
 
         AddDistanceScore();
     }
@@ -49,26 +53,35 @@ public class ScoreScript : MonoBehaviour
 
     void AddDistanceScore()
     {
-
         currentScore+=baseDistanceScore;
-
     }
+
+    public void AddNoteScore()
+    {
+        currentScore += baseNoteScore;
+    }
+
 
     public void AddPerfectNoteScore()
     {
-        currentScore += (multiplier * baseNoteScore);
+        currentScore += (gear * baseNoteScore);
     }
 
 
-    public void IncrementMultiplier()
+    public void IncrementGearLevel()
     {
-        multiplier += 1;
+        gearLevel += 1;
+        if (gearLevel == 4 && gear < 4)
+        {
+            gearLevel = 0;
+            gear +=1;
+        }
     }
 
     public void LostStreak()
     {
-        Debug.Log("mult = 1");
-        multiplier = 1;
+        Debug.Log("gear = 1");
+        gear = 1;
 
     }
 
@@ -77,6 +90,11 @@ public class ScoreScript : MonoBehaviour
     {
         float percentNotesHit = sectionNotesHit/notesThisSection * 100;
 
-        //switch (percentNotesHit)
+        if (gear == 1)
+        {
+
+        }
+
+        //if (gear)
     }
 }
