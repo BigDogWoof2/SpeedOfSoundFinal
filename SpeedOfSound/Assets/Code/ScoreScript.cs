@@ -88,11 +88,20 @@ public class ScoreScript : MonoBehaviour
     //needs to be called as a player calls a user defined threshold
     public void AssessPerformance()
     {
-        float percentNotesHit = sectionNotesHit/notesThisSection * 100;
 
         if (gear == 1)
         {
+            //load difficulty 1 next section
+        }
 
+        if (gear == 2)
+        {
+            //load difficulty 1 next section
+        }
+
+        if (gear >2)
+        {
+            //load difficulty 3 next section
         }
 
         //if (gear)

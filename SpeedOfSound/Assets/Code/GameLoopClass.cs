@@ -115,7 +115,7 @@ public class GameLoopClass : MonoBehaviour
     void PerfectNoteHit()
     {
         Debug.Log("Perfect note hit");
-        scoreScriptRef.IncrementMultiplier();
+        scoreScriptRef.IncrementGearLevel();
         scoreScriptRef.AddPerfectNoteScore();
     }
 
