@@ -32,6 +32,10 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] private int nextDifficulty;
 
+    //
+
+    [SerializeField] private GameObject diff2Road;
+
     
     void Start()
     {
@@ -97,6 +101,8 @@ public class ScoreScript : MonoBehaviour
         if (gear == 2)
         {
             //load difficulty 1 next section
+
+            //diff2Road.transform.position.x == 
         }
 
         if (gear >2)
