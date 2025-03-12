@@ -14,6 +14,8 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    [SerializeField] private TextMeshProUGUI gearLevelText;
+
     [SerializeField] int baseNoteScore;
 
     [SerializeField] int gear;
@@ -28,27 +30,41 @@ public class ScoreScript : MonoBehaviour
 
     private int sectionNotesHit;
 
+    
+
     [SerializeField] private int currentDifficulty;
 
     [SerializeField] private int nextDifficulty;
 
-    //
+    [SerializeField] private int currentPhraseLevel;
+
+    //roads object references
+
+    [SerializeField] private GameObject currentRoad;
+
+    [SerializeField] private GameObject diff1Road;
 
     [SerializeField] private GameObject diff2Road;
 
-    
+    [SerializeField] private GameObject diff3Road;
+
+    [SerializeField] private GameObject diff4Road;
+
+
     void Start()
     {
         baseNoteScore = 50;
         gear = 1;
         currentScore = 0;
         gearLevel = 0;
+        currentPhraseLevel = 1;
     }
 
     void Update()
     {
         scoreText.text = currentScore.ToString();
         multText.text = gear.ToString();
+        gearLevelText.text = gearLevel.ToString();
 
         AddDistanceScore();
     }
@@ -95,19 +111,44 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 1)
         {
-            //load difficulty 1 next section
+            if (currentPhraseLevel != 1)
+            {
+                //translate current road to placeholder xposition;
+                //translate road 1 to road xposition;
+                //set current road to road2
+                //set currentPhraseLevel to 1
+            }
+
+
         }
 
         if (gear == 2)
         {
             //load difficulty 1 next section
 
+            if (currentPhraseLevel != 2)
+            {
+                //translate current road to placeholder xposition;
+                //translate road 2 to road xposition;
+                //set current road to road2
+                //set currentPhraseLevel to 2
+            }
+
             //diff2Road.transform.position.x == 
         }
 
-        if (gear >2)
+        if (gear ==3)
         {
             //load difficulty 3 next section
+
+            if (currentPhraseLevel != 3)
+            {
+                //translate current road to placeholder xposition;
+                //translate road 2 to road xposition;
+                //set current road to road2
+                //set currentPhraseLevel to 2
+            }
+
         }
 
         //if (gear)
