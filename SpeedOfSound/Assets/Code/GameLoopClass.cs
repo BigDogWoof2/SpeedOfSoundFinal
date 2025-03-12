@@ -22,8 +22,11 @@ public class GameLoopClass : MonoBehaviour
 
     [SerializeField] private int trackSpeed;
 
-    public GameObject roadRef;
+    public GameObject roadRef1;
 
+    public GameObject roadRef2;
+
+    public GameObject roadRef3;
     public GameObject carRef;
 
     private GameObject currentNote;
@@ -65,8 +68,10 @@ public class GameLoopClass : MonoBehaviour
          carLaneNumber -=1;
         }
 
-
-        roadRef.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
+        //Move the track towards the player, probably gonna need to change with art etc in
+        roadRef1.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
+        roadRef2.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
+        roadRef3.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using NUnit.Framework;
 using TMPro;
 using Unity.VisualScripting;
@@ -108,15 +109,24 @@ public class ScoreScript : MonoBehaviour
     //needs to be called as a player calls a user defined threshold
     public void AssessPerformance()
     {
+        
+        Debug.Log("AssessPerformanceCalled");
+
+        UnityEngine.Vector3 currentPosition = new UnityEngine.Vector3();
 
         if (gear == 1)
         {
             if (currentPhraseLevel != 1)
             {
                 //translate current road to placeholder xposition;
+                currentPosition = currentRoad.transform.position;
+                currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
                 //translate road 1 to road xposition;
-                //set current road to road2
+                diff1Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff1Road;
                 //set currentPhraseLevel to 1
+                currentPhraseLevel = 1; 
             }
 
 
@@ -128,10 +138,15 @@ public class ScoreScript : MonoBehaviour
 
             if (currentPhraseLevel != 2)
             {
-                //translate current road to placeholder xposition;
-                //translate road 2 to road xposition;
-                //set current road to road2
-                //set currentPhraseLevel to 2
+
+                currentPosition = currentRoad.transform.position;
+               currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
+                //translate road 1 to road xposition;
+                diff2Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff2Road;
+                //set currentPhraseLevel to 1
+                currentPhraseLevel = 2; 
             }
 
             //diff2Road.transform.position.x == 
@@ -143,14 +158,19 @@ public class ScoreScript : MonoBehaviour
 
             if (currentPhraseLevel != 3)
             {
-                //translate current road to placeholder xposition;
-                //translate road 2 to road xposition;
-                //set current road to road2
-                //set currentPhraseLevel to 2
+                currentPosition = currentRoad.transform.position;
+                //translate road 1 to road xposition;
+                currentRoad.transform.position = new UnityEngine.Vector3(500, 0, 200);
+
+                diff3Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff3Road;
+                //set currentPhraseLevel to 1
+                currentPhraseLevel = 3; 
             }
 
         }
 
-        //if (gear)
+        
     }
 }
