@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1123068841	Beep			\Default Work Unit\Beep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	880395594	Beep	C:\Users\2302504\Documents\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
+
