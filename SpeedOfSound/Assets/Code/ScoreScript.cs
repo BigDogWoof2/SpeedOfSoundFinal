@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using NUnit.Framework;
 using TMPro;
 using Unity.VisualScripting;
@@ -13,6 +14,8 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI multText;
 
     [SerializeField] private TextMeshProUGUI scoreText;
+
+    [SerializeField] private TextMeshProUGUI gearLevelText;
 
     [SerializeField] int baseNoteScore;
 
@@ -28,23 +31,42 @@ public class ScoreScript : MonoBehaviour
 
     private int sectionNotesHit;
 
+    private int upgradesHit; 
+    
+
     [SerializeField] private int currentDifficulty;
 
     [SerializeField] private int nextDifficulty;
 
-    
+    [SerializeField] private int currentPhraseLevel;
+
+    //roads object references
+
+    [SerializeField] private GameObject currentRoad;
+
+    [SerializeField] private GameObject diff1Road;
+
+    [SerializeField] private GameObject diff2Road;
+
+    [SerializeField] private GameObject diff3Road;
+
+    [SerializeField] private GameObject diff4Road;
+
+
     void Start()
     {
         baseNoteScore = 50;
         gear = 1;
         currentScore = 0;
         gearLevel = 0;
+        currentPhraseLevel = 1;
     }
 
     void Update()
     {
         scoreText.text = currentScore.ToString();
         multText.text = gear.ToString();
+        gearLevelText.text = gearLevel.ToString();
 
         AddDistanceScore();
     }
@@ -67,6 +89,16 @@ public class ScoreScript : MonoBehaviour
         currentScore += (gear * baseNoteScore);
     }
 
+    public void ObstacleHit()
+    {
+        currentScore -= 500*gear; 
+        
+    }
+
+    public void UpgradeHit()
+    {
+        upgradesHit +=1; 
+    }
 
     public void IncrementGearLevel()
     {
@@ -88,22 +120,68 @@ public class ScoreScript : MonoBehaviour
     //needs to be called as a player calls a user defined threshold
     public void AssessPerformance()
     {
+        
+        Debug.Log("AssessPerformanceCalled");
+
+        UnityEngine.Vector3 currentPosition = new UnityEngine.Vector3();
 
         if (gear == 1)
         {
-            //load difficulty 1 next section
+            if (currentPhraseLevel != 1)
+            {
+                //translate current road to placeholder xposition;
+                currentPosition = currentRoad.transform.position;
+                currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
+                //translate road 1 to road xposition;
+                diff1Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff1Road;
+                //set currentPhraseLevel to 1
+                currentPhraseLevel = 1; 
+            }
+
+
         }
 
         if (gear == 2)
         {
             //load difficulty 1 next section
+
+            if (currentPhraseLevel != 2)
+            {
+
+                currentPosition = currentRoad.transform.position;
+               currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
+                //translate road 1 to road xposition;
+                diff2Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff2Road;
+                //set currentPhraseLevel to 1
+                currentPhraseLevel = 2; 
+            }
+
+            //diff2Road.transform.position.x == 
         }
 
-        if (gear >2)
+        if (gear ==3)
         {
             //load difficulty 3 next section
+
+            if (currentPhraseLevel != 3)
+            {
+                currentPosition = currentRoad.transform.position;
+                //translate road 1 to road xposition;
+                currentRoad.transform.position = new UnityEngine.Vector3(500, 0, 200);
+
+                diff3Road.transform.position = currentPosition;
+                //set current road to road1
+                currentRoad = diff3Road;
+                //set currentPhraseLevel to 1
+                currentPhraseLevel = 3; 
+            }
+
         }
 
-        //if (gear)
+        
     }
 }

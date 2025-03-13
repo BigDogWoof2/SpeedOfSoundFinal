@@ -23,11 +23,29 @@ public class NoteDetector : MonoBehaviour
     
     void OnTriggerEnter(Collider otherCollider)
     {
+
+        
+
+        
+
         if(otherCollider.gameObject.tag == "Note"){
 
-            Debug.Log("decector collides with note" + otherCollider.name);
+            if (otherCollider.GetType().ToString().Equals("UnityEngine.CapsuleCollider"))
+            {
 
-            GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.perfect;
+                Debug.Log("Collide with decent");
+                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.decent;
+
+            }
+
+            //Debug.Log("decector collides with note" + otherCollider.name);
+
+            if (otherCollider.GetType().ToString().Equals("UnityEngine.BoxCollider"))
+            {
+                Debug.Log("Collide with perfect");
+                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.perfect;
+
+            }
             
             if (otherCollider.gameObject.transform.parent.name == "Lane0")
             {
@@ -72,7 +90,23 @@ public class NoteDetector : MonoBehaviour
 
             Debug.Log("detector exits note " + otherCollider.name);
 
-            GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.fail;
+            if (otherCollider.GetType().ToString().Equals("UnityEngine.BoxCollider"))
+            {
+                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.decent;
+                Debug.Log("Leave perfect");
+            }
+
+            if (otherCollider.GetType().ToString().Equals("UnityEngine.CapsuleCollider"))
+            {
+
+                Debug.Log("Leave decent");
+                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.fail;
+
+                
+
+            }
+
+            
             
             
 
