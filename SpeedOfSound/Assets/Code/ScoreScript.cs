@@ -31,6 +31,7 @@ public class ScoreScript : MonoBehaviour
 
     private int sectionNotesHit;
 
+    private int upgradesHit; 
     
 
     [SerializeField] private int currentDifficulty;
@@ -88,6 +89,16 @@ public class ScoreScript : MonoBehaviour
         currentScore += (gear * baseNoteScore);
     }
 
+    public void ObstacleHit()
+    {
+        currentScore -= 500*gear; 
+        
+    }
+
+    public void UpgradeHit()
+    {
+        upgradesHit +=1; 
+    }
 
     public void IncrementGearLevel()
     {
