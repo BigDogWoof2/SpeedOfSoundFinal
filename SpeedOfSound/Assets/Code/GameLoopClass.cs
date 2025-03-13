@@ -87,6 +87,9 @@ public class GameLoopClass : MonoBehaviour
 
                 case Strum.decent: 
 
+                DecentNoteHit();
+
+                break;
                 //if lane is correct then x, if lane incorrect then wrong note function called
 
                 case Strum.perfect: 
@@ -122,6 +125,12 @@ public class GameLoopClass : MonoBehaviour
         Debug.Log("Perfect note hit");
         scoreScriptRef.IncrementGearLevel();
         scoreScriptRef.AddPerfectNoteScore();
+    }
+
+    void DecentNoteHit()
+    {
+        Debug.Log("decent note hit");
+        scoreScriptRef.AddNoteScore();
     }
 
     void FailedNote()
