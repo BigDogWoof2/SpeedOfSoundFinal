@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
+using static ak;
 
 public class MenuManager : MonoBehaviour
 {
@@ -17,8 +19,9 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void LoadLevel(){
 
+    public void LoadLevel(){
+        AkSoundEngine.PostEvent("StopTitleScreenMusic", gameObject);
         SceneManager.LoadScene("SampleScene");
     }
 }
