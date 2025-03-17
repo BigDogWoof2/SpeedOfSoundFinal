@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{18AA4916-35BA-3604-89A9-27F1EA24A646}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{048B0D37-5AAE-6F2E-4C50-CB4D8E957796}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
+					<CachePath>SFX/TitleScreenVersion2Finished_50B65C14.wem</CachePath>
+				</File>
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
@@ -37,8 +41,13 @@
 						<MediaRef Id="880395594"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1042789154" Name="TitleScreenMusic" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="38756479"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A03B3768-738C-E25E-BFFA-15B49F48E0BC}</FileHash>
+	<FileHash>{824EED19-2824-ABFA-5E5C-3342D75F1FFF}</FileHash>
 </SoundBanksInfo>

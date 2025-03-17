@@ -25,6 +25,35 @@
 						<ActiveSource Name="beep" ID="{4958D385-FB6B-4A5B-985B-DE39CB767C2B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" ShortID="1050457566">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TitleScreenVersion2Finished" ID="{B22C92CD-5576-431E-8DBD-8ACFC250653F}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.71899381975012"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TitleScreenVersion2Finished.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="38756479"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TitleScreenVersion2Finished" ID="{B22C92CD-5576-431E-8DBD-8ACFC250653F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
