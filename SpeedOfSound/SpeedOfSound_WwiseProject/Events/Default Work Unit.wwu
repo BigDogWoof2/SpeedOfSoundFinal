@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8499D1CC-50FB-47D5-8061-961793EF505E}" SchemaVersion="119">
 	<Events>
+<<<<<<< Updated upstream
 		<WorkUnit Name="Default Work Unit" ID="{8499D1CC-50FB-47D5-8061-961793EF505E}" PersistMode="Standalone"/>
+=======
+		<WorkUnit Name="Default Work Unit" ID="{8499D1CC-50FB-47D5-8061-961793EF505E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Beep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}">
+					<ChildrenList>
+						<Action Name="" ID="{BE8B41E2-DA11-4579-90E4-F8BB615AA910}" ShortID="682268780">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Beep" ID="{26566624-A982-4EC2-9024-700BB41F43A2}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TitleScreenMusic" ID="{4728BBD9-EAFB-4CED-A91E-7865758FD94F}">
+					<ChildrenList>
+						<Action Name="" ID="{3CE6C02B-A56C-481C-9F8E-01AD3A2B433A}" ShortID="734262990">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TitleScreenMusicBeta" ID="{6C8F96A8-6656-429A-948C-D3FE64C6D405}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+>>>>>>> Stashed changes
 	</Events>
 </WwiseDocument>

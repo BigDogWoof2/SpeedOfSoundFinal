@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" SchemaVersion="119">
 	<AudioObjects>
+<<<<<<< Updated upstream
 		<WorkUnit Name="Default Work Unit" ID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" PersistMode="Standalone"/>
+=======
+		<WorkUnit Name="Default Work Unit" ID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Beep" ID="{26566624-A982-4EC2-9024-700BB41F43A2}" ShortID="170116472">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="beep" ID="{4958D385-FB6B-4A5B-985B-DE39CB767C2B}">
+							<Language>SFX</Language>
+							<AudioFile>beep.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="880395594"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="beep" ID="{4958D385-FB6B-4A5B-985B-DE39CB767C2B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TitleScreenMusicBeta" ID="{6C8F96A8-6656-429A-948C-D3FE64C6D405}" ShortID="499540695">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TitleScreenVersion2Finished" ID="{6F90BB85-338B-4D5E-952F-660F5B4F93BE}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="4.95494172321037"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TitleScreenVersion2Finished.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="910361631"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TitleScreenVersion2Finished" ID="{6F90BB85-338B-4D5E-952F-660F5B4F93BE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+>>>>>>> Stashed changes
 	</AudioObjects>
 </WwiseDocument>
