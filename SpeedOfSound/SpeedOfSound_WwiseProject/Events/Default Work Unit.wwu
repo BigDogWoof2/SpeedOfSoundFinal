@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
+					<ChildrenList>
+						<Action Name="" ID="{2FAA7D0C-B3BA-46E1-B199-78CF1A8126D5}" ShortID="242600487">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
