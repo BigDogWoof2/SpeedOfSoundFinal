@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BEEP = 1123068841U;
+        static const AkUniqueID INGAMEMUSIC = 1545821079U;
         static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
     } // namespace EVENTS

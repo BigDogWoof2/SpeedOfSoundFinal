@@ -22,13 +22,17 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9E88874A-EFAA-9B6B-0AAA-75CC8A744E22}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{402AA024-6789-73BB-2F64-388A1AE08D54}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
 					<CachePath>SFX/TitleScreenVersion2Finished_0B575556.wem</CachePath>
+				</File>
+				<File Id="426361641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ReadSetGOBounceNormal.wav</ShortName>
+					<CachePath>SFX/ReadSetGOBounceNormal_818F3B66.wem</CachePath>
 				</File>
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
@@ -39,6 +43,11 @@
 				<Event Id="1123068841" Name="Beep" DurationType="OneShot" DurationMin="0.7853288" DurationMax="0.7853288">
 					<MediaRefs>
 						<MediaRef Id="880395594"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1545821079" Name="InGameMusic" DurationType="OneShot" DurationMin="132.15353" DurationMax="132.15353">
+					<MediaRefs>
+						<MediaRef Id="426361641"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -54,5 +63,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{56674397-DC34-DBE8-148C-F9105E5BD4F8}</FileHash>
+	<FileHash>{C93A41C9-FC5B-D1E6-88CD-A2BFAB35D529}</FileHash>
 </SoundBanksInfo>

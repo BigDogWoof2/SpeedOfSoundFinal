@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1042789154	TitleScreenMusic			\Default Work Unit\TitleScreenMusic	
 	1123068841	Beep			\Default Work Unit\Beep	
+	1545821079	InGameMusic			\Default Work Unit\InGameMusic	
 	4294539114	StopTitleScreenMusic			\Default Work Unit\StopTitleScreenMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	38756479	TitleScreenMusic	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\TitleScreenVersion2Finished_0B575556.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreenMusic		15464916
-	880395594	Beep	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
+	38756479	TitleScreenMusic	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\TitleScreenVersion2Finished_0B575556.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreenMusic		15464916
+	426361641	InGameMusic	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\ReadSetGOBounceNormal_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\InGameMusic		23312044
+	880395594	Beep	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
 

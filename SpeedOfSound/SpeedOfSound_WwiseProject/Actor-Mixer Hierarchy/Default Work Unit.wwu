@@ -54,6 +54,28 @@
 						<ActiveSource Name="TitleScreenVersion2Finished" ID="{B22C92CD-5576-431E-8DBD-8ACFC250653F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="InGameMusic" ID="{4068DB7F-1282-4BE7-A735-8A28E3AD20C8}" ShortID="664569024">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ReadSetGOBounceNormal" ID="{19E96B0F-C56C-4B43-89B2-4A1C5D967469}">
+							<Language>SFX</Language>
+							<AudioFile>ReadSetGOBounceNormal.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="426361641"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ReadSetGOBounceNormal" ID="{19E96B0F-C56C-4B43-89B2-4A1C5D967469}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

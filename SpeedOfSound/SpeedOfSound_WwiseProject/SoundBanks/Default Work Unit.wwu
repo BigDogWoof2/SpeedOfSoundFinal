@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Beep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

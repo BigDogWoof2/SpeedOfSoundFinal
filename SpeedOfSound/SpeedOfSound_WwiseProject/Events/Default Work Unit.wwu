@@ -39,6 +39,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}">
+					<ChildrenList>
+						<Action Name="" ID="{BE596E35-CA17-4D95-B43C-6FA0CD50D39C}" ShortID="647420658">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameMusic" ID="{4068DB7F-1282-4BE7-A735-8A28E3AD20C8}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
