@@ -1,11 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1042789154	TitleScreenMusic			\Default Work Unit\TitleScreenMusic	
+	1042789154	TitleScreenMusic			\Default Work Unit\Music\TitleScreenMusic	
 	1123068841	Beep			\Default Work Unit\Beep	
-	1545821079	InGameMusic			\Default Work Unit\InGameMusic	
-	4294539114	StopTitleScreenMusic			\Default Work Unit\StopTitleScreenMusic	
+	1475854423	UI_ContextOpen			\Default Work Unit\UI\UI_ContextOpen	
+	1545821079	InGameMusic			\Default Work Unit\Music\InGameMusic	
+	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
+	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
+	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
+	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
+	4294539114	StopTitleScreenMusic			\Default Work Unit\Music\StopTitleScreenMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	38756479	TitleScreenMusic	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\TitleScreenVersion2Finished_0B575556.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreenMusic		15464916
-	426361641	InGameMusic	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\ReadSetGOBounceNormal_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\InGameMusic		23312044
-	880395594	Beep	C:\Fraser\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
+	38756479	TitleScreenMusic	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\TitleScreenVersion2Finished_7DD98C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\TitleScreenMusic		15464996
+	92911097	ContextOpen	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextOpen		28194
+	130700730	ButtonHover	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ButtonHover		1556
+	273898768	newgame3	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame3		210824
+	426361641	InGameMusic	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\ReadSetGOBounceNormal_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\InGameMusic		23312044
+	486015963	newgame2	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame2		210824
+	501775720	ContextClose	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextClose		28194
+	503168787	Quit	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		152932
+	751472918	newgame4	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame4		210824
+	812197760	newgame1	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame1		256160
+	880395594	Beep	C:\Users\2302504.UAD\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
 

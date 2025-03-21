@@ -14,42 +14,105 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
+				<Folder Name="UI" ID="{78ED92C0-0257-4B3C-9171-C94B57070873}" ShortID="1029689051">
 					<ChildrenList>
-						<Action Name="" ID="{2FAA7D0C-B3BA-46E1-B199-78CF1A8126D5}" ShortID="242600487">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="UI_ContextClose" ID="{40A03FE7-27AD-4B03-A91F-50AC91184F56}">
+							<ChildrenList>
+								<Action Name="" ID="{EC62B1E0-B433-4FB1-B6A5-E63405E9E926}" ShortID="280147777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ContextClose" ID="{5BC0323C-0A39-4C12-83B6-DDFBC2827C30}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_NewGame" ID="{C14A4514-5759-4AE7-A795-3CCDCE41D7D5}">
+							<ChildrenList>
+								<Action Name="" ID="{99A31338-73F4-4330-82EA-434B8BBB657C}" ShortID="222385242">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NewGame" ID="{779BAE9A-AE02-497D-9CEA-C69A48DBE5B4}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_ContextOpen" ID="{0839CFE9-308B-4578-BEFA-658BC1CF9A0D}">
+							<ChildrenList>
+								<Action Name="" ID="{6E7EAA12-182B-4FF0-BFBF-EEA75E0109F2}" ShortID="348890614">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ContextOpen" ID="{B3BF67E0-D573-4497-B060-B6AAE6F77A82}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Quit" ID="{5A1D9308-9BAF-4816-B9F4-98303736B050}">
+							<ChildrenList>
+								<Action Name="" ID="{25001BF2-0B19-4497-A157-EFA9AD175675}" ShortID="28894363">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Quit" ID="{D322A0B0-4621-4C8A-8642-BFD695A68A51}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_ButtonHover" ID="{F3AA7A81-F121-449B-863E-673B850C0456}">
+							<ChildrenList>
+								<Action Name="" ID="{480FDCE8-A6FB-40BB-A976-BCA0E51ED9CF}" ShortID="872462803">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ButtonHover" ID="{97BA6F0D-F9EE-4C7F-91B2-863FD9C5891A}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}">
+				</Folder>
+				<Folder Name="Music" ID="{8F9B9F2D-550D-4CA4-8B32-A0091CCC0D54}" ShortID="164676567">
 					<ChildrenList>
-						<Action Name="" ID="{14D7402E-D289-4478-9202-A3433BE2B9F0}" ShortID="309638173">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}">
+							<ChildrenList>
+								<Action Name="" ID="{BE596E35-CA17-4D95-B43C-6FA0CD50D39C}" ShortID="647420658">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InGameMusic" ID="{4068DB7F-1282-4BE7-A735-8A28E3AD20C8}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
+							<ChildrenList>
+								<Action Name="" ID="{2FAA7D0C-B3BA-46E1-B199-78CF1A8126D5}" ShortID="242600487">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}">
+							<ChildrenList>
+								<Action Name="" ID="{14D7402E-D289-4478-9202-A3433BE2B9F0}" ShortID="309638173">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}">
-					<ChildrenList>
-						<Action Name="" ID="{BE596E35-CA17-4D95-B43C-6FA0CD50D39C}" ShortID="647420658">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="InGameMusic" ID="{4068DB7F-1282-4BE7-A735-8A28E3AD20C8}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
