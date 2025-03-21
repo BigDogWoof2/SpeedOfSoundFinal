@@ -22,17 +22,49 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{402AA024-6789-73BB-2F64-388A1AE08D54}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3185AD6-89DF-AF09-F7EA-45CE0C92FC4E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
-					<CachePath>SFX/TitleScreenVersion2Finished_0B575556.wem</CachePath>
+					<CachePath>SFX/TitleScreenVersion2Finished_7DD98C96.wem</CachePath>
+				</File>
+				<File Id="92911097" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>User Interface, Motion, Lazer, Maximize, Short SND31021 2.wav</ShortName>
+					<CachePath>SFX/User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="130700730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
+					<CachePath>SFX/User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem</CachePath>
+				</File>
+				<File Id="273898768" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>newgame3.wav</ShortName>
+					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="426361641" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ReadSetGOBounceNormal.wav</ShortName>
 					<CachePath>SFX/ReadSetGOBounceNormal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="486015963" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>newgame2.wav</ShortName>
+					<CachePath>SFX/newgame2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="501775720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>User Interface, Motion, Lazer, Minimize, Short SND31020.wav</ShortName>
+					<CachePath>SFX/User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem</CachePath>
+				</File>
+				<File Id="503168787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
+					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
+				</File>
+				<File Id="751472918" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>newgame4.wav</ShortName>
+					<CachePath>SFX/newgame4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="812197760" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>newgame1.wav</ShortName>
+					<CachePath>SFX/newgame1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
@@ -60,8 +92,36 @@
 						<MediaRef Id="38756479"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
+					<MediaRefs>
+						<MediaRef Id="130700730"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4003678909" Name="UI_ContextClose" DurationType="OneShot" DurationMin="0.2926875" DurationMax="0.2926875">
+					<MediaRefs>
+						<MediaRef Id="501775720"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1475854423" Name="UI_ContextOpen" DurationType="OneShot" DurationMin="0.2926875" DurationMax="0.2926875">
+					<MediaRefs>
+						<MediaRef Id="92911097"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2240351934" Name="UI_NewGame" DurationType="OneShot" DurationMin="1.1946032" DurationMax="1.45161">
+					<MediaRefs>
+						<MediaRef Id="273898768"/>
+						<MediaRef Id="486015963"/>
+						<MediaRef Id="751472918"/>
+						<MediaRef Id="812197760"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4273572087" Name="UI_Quit" DurationType="OneShot" DurationMin="0.79603124" DurationMax="0.79603124">
+					<MediaRefs>
+						<MediaRef Id="503168787"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C93A41C9-FC5B-D1E6-88CD-A2BFAB35D529}</FileHash>
+	<FileHash>{0B93B2F0-E996-FF25-6987-6F714DE12D95}</FileHash>
 </SoundBanksInfo>

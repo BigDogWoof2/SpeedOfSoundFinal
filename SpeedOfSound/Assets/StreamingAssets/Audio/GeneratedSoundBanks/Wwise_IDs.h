@@ -17,6 +17,11 @@ namespace AK
         static const AkUniqueID INGAMEMUSIC = 1545821079U;
         static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
+        static const AkUniqueID UI_BUTTONHOVER = 2027123568U;
+        static const AkUniqueID UI_CONTEXTCLOSE = 4003678909U;
+        static const AkUniqueID UI_CONTEXTOPEN = 1475854423U;
+        static const AkUniqueID UI_NEWGAME = 2240351934U;
+        static const AkUniqueID UI_QUIT = 4273572087U;
     } // namespace EVENTS
 
     namespace BANKS
