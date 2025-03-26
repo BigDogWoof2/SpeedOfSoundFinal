@@ -23,7 +23,7 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] int gearLevel;
 
-    [SerializeField] int currentScore;
+    public int currentScore;
 
     [SerializeField] private int baseDistanceScore;
 

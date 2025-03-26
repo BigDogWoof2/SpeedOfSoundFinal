@@ -43,11 +43,17 @@ public class GameLoopClass : MonoBehaviour
 
         carLaneNumber = 1;
 
-        trackSpeed = 5;
+        trackSpeed = 75;
         
     }
    
-   
+    void FixedUpdate()
+    {
+        //Move the track towards the player, probably gonna need to change with art etc in
+        roadRef1.transform.Translate(0, 0, (-0.001f * trackSpeed));
+        roadRef2.transform.Translate(0, 0, (-0.001f * trackSpeed));
+        roadRef3.transform.Translate(0, 0, (-0.001f * trackSpeed));
+    }
 
     // Update is called once per frame
     void Update()
@@ -67,12 +73,7 @@ public class GameLoopClass : MonoBehaviour
 
          carLaneNumber -=1;
         }
-
-        //Move the track towards the player, probably gonna need to change with art etc in
-        roadRef1.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
-        roadRef2.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
-        roadRef3.transform.Translate(0, 0, (- 0.001f*trackSpeed) );
-
+                
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
