@@ -8,6 +8,10 @@ public class CarColliderScript : MonoBehaviour
 
     [SerializeField] ScoreScript scoreScriptRef;
 
+    [SerializeField] EndLevel endLevelRef;
+
+
+
     void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.tag == "Obstacle")
@@ -20,6 +24,13 @@ public class CarColliderScript : MonoBehaviour
         {
             Debug.Log("Hit upgrade");
             scoreScriptRef.UpgradeHit();
+        }
+
+        if (otherCollider.gameObject.tag == "EndLevel")
+        {
+            Debug.Log("Hit EndLevel");
+            endLevelRef.EndLevelTriggered();
+            
         }
     }
 
