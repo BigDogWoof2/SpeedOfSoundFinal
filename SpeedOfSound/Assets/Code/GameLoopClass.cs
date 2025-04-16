@@ -43,7 +43,7 @@ public class GameLoopClass : MonoBehaviour
 
         carLaneNumber = 1;
 
-        trackSpeed = 200;
+        trackSpeed = 400;
         
     }
    

@@ -52,6 +52,11 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] private GameObject diff4Road;
 
+    //Background speed change
+
+    [SerializeField] private GameObject frontBG;
+
+    [SerializeField] private GameObject backBG;
 
     void Start()
     {
@@ -145,6 +150,10 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 2)
         {
+            //change speed of BG
+            frontBG.GetComponent<BackgroundMovement>().speed = -80;
+            backBG.GetComponent<BackgroundMovement>().speed = -60;
+
             //load difficulty 1 next section
 
             if (currentPhraseLevel != 2)
@@ -157,7 +166,9 @@ public class ScoreScript : MonoBehaviour
                 //set current road to road1
                 currentRoad = diff2Road;
                 //set currentPhraseLevel to 1
-                currentPhraseLevel = 2; 
+                currentPhraseLevel = 2;
+               
+
             }
 
             //diff2Road.transform.position.x == 
@@ -165,6 +176,9 @@ public class ScoreScript : MonoBehaviour
 
         if (gear ==3)
         {
+            //change speed of BG
+            frontBG.GetComponent<BackgroundMovement>().speed = -100;
+            backBG.GetComponent<BackgroundMovement>().speed = -80;
             //load difficulty 3 next section
 
             if (currentPhraseLevel != 3)
@@ -177,7 +191,8 @@ public class ScoreScript : MonoBehaviour
                 //set current road to road1
                 currentRoad = diff3Road;
                 //set currentPhraseLevel to 1
-                currentPhraseLevel = 3; 
+                currentPhraseLevel = 3;
+                
             }
 
         }
