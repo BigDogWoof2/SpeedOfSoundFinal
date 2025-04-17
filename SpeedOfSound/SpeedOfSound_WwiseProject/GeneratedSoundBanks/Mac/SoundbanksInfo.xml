@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3185AD6-89DF-AF09-F7EA-45CE0C92FC4E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E9DB8EE6-46DA-685B-429F-246631DC3041}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -38,13 +38,13 @@
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
 					<CachePath>SFX/User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem</CachePath>
 				</File>
+				<File Id="207187456" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>final song.wav</ShortName>
+					<CachePath>SFX/final song_818F3B66.wem</CachePath>
+				</File>
 				<File Id="273898768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame3.wav</ShortName>
 					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
-				</File>
-				<File Id="426361641" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ReadSetGOBounceNormal.wav</ShortName>
-					<CachePath>SFX/ReadSetGOBounceNormal_818F3B66.wem</CachePath>
 				</File>
 				<File Id="486015963" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame2.wav</ShortName>
@@ -77,9 +77,9 @@
 						<MediaRef Id="880395594"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1545821079" Name="InGameMusic" DurationType="OneShot" DurationMin="132.15353" DurationMax="132.15353">
+				<Event Id="1545821079" Name="InGameMusic" DurationType="OneShot" DurationMin="265.5625" DurationMax="265.5625">
 					<MediaRefs>
-						<MediaRef Id="426361641"/>
+						<MediaRef Id="207187456"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -123,5 +123,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B2F5403F-D18E-2DB5-1575-9FF50EB6F6FC}</FileHash>
+	<FileHash>{49D6EB02-8B77-AE52-C169-2CC0C4C5CA5F}</FileHash>
 </SoundBanksInfo>
