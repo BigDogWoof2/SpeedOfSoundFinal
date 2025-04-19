@@ -2,9 +2,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1042789154	TitleScreenMusic			\Default Work Unit\Music\TitleScreenMusic	
 	1123068841	Beep			\Default Work Unit\Beep	
 	1475854423	UI_ContextOpen			\Default Work Unit\UI\UI_ContextOpen	
-	1545821079	InGameMusic			\Default Work Unit\Music\InGameMusic	
+	1886138784	SpeedOfSoundLOW			\Default Work Unit\Music\SpeedOfSoundLOW	
 	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
+	2255393652	SpeedOfSoundMED			\Default Work Unit\Music\SpeedOfSoundMED	
+	3860062838	SpeedOfSoundHIGH			\Default Work Unit\Music\SpeedOfSoundHIGH	
 	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
 	4294539114	StopTitleScreenMusic			\Default Work Unit\Music\StopTitleScreenMusic	
@@ -13,12 +15,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	38756479	TitleScreenMusic	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\TitleScreenVersion2Finished_7DD98C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\TitleScreenMusic		15464996
 	92911097	ContextOpen	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextOpen		28194
 	130700730	ButtonHover	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ButtonHover		1556
-	207187456	InGameMusic	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\final song_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\InGameMusic		46845368
 	273898768	newgame3	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame3		210824
 	486015963	newgame2	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame2		210824
 	501775720	ContextClose	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextClose		28194
 	503168787	Quit	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		152932
+	732036356	SpeedOfSoundHIGH	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundHIGH_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundHIGH		46474412
 	751472918	newgame4	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame4		210824
+	810624198	SpeedOfSoundLOW	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundLOW_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundLOW		46424472
 	812197760	newgame1	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame1		256160
 	880395594	Beep	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
+	979608020	SpeedOfSoundMED	C:\Users\liam\Documents\GitHub\AlienUnityProject\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundMED_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundMED		46440688
 

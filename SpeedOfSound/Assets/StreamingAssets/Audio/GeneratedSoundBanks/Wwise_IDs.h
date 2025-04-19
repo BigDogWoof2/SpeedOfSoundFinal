@@ -14,7 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BEEP = 1123068841U;
-        static const AkUniqueID INGAMEMUSIC = 1545821079U;
+        static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
+        static const AkUniqueID SPEEDOFSOUNDLOW = 1886138784U;
+        static const AkUniqueID SPEEDOFSOUNDMED = 2255393652U;
         static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;

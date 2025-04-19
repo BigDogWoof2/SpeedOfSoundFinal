@@ -10,11 +10,13 @@
 						<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ButtonHover" ID="{F3AA7A81-F121-449B-863E-673B850C0456}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ContextOpen" ID="{0839CFE9-308B-4578-BEFA-658BC1CF9A0D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Quit" ID="{5A1D9308-9BAF-4816-B9F4-98303736B050}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_NewGame" ID="{C14A4514-5759-4AE7-A795-3CCDCE41D7D5}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ContextClose" ID="{40A03FE7-27AD-4B03-A91F-50AC91184F56}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpeedOfSoundLOW" ID="{C23FC8BE-94AB-4D9E-9B1E-83F1876A823A}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpeedOfSoundHIGH" ID="{AA1FE555-AAE2-4E65-B2BD-7B807F16506E}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

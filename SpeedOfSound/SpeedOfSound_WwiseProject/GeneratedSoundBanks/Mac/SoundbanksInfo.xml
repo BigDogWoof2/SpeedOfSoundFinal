@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E9DB8EE6-46DA-685B-429F-246631DC3041}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2D4F92CF-44E7-BA7E-A571-45427DF768CA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -37,10 +37,6 @@
 				<File Id="130700730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
 					<CachePath>SFX/User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem</CachePath>
-				</File>
-				<File Id="207187456" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>final song.wav</ShortName>
-					<CachePath>SFX/final song_818F3B66.wem</CachePath>
 				</File>
 				<File Id="273898768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame3.wav</ShortName>
@@ -58,9 +54,17 @@
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
 					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
 				</File>
+				<File Id="732036356" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpeedOfSoundHIGH.wav</ShortName>
+					<CachePath>SFX/SpeedOfSoundHIGH_818F3B66.wem</CachePath>
+				</File>
 				<File Id="751472918" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame4.wav</ShortName>
 					<CachePath>SFX/newgame4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="810624198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpeedOfSoundLOW.wav</ShortName>
+					<CachePath>SFX/SpeedOfSoundLOW_818F3B66.wem</CachePath>
 				</File>
 				<File Id="812197760" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame1.wav</ShortName>
@@ -70,6 +74,10 @@
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
 				</File>
+				<File Id="979608020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpeedOfSoundMED.wav</ShortName>
+					<CachePath>SFX/SpeedOfSoundMED_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="1123068841" Name="Beep" DurationType="OneShot" DurationMin="0.7853288" DurationMax="0.7853288">
@@ -77,9 +85,19 @@
 						<MediaRef Id="880395594"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1545821079" Name="InGameMusic" DurationType="OneShot" DurationMin="265.5625" DurationMax="265.5625">
+				<Event Id="3860062838" Name="SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.45956" DurationMax="263.45956">
 					<MediaRefs>
-						<MediaRef Id="207187456"/>
+						<MediaRef Id="732036356"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1886138784" Name="SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
+					<MediaRefs>
+						<MediaRef Id="810624198"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2255393652" Name="SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.2684" DurationMax="263.2684">
+					<MediaRefs>
+						<MediaRef Id="979608020"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -123,5 +141,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{49D6EB02-8B77-AE52-C169-2CC0C4C5CA5F}</FileHash>
+	<FileHash>{E4DF0762-72CB-1811-291F-02295D091FF6}</FileHash>
 </SoundBanksInfo>

@@ -75,17 +75,6 @@
 				</Folder>
 				<Folder Name="Music" ID="{8F9B9F2D-550D-4CA4-8B32-A0091CCC0D54}" ShortID="164676567">
 					<ChildrenList>
-						<Event Name="InGameMusic" ID="{1FB48406-0B2E-4ADB-8778-977BCBC85CF4}">
-							<ChildrenList>
-								<Action Name="" ID="{7E97C13C-AF37-4A65-9AB0-C412BE89E261}" ShortID="526842669">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="InGameMusic" ID="{CDEFACFC-B043-4040-96AA-9C08E38149EB}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
 							<ChildrenList>
 								<Action Name="" ID="{2FAA7D0C-B3BA-46E1-B199-78CF1A8126D5}" ShortID="242600487">
@@ -106,6 +95,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpeedOfSoundHIGH" ID="{AA1FE555-AAE2-4E65-B2BD-7B807F16506E}">
+							<ChildrenList>
+								<Action Name="" ID="{82C51D37-447C-44D8-80FE-96F181339154}" ShortID="182059258">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedOfSoundHIGH" ID="{0798C9A8-7FAE-4BB6-A384-C1432E19AD56}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}">
+							<ChildrenList>
+								<Action Name="" ID="{5B223F31-9D86-4D6A-BF60-5C79EF107138}" ShortID="94839877">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedOfSoundMED" ID="{D6CD12F5-2CB3-4280-B772-D613C1A7C4CD}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpeedOfSoundLOW" ID="{C23FC8BE-94AB-4D9E-9B1E-83F1876A823A}">
+							<ChildrenList>
+								<Action Name="" ID="{BB7A51A3-225A-4814-A7EA-0689F31D2464}" ShortID="1009354883">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedOfSoundLOW" ID="{E1112874-A366-4067-A583-D2E993F88062}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
