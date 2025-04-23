@@ -8,7 +8,7 @@ public class BackgroundMovement : MonoBehaviour
 
     void Update()
     {
-        // Move the sprite forward along the Z-axis every frame
+        // Move the background sprites forward along the Z-axis every frame
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }

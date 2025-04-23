@@ -21,7 +21,7 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] int gear;
 
-    [SerializeField] int gearLevel;
+    [SerializeField] public int gearLevel;
 
     public int currentScore;
 
@@ -61,7 +61,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         baseNoteScore = 50;
-        gear = 1;
+        gear = 2;
         currentScore = 0;
         gearLevel = 0;
         currentPhraseLevel = 1;
@@ -108,7 +108,7 @@ public class ScoreScript : MonoBehaviour
     public void IncrementGearLevel()
     {
         gearLevel += 1;
-        if (gearLevel == 4 && gear < 4)
+        if (gearLevel == 8 && gear < 3)
         {
             gearLevel = 0;
             gear +=1;
