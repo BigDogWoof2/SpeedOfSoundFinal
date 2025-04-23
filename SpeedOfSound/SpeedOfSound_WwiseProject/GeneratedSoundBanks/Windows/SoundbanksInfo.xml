@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2D4F92CF-44E7-BA7E-A571-45427DF768CA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0A781D54-717E-1ACD-5DAA-D826ECB5F9F9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -90,16 +90,22 @@
 						<MediaRef Id="732036356"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1108629473" Name="SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3987112624" Name="SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1886138784" Name="SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
 					<MediaRefs>
 						<MediaRef Id="810624198"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="116907507" Name="SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2887728430" Name="SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2255393652" Name="SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.2684" DurationMax="263.2684">
 					<MediaRefs>
 						<MediaRef Id="979608020"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1668046471" Name="SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3740494770" Name="SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="38756479"/>
@@ -141,5 +147,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{575574E7-A5C2-874D-2D94-BFA56A082B3E}</FileHash>
+	<FileHash>{B13EB58E-CB87-40F5-5E3E-7EB06DAEAB24}</FileHash>
 </SoundBanksInfo>

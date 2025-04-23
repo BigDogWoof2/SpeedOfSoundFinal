@@ -15,8 +15,14 @@ namespace AK
     {
         static const AkUniqueID BEEP = 1123068841U;
         static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
+        static const AkUniqueID SPEEDOFSOUNDHIGHMUTE = 1108629473U;
+        static const AkUniqueID SPEEDOFSOUNDHIGHUNMUTE = 3987112624U;
         static const AkUniqueID SPEEDOFSOUNDLOW = 1886138784U;
+        static const AkUniqueID SPEEDOFSOUNDLOWMUTE = 116907507U;
+        static const AkUniqueID SPEEDOFSOUNDLOWUNMUTE = 2887728430U;
         static const AkUniqueID SPEEDOFSOUNDMED = 2255393652U;
+        static const AkUniqueID SPEEDOFSOUNDMEDMUTE = 1668046471U;
+        static const AkUniqueID SPEEDOFSOUNDMEDUNMUTE = 3740494770U;
         static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;

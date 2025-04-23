@@ -1,12 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
+	116907507	SpeedOfSoundLOWMute			\Default Work Unit\Music\SpeedOfSoundLOWMute	
 	1042789154	TitleScreenMusic			\Default Work Unit\Music\TitleScreenMusic	
+	1108629473	SpeedOfSoundHIGHMute			\Default Work Unit\Music\SpeedOfSoundHIGHMute	
 	1123068841	Beep			\Default Work Unit\Beep	
 	1475854423	UI_ContextOpen			\Default Work Unit\UI\UI_ContextOpen	
+	1668046471	SpeedOfSoundMEDMute			\Default Work Unit\Music\SpeedOfSoundMEDMute	
 	1886138784	SpeedOfSoundLOW			\Default Work Unit\Music\SpeedOfSoundLOW	
 	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
 	2255393652	SpeedOfSoundMED			\Default Work Unit\Music\SpeedOfSoundMED	
+	2887728430	SpeedOfSoundLOWUnmute			\Default Work Unit\Music\SpeedOfSoundLOWUnmute	
+	3740494770	SpeedOfSoundMEDUnmute			\Default Work Unit\Music\SpeedOfSoundMEDUnmute	
 	3860062838	SpeedOfSoundHIGH			\Default Work Unit\Music\SpeedOfSoundHIGH	
+	3987112624	SpeedOfSoundHIGHUnmute			\Default Work Unit\Music\SpeedOfSoundHIGHUnmute	
 	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
 	4294539114	StopTitleScreenMusic			\Default Work Unit\Music\StopTitleScreenMusic	
