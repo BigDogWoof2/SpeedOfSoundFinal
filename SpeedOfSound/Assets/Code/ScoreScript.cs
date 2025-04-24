@@ -132,6 +132,7 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 1)
         {
+
             if (currentPhraseLevel != 1)
             {
                 //translate current road to placeholder xposition;
