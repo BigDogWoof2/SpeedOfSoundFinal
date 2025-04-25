@@ -65,6 +65,7 @@ public class ScoreScript : MonoBehaviour
         currentScore = 0;
         gearLevel = 0;
         currentPhraseLevel = 1;
+
     }
 
     void Update()
@@ -74,6 +75,11 @@ public class ScoreScript : MonoBehaviour
         gearLevelText.text = gearLevel.ToString();
 
         AddDistanceScore();
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+          Debug.Break();
+        }
     }
 
 
@@ -107,7 +113,11 @@ public class ScoreScript : MonoBehaviour
 
     public void IncrementGearLevel()
     {
-        gearLevel += 1;
+        if (gearLevel < 8)
+        {
+            gearLevel += 1;
+
+        }
         if (gearLevel == 8 && gear < 3)
         {
             gearLevel = 0;
@@ -119,6 +129,7 @@ public class ScoreScript : MonoBehaviour
     {
         Debug.Log("gear = 1");
         gear = 1;
+        gearLevel = 1;
 
     }
 
@@ -132,9 +143,11 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 1)
         {
-
             if (currentPhraseLevel != 1)
             {
+                //change speed of BG
+                frontBG.GetComponent<BackgroundMovement>().speed = -60;
+                backBG.GetComponent<BackgroundMovement>().speed = -40;
                 //translate current road to placeholder xposition;
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
@@ -144,11 +157,12 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff1Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 1;
-                //CHANGE TO HIGH MUSIC TRACK
-                AkSoundEngine.PostEvent("SpeedOfSoundHIGHUnmute", gameObject);
+                //CHANGE TO LOW MUSIC TRACK
                 AkSoundEngine.PostEvent("SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundLOWMute", gameObject);
-                Debug.Log("HIGH MUSIC TRACK PLAYING");
+                AkSoundEngine.PostEvent("SpeedOfSoundHIGHMute", gameObject);
+                AkSoundEngine.PostEvent("SpeedOfSoundLOWUnmute", gameObject);
+                Debug.Log("LOW MUSIC TRACK PLAYING");
+                
             }
 
 
@@ -166,7 +180,7 @@ public class ScoreScript : MonoBehaviour
             {
 
                 currentPosition = currentRoad.transform.position;
-               currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
+                currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
                 //translate road 1 to road xposition;
                 diff2Road.transform.position = currentPosition;
                 //set current road to road1
@@ -201,11 +215,11 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff3Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 3;
-                //CHANGE TO LOW MUSIC TRACK
+                //CHANGE TO HIGH MUSIC TRACK
+                AkSoundEngine.PostEvent("SpeedOfSoundHIGHUnmute", gameObject);
                 AkSoundEngine.PostEvent("SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundHIGHMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundLOWUnmute", gameObject);
-                Debug.Log("LOW MUSIC TRACK PLAYING");
+                AkSoundEngine.PostEvent("SpeedOfSoundLOWMute", gameObject);
+                Debug.Log("HIGH MUSIC TRACK PLAYING");
             }
 
         }
