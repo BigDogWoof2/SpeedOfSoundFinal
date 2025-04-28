@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0A781D54-717E-1ACD-5DAA-D826ECB5F9F9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{94417DEC-F90B-806C-5280-AB45839C08B5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -53,6 +53,10 @@
 				<File Id="503168787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
 					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
+				</File>
+				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
+					<CachePath>SFX/Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219_818F3B66.wem</CachePath>
 				</File>
 				<File Id="732036356" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpeedOfSoundHIGH.wav</ShortName>
@@ -106,6 +110,11 @@
 				</Event>
 				<Event Id="1668046471" Name="SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3740494770" Name="SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3806065263" Name="StartupJingle" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="658922471"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="38756479"/>
@@ -147,5 +156,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E853BC94-A133-5662-08C5-437765B28900}</FileHash>
+	<FileHash>{CA93CA65-31F5-5BCF-E9B6-379C3209B8A4}</FileHash>
 </SoundBanksInfo>

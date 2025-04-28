@@ -247,6 +247,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}">
+							<ChildrenList>
+								<Action Name="" ID="{B5273DCA-4EEF-40D1-A89F-5EA12C063F96}" ShortID="821397772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartupJingle" ID="{723A276A-DD9A-46FE-9BA1-17FC00C32CEA}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

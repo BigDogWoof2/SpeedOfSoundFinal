@@ -14,6 +14,7 @@
 						<ObjectRef Name="SpeedOfSoundLOWMute" ID="{7735A26B-A257-4608-B442-05BFF0BB5A17}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Quit" ID="{5A1D9308-9BAF-4816-B9F4-98303736B050}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundHIGHUnmute" ID="{C31C759E-8D07-49AD-87E1-614ABD7F96E1}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundLOWUnmute" ID="{2400E1E8-30BE-4A21-9092-CF813213D699}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_NewGame" ID="{C14A4514-5759-4AE7-A795-3CCDCE41D7D5}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>

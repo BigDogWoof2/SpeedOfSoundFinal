@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID SPEEDOFSOUNDMED = 2255393652U;
         static const AkUniqueID SPEEDOFSOUNDMEDMUTE = 1668046471U;
         static const AkUniqueID SPEEDOFSOUNDMEDUNMUTE = 3740494770U;
+        static const AkUniqueID STARTUPJINGLE = 3806065263U;
         static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;
