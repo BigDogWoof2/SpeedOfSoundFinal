@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0A781D54-717E-1ACD-5DAA-D826ECB5F9F9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{48FD2893-9EE9-AD9F-132E-5292A2351602}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -42,6 +42,10 @@
 					<ShortName>newgame3.wav</ShortName>
 					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="344589538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpeedOfSoundMED2.wav</ShortName>
+					<CachePath>SFX/SpeedOfSoundMED2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="486015963" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame2.wav</ShortName>
 					<CachePath>SFX/newgame2_818F3B66.wem</CachePath>
@@ -53,10 +57,6 @@
 				<File Id="503168787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
 					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
-				</File>
-				<File Id="732036356" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SpeedOfSoundHIGH.wav</ShortName>
-					<CachePath>SFX/SpeedOfSoundHIGH_818F3B66.wem</CachePath>
 				</File>
 				<File Id="751472918" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame4.wav</ShortName>
@@ -74,9 +74,9 @@
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
 				</File>
-				<File Id="979608020" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SpeedOfSoundMED.wav</ShortName>
-					<CachePath>SFX/SpeedOfSoundMED_818F3B66.wem</CachePath>
+				<File Id="936928125" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpeedOfSoundHIGH2.wav</ShortName>
+					<CachePath>SFX/SpeedOfSoundHIGH2_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -85,13 +85,21 @@
 						<MediaRef Id="880395594"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3860062838" Name="SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.45956" DurationMax="263.45956">
+				<Event Id="3860062838" Name="SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
 					<MediaRefs>
-						<MediaRef Id="732036356"/>
+						<MediaRef Id="936928125"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1108629473" Name="SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3987112624" Name="SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1108629473" Name="SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="936928125"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3987112624" Name="SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="936928125"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1886138784" Name="SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
 					<MediaRefs>
 						<MediaRef Id="810624198"/>
@@ -99,13 +107,21 @@
 				</Event>
 				<Event Id="116907507" Name="SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2887728430" Name="SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2255393652" Name="SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.2684" DurationMax="263.2684">
+				<Event Id="2255393652" Name="SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.4522" DurationMax="263.4522">
 					<MediaRefs>
-						<MediaRef Id="979608020"/>
+						<MediaRef Id="344589538"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1668046471" Name="SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3740494770" Name="SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1668046471" Name="SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="344589538"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3740494770" Name="SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="344589538"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="38756479"/>
@@ -147,5 +163,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E853BC94-A133-5662-08C5-437765B28900}</FileHash>
+	<FileHash>{E52FF6DD-FDA4-7160-72CE-D195E1274EB9}</FileHash>
 </SoundBanksInfo>
