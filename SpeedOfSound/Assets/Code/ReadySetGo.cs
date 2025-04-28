@@ -19,7 +19,7 @@ public class ReadySetGo : MonoBehaviour
     IEnumerator CountdownRoutine()
     {
         yield return new WaitForSeconds(0.5f);
-        readySetGo.GetComponent<Text>().text = "Ready";
+        readySetGo.GetComponent<TextMeshPro>().text = "Ready";
         readySetGo.SetActive(true);
 
         yield return new WaitForSeconds(1f);
