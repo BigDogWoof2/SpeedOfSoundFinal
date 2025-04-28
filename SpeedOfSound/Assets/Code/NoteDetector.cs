@@ -100,16 +100,10 @@ public class NoteDetector : MonoBehaviour
             {
 
                 Debug.Log("Leave decent");
-                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.fail;
+                GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.fail;                
 
-                
-
-            }
-
+            }                    
             
-            
-            
-
         }
     }
 

@@ -38,10 +38,9 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] private int nextDifficulty;
 
-    [SerializeField] private int currentPhraseLevel;
+    [SerializeField] public int currentPhraseLevel;
 
     //roads object references
-
     [SerializeField] private GameObject currentRoad;
 
     [SerializeField] private GameObject diff1Road;
@@ -53,14 +52,28 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] private GameObject diff4Road;
 
     //Background speed change
-
     [SerializeField] private GameObject frontBG;
-
     [SerializeField] private GameObject backBG;
+    [SerializeField] private GameObject clutter;
+
+    //FOV Shifting
+    [SerializeField] Camera cameraObj;
+    [SerializeField] private float fovSpeed = 0.5f;
+    [SerializeField] public float gearOneFOV = 40f;
+    [SerializeField] public float gearTwoFOV = 50f;
+    [SerializeField] public float gearThreeFOV = 60f;
+
+    //Police Siren
+    [SerializeField] private GameObject policeLights;
+    private UnityEngine.Vector3 plStartPos;
+    private UnityEngine.Vector3 plEndPos;
+
+
 
     void Start()
     {
-        baseNoteScore = 50;
+        baseNoteScore = 500;
+        baseDistanceScore = 1;
         gear = 2;
         currentScore = 0;
         gearLevel = 0;
@@ -75,7 +88,8 @@ public class ScoreScript : MonoBehaviour
         gearLevelText.text = gearLevel.ToString();
 
         AddDistanceScore();
-
+        PoliceLights();
+        
         if(Input.GetKeyDown(KeyCode.P))
         {
           Debug.Break();
@@ -86,7 +100,7 @@ public class ScoreScript : MonoBehaviour
 
     void AddDistanceScore()
     {
-        currentScore+=baseDistanceScore;
+        currentScore+=baseDistanceScore * currentPhraseLevel;
     }
 
     public void AddNoteScore()
@@ -102,7 +116,7 @@ public class ScoreScript : MonoBehaviour
 
     public void ObstacleHit()
     {
-        currentScore -= 500*gear; 
+        currentScore -= 5000*gear; 
         
     }
 
@@ -127,8 +141,15 @@ public class ScoreScript : MonoBehaviour
 
     public void LostStreak()
     {
-        Debug.Log("gear = 1");
-        gear = 1;
+        Debug.Log("gear -1");
+        if (gear == 1)
+        {
+            gear = 1;
+        }
+        else
+        {
+            gear -= 1;
+        }        
         gearLevel = 1;
 
     }
@@ -143,11 +164,16 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 1)
         {
+            //change speed of BG
+            frontBG.GetComponent<BackgroundMovement>().speed = -40;
+            backBG.GetComponent<BackgroundMovement>().speed = -30;
+            clutter.GetComponent<BackgroundMovement>().speed = -40;
+            //change camera FOV
+            cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearOneFOV, fovSpeed);
+
             if (currentPhraseLevel != 1)
             {
-                //change speed of BG
-                frontBG.GetComponent<BackgroundMovement>().speed = -60;
-                backBG.GetComponent<BackgroundMovement>().speed = -40;
+                
                 //translate current road to placeholder xposition;
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
@@ -173,6 +199,10 @@ public class ScoreScript : MonoBehaviour
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -80;
             backBG.GetComponent<BackgroundMovement>().speed = -60;
+            clutter.GetComponent<BackgroundMovement>().speed = -40;
+
+            //change camera FOV
+            cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearTwoFOV, fovSpeed);
 
             //load difficulty 1 next section
 
@@ -202,6 +232,10 @@ public class ScoreScript : MonoBehaviour
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -100;
             backBG.GetComponent<BackgroundMovement>().speed = -80;
+            clutter.GetComponent<BackgroundMovement>().speed = -40;
+
+            //change camera FOV
+            cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearThreeFOV, fovSpeed);
             //load difficulty 3 next section
 
             if (currentPhraseLevel != 3)
@@ -226,4 +260,18 @@ public class ScoreScript : MonoBehaviour
 
         
     }
+
+    void PoliceLights()
+    {
+        if (gear == 1 && gearLevel <= 3 && currentPhraseLevel == 1)
+        {
+            policeLights.SetActive(true);
+
+        }
+        else
+        {
+            policeLights.SetActive(false);
+        }
+    }
+
 }
