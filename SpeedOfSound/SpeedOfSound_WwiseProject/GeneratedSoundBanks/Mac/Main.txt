@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	116907507	SpeedOfSoundLOWMute			\Default Work Unit\Music\SpeedOfSoundLOWMute	
+	164866881	EngineStart			\Default Work Unit\Ambient\EngineStart	
 	1042789154	TitleScreenMusic			\Default Work Unit\Music\TitleScreenMusic	
 	1108629473	SpeedOfSoundHIGHMute			\Default Work Unit\Music\SpeedOfSoundHIGHMute	
 	1123068841	Beep			\Default Work Unit\Beep	
@@ -7,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1668046471	SpeedOfSoundMEDMute			\Default Work Unit\Music\SpeedOfSoundMEDMute	
 	1886138784	SpeedOfSoundLOW			\Default Work Unit\Music\SpeedOfSoundLOW	
 	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
+	2079244539	EngineStop			\Default Work Unit\Ambient\EngineStop	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
 	2255393652	SpeedOfSoundMED			\Default Work Unit\Music\SpeedOfSoundMED	
 	2887728430	SpeedOfSoundLOWUnmute			\Default Work Unit\Music\SpeedOfSoundLOWUnmute	
@@ -18,19 +20,24 @@ Event	ID	Name			Wwise Object Path	Notes
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
 	4294539114	StopTitleScreenMusic			\Default Work Unit\Music\StopTitleScreenMusic	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	796049864	RPM			\Default Work Unit\RPM	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	38756479	TitleScreenMusic	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\TitleScreenVersion2Finished_7DD98C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\TitleScreenMusic		15464996
 	92911097	ContextOpen	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextOpen		28194
 	130700730	ButtonHover	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ButtonHover		1556
+	261557266	EngineOff	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\EngineOff		2242336
 	273898768	newgame3	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame3		210824
+	344589538	SpeedOfSoundMED	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\SpeedOfSoundMED2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundMED		46473112
 	486015963	newgame2	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame2		210824
 	501775720	ContextClose	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextClose		28194
 	503168787	Quit	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		152932
 	658922471	StartupJingle	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\StartupJingle		384096
-	732036356	SpeedOfSoundHIGH	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\SpeedOfSoundHIGH_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundHIGH		46474412
 	751472918	newgame4	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame4		210824
 	810624198	SpeedOfSoundLOW	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\SpeedOfSoundLOW_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundLOW		46424472
 	812197760	newgame1	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\newgame1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame1		256160
 	880395594	Beep	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
-	979608020	SpeedOfSoundMED	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\SpeedOfSoundMED_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundMED		46440688
+	936928125	SpeedOfSoundHIGH	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\SpeedOfSoundHIGH2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundHIGH		46502296
+	968679976	EngineLoop	C:\Users\lewis\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Mac\SFX\Engine_6CA5A018.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\EngineLoop		12244068
 

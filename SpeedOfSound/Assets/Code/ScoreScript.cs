@@ -23,6 +23,9 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] public int gearLevel;
 
+    //public int RPM;
+    [SerializeField] AK.Wwise.RTPC RPM = null;
+
     public int currentScore;
 
     [SerializeField] private int baseDistanceScore;
@@ -137,6 +140,8 @@ public class ScoreScript : MonoBehaviour
             gearLevel = 0;
             gear +=1;
         }
+
+        RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 
     public void LostStreak()
@@ -152,6 +157,7 @@ public class ScoreScript : MonoBehaviour
         }        
         gearLevel = 1;
 
+        RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 
     //needs to be called as a player calls a user defined threshold

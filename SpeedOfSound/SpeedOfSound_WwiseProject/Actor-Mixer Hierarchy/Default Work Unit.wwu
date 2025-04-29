@@ -400,6 +400,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SpeedOfSoundLOW" ID="{E1112874-A366-4067-A583-D2E993F88062}" ShortID="75113716">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
@@ -422,6 +429,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SpeedOfSoundHIGH" ID="{443FFC7F-CB7E-4BAA-BFBC-0D2B9329DDD6}" ShortID="994961466">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
@@ -444,6 +458,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SpeedOfSoundMED" ID="{7B5D5598-7101-4E7E-95CA-34730A3E3F6A}" ShortID="283636409">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
@@ -468,6 +489,117 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{D5C7B7AF-1672-442D-B742-D0DE312C5BFE}" ShortID="811795823"/>
+				<Folder Name="Ambient" ID="{1D5D6C67-70E1-4384-A178-4AD8BB2196C7}" ShortID="726904957">
+					<ChildrenList>
+						<Sound Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" ShortID="874161079">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Engine" ID="{903F4304-A1D4-49AD-AFF9-939C2128B5E9}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2191.895"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.29973451327434"/>
+										<Property Name="LoopEnd" Type="Real64" Value="66.4411356932153"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Engine.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="968679976"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D1D87204-02A3-4E2F-8392-5EEBACBCC414}" ShortID="455778798">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RPM" ID="{977005A0-48B6-488F-ABAE-AC7657BCA93D}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E94C2872-18D9-4E3A-A5D9-C57BC70FFD75}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-250</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>1384</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Engine" ID="{903F4304-A1D4-49AD-AFF9-939C2128B5E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EngineOff" ID="{DD826D50-5D3B-46B8-B74B-9750419D9E5E}" ShortID="685892230">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581" ID="{E31F2288-6BB7-4BE0-B23C-657783EF97A0}">
+									<Language>SFX</Language>
+									<AudioFile>Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="261557266"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581" ID="{E31F2288-6BB7-4BE0-B23C-657783EF97A0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

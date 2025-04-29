@@ -260,6 +260,42 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambient" ID="{7C602F65-5DC6-4255-AB6B-980136179C52}" ShortID="346550297">
+					<ChildrenList>
+						<Event Name="EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}">
+							<ChildrenList>
+								<Action Name="" ID="{BC5D215C-44A4-4990-B8EA-065660ED8670}" ShortID="665267972">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}">
+							<ChildrenList>
+								<Action Name="" ID="{3307AB9A-CA41-4835-B8E8-2756FC2528AD}" ShortID="786720366">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B4E7743F-380E-44A4-A060-DE4461ACDB88}" ShortID="370856037">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineOff" ID="{DD826D50-5D3B-46B8-B74B-9750419D9E5E}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

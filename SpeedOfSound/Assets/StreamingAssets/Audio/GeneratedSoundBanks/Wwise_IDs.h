@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BEEP = 1123068841U;
+        static const AkUniqueID ENGINESTART = 164866881U;
+        static const AkUniqueID ENGINESTOP = 2079244539U;
         static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
         static const AkUniqueID SPEEDOFSOUNDHIGHMUTE = 1108629473U;
         static const AkUniqueID SPEEDOFSOUNDHIGHUNMUTE = 3987112624U;
@@ -33,6 +35,11 @@ namespace AK
         static const AkUniqueID UI_QUIT = 4273572087U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID RPM = 796049864U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -43,6 +50,12 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB_OUTSIDE = 2098287461U;
+        static const AkUniqueID REVERB_TUNNEL = 2261546958U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
