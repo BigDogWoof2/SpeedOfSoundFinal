@@ -399,50 +399,6 @@
 								<ActiveSource Name="final song" ID="{B3D11848-28E6-410E-9401-C8203DD0A05C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="SpeedOfSoundHIGH" ID="{0798C9A8-7FAE-4BB6-A384-C1432E19AD56}" ShortID="443581922">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SpeedOfSoundHIGH" ID="{C60AECEB-283A-4F60-BDAA-C2869C282800}">
-									<Language>SFX</Language>
-									<AudioFile>SpeedOfSoundHIGH.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="732036356"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SpeedOfSoundHIGH" ID="{C60AECEB-283A-4F60-BDAA-C2869C282800}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="SpeedOfSoundMED" ID="{D6CD12F5-2CB3-4280-B772-D613C1A7C4CD}" ShortID="881184746">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SpeedOfSoundMED" ID="{2BFF16F7-52C8-4525-813A-C06FD3AD2E2B}">
-									<Language>SFX</Language>
-									<AudioFile>SpeedOfSoundMED.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="979608020"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SpeedOfSoundMED" ID="{2BFF16F7-52C8-4525-813A-C06FD3AD2E2B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="SpeedOfSoundLOW" ID="{E1112874-A366-4067-A583-D2E993F88062}" ShortID="75113716">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -463,6 +419,50 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SpeedOfSoundLOW" ID="{0FFE9C42-05BB-48A4-8007-8F904EE0CE3A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpeedOfSoundHIGH" ID="{443FFC7F-CB7E-4BAA-BFBC-0D2B9329DDD6}" ShortID="994961466">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpeedOfSoundHIGH2" ID="{E501FF8F-C743-4B94-A148-F3534A7EF430}">
+									<Language>SFX</Language>
+									<AudioFile>SpeedOfSoundHIGH2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="936928125"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpeedOfSoundHIGH2" ID="{E501FF8F-C743-4B94-A148-F3534A7EF430}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpeedOfSoundMED" ID="{7B5D5598-7101-4E7E-95CA-34730A3E3F6A}" ShortID="283636409">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpeedOfSoundMED2" ID="{DA1A9E3A-84B4-4CE0-B63B-078F6BB39B1F}">
+									<Language>SFX</Language>
+									<AudioFile>SpeedOfSoundMED2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="344589538"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpeedOfSoundMED2" ID="{DA1A9E3A-84B4-4CE0-B63B-078F6BB39B1F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
