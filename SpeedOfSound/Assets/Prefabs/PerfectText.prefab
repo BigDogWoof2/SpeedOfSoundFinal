@@ -202,6 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5986478242691762890}
+  - component: {fileID: 6983972086585054339}
   m_Layer: 0
   m_Name: PerfectText
   m_TagString: Untagged
@@ -225,3 +226,15 @@ Transform:
   - {fileID: 7771689339311055588}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6983972086585054339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011754763013446434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d800b67ce146a44a37f32c3b3c9d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
