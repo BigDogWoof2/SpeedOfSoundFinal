@@ -9,12 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8D7BDD1D-CF8F-A8BB-5626-55F87A30205B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{71A4AD45-D845-0BB1-687F-0B485983DFB2}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1203617187" Name="Machine_Gun_Hangar" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
@@ -26,6 +27,13 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
+				<AuxBus Id="2041057431" Name="Reverb_Siren">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 				<AuxBus Id="2098287461" Name="Reverb_Outside">
 					<PluginRefs>
 						<ShareSets>
@@ -43,9 +51,10 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BF02AFBB-17D0-888B-8138-8951B14DE634}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{882A3049-5369-5520-22A5-DD6812263FF9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -84,6 +93,10 @@
 				<File Id="486015963" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame2.wav</ShortName>
 					<CachePath>SFX/newgame2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="488550204" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967.wav</ShortName>
+					<CachePath>SFX/Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_58EF1FC2.wem</CachePath>
 				</File>
 				<File Id="501775720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Motion, Lazer, Minimize, Short SND31020.wav</ShortName>
@@ -161,6 +174,14 @@
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2666848490" Name="PoliceSiren" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="488550204"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2041057431" Name="Reverb_Siren"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="3860062838" Name="SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
@@ -246,8 +267,9 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{20740A95-C978-C7C0-A6DA-BEB39A7CF414}</FileHash>
+	<FileHash>{20F84B02-DD82-F8CA-3620-9AF84824905B}</FileHash>
 </SoundBanksInfo>

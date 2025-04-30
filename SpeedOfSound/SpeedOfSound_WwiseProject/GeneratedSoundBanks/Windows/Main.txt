@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2079244539	EngineStop			\Default Work Unit\Ambient\EngineStop	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
 	2255393652	SpeedOfSoundMED			\Default Work Unit\Music\SpeedOfSoundMED	
+	2666848490	PoliceSiren			\Default Work Unit\Ambient\PoliceSiren	
 	2729209948	GearShift			\Default Work Unit\SFX\GearShift	
 	2887728430	SpeedOfSoundLOWUnmute			\Default Work Unit\Music\SpeedOfSoundLOWUnmute	
 	3740494770	SpeedOfSoundMEDUnmute			\Default Work Unit\Music\SpeedOfSoundMEDUnmute	
@@ -23,6 +24,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	796049864	RPM			\Default Work Unit\RPM	
+	1887703654	PoliceDistance			\Default Work Unit\PoliceDistance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	38756479	TitleScreenMusic	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\TitleScreenVersion2Finished_7DD98C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\TitleScreenMusic		15464996
@@ -34,6 +36,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	329238730	gearshift3	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift3		63984
 	344589538	SpeedOfSoundMED	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundMED2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundMED		46473112
 	486015963	newgame2	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame2		210824
+	488550204	PoliceSiren	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_58EF1FC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\PoliceSiren		6688316
 	501775720	ContextClose	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextClose		28194
 	502578227	gearshift2	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift2		70944
 	503168787	Quit	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		152932

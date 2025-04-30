@@ -721,6 +721,166 @@
 								<ActiveSource Name="Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581" ID="{E31F2288-6BB7-4BE0-B23C-657783EF97A0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="PoliceSiren" ID="{C427946E-760B-474D-B893-1FCA280AE7A5}" ShortID="304935961">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Siren" ID="{E26BCBC6-008B-4C90-8DF2-AC9CD4649808}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967" ID="{6EE3E8C5-0EBB-4EA1-BBE6-67CDD1D6D6DD}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.227154761997351"/>
+										<Property Name="LoopEnd" Type="Real64" Value="34.8439097249833"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.149484008666873"/>
+										<Property Name="TrimEnd" Type="Real64" Value="34.9837170809782"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="488550204"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CE72AAE3-7983-4984-B559-0ACD87A9F2DA}" ShortID="608193650">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume0"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BB8AC0FE-AB78-4016-BF96-DF40F2432FC5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6.47786</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>60.15108</XPos>
+																		<YPos>0.09909</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{819C11D1-9867-4600-BBE4-4778199D83A4}" ShortID="845886755">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputBusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7D8004FE-2BFA-4AEF-B990-6DE66C53D759}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.96223</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{3AA1BFDC-E102-423B-9AEB-54C468B0C727}" ShortID="666991231">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{42E8471D-0A0C-4469-B32E-891ABE8970B7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>69.87804</XPos>
+																		<YPos>65</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967" ID="{6EE3E8C5-0EBB-4EA1-BBE6-67CDD1D6D6DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

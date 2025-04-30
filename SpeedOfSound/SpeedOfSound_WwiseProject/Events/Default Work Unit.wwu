@@ -294,6 +294,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}">
+							<ChildrenList>
+								<Action Name="" ID="{AD4D5C49-00D1-4C53-87BC-C70AFC7F8951}" ShortID="795240694">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PoliceSiren" ID="{C427946E-760B-474D-B893-1FCA280AE7A5}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BBC9F5FC-02BE-429E-93A5-2B35B8856178}" ShortID="860659238">

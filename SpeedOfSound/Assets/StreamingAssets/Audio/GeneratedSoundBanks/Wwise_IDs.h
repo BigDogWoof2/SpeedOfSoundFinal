@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ENGINESTART = 164866881U;
         static const AkUniqueID ENGINESTOP = 2079244539U;
         static const AkUniqueID GEARSHIFT = 2729209948U;
+        static const AkUniqueID POLICESIREN = 2666848490U;
         static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
         static const AkUniqueID SPEEDOFSOUNDHIGHMUTE = 1108629473U;
         static const AkUniqueID SPEEDOFSOUNDHIGHUNMUTE = 3987112624U;
@@ -38,6 +39,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID POLICEDISTANCE = 1887703654U;
         static const AkUniqueID RPM = 796049864U;
     } // namespace GAME_PARAMETERS
 
@@ -55,6 +57,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID REVERB_OUTSIDE = 2098287461U;
+        static const AkUniqueID REVERB_SIREN = 2041057431U;
         static const AkUniqueID REVERB_TUNNEL = 2261546958U;
     } // namespace AUX_BUSSES
 

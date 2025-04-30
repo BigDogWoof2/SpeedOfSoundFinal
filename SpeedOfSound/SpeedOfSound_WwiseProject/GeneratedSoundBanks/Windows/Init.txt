@@ -2,11 +2,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2041057431	Reverb_Siren			\Default Work Unit\Master Audio Bus\Reverb_Siren	
 	2098287461	Reverb_Outside			\Default Work Unit\Master Audio Bus\Reverb_Outside	
 	2261546958	Reverb_Tunnel			\Default Work Unit\Master Audio Bus\Reverb_Tunnel	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	602546716	Room_Large	Wwise RoomVerb			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
