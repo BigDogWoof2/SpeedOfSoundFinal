@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3103C1F9-804D-E1F4-B6CA-A17F7650C1EC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EF8D3322-090D-E996-DE18-C8D518F4E024}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -45,7 +45,7 @@
 				<GameParameter Id="796049864" Name="RPM"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{354AAD6F-3724-87CC-FF6D-06472FE7A2B1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BF02AFBB-17D0-888B-8138-8951B14DE634}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -69,6 +69,14 @@
 					<ShortName>newgame3.wav</ShortName>
 					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="318308067" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gearshift4.wav</ShortName>
+					<CachePath>SFX/gearshift4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="329238730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gearshift3.wav</ShortName>
+					<CachePath>SFX/gearshift3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="344589538" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpeedOfSoundMED2.wav</ShortName>
 					<CachePath>SFX/SpeedOfSoundMED2_818F3B66.wem</CachePath>
@@ -80,6 +88,10 @@
 				<File Id="501775720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Motion, Lazer, Minimize, Short SND31020.wav</ShortName>
 					<CachePath>SFX/User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem</CachePath>
+				</File>
+				<File Id="502578227" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gearshift2.wav</ShortName>
+					<CachePath>SFX/gearshift2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="503168787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
@@ -101,6 +113,10 @@
 					<ShortName>newgame1.wav</ShortName>
 					<CachePath>SFX/newgame1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="832444909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gearshift1.wav</ShortName>
+					<CachePath>SFX/gearshift1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
@@ -111,7 +127,7 @@
 				</File>
 				<File Id="968679976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Engine.wav</ShortName>
-					<CachePath>SFX/Engine_6CA5A018.wem</CachePath>
+					<CachePath>SFX/Engine_61BD84BE.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -131,6 +147,17 @@
 				<Event Id="2079244539" Name="EngineStop" DurationType="OneShot" DurationMin="13.108486" DurationMax="13.108486">
 					<MediaRefs>
 						<MediaRef Id="261557266"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2729209948" Name="GearShift" DurationType="OneShot" DurationMin="0.319161" DurationMax="0.4554195">
+					<MediaRefs>
+						<MediaRef Id="318308067"/>
+						<MediaRef Id="329238730"/>
+						<MediaRef Id="502578227"/>
+						<MediaRef Id="832444909"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
@@ -222,5 +249,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4C4A7592-D466-5D2F-AA2A-E4833D0AECAB}</FileHash>
+	<FileHash>{FCD1565F-6ED9-A8EA-E3E6-34A3DF2DBD47}</FileHash>
 </SoundBanksInfo>

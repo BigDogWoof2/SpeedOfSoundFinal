@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BEEP = 1123068841U;
         static const AkUniqueID ENGINESTART = 164866881U;
         static const AkUniqueID ENGINESTOP = 2079244539U;
+        static const AkUniqueID GEARSHIFT = 2729209948U;
         static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
         static const AkUniqueID SPEEDOFSOUNDHIGHMUTE = 1108629473U;
         static const AkUniqueID SPEEDOFSOUNDHIGHUNMUTE = 3987112624U;

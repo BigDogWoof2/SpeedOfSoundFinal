@@ -23,9 +23,6 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField] public int gearLevel;
 
-    //public int RPM;
-    [SerializeField] AK.Wwise.RTPC RPM = null;
-
     public int currentScore;
 
     [SerializeField] private int baseDistanceScore;
@@ -71,6 +68,8 @@ public class ScoreScript : MonoBehaviour
     private UnityEngine.Vector3 plStartPos;
     private UnityEngine.Vector3 plEndPos;
 
+    //Wwise RealTime Parameter Controls
+    [SerializeField] AK.Wwise.RTPC RPM = null;
 
 
     void Start()
@@ -139,8 +138,10 @@ public class ScoreScript : MonoBehaviour
         {
             gearLevel = 0;
             gear +=1;
+            AkSoundEngine.PostEvent("GearShift", gameObject);
         }
 
+        // RPM informs the pitch of the engine ambient sound
         RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 

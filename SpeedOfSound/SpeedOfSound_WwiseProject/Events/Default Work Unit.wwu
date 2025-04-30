@@ -296,6 +296,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX" ID="{BBC9F5FC-02BE-429E-93A5-2B35B8856178}" ShortID="860659238">
+					<ChildrenList>
+						<Event Name="GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}">
+							<ChildrenList>
+								<Action Name="" ID="{7151F62E-CA52-421D-A8D0-8BFA253C26CC}" ShortID="806243545">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GearShift" ID="{32A44AEF-F5EA-4EC9-BF22-71D021476D9F}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
