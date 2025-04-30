@@ -70,6 +70,7 @@ public class ScoreScript : MonoBehaviour
     private UnityEngine.Vector3 plEndPos;
 
     //Wwise RealTime Parameter Controls
+    [SerializeField] AK.Wwise.RTPC WindSpeed = null;
     [SerializeField] AK.Wwise.RTPC RPM = null;
     [SerializeField] AK.Wwise.RTPC PoliceDistance = null;
 
@@ -128,38 +129,28 @@ public class ScoreScript : MonoBehaviour
         upgradesHit +=1; 
     }
 
-    public void IncrementGearLevel()
+    public void IncrementGearLevel(int value)
     {
-        if (gearLevel < 8)
-        {
-            gearLevel += 1;
-        }
-        if (gearLevel == 8 && gear < 3)
-        {
-            gearLevel = 0;
-            gear +=1;
-            AkSoundEngine.PostEvent("GearShift", gameObject);
-        }
 
-        PoliceEffects();
-        RPM.SetGlobalValue((gearLevel + gear) * 10);
-    }
-
-    public void LostStreak()
-    {
-        Debug.Log("gear -1");
-        if (gear == 1)
+        if (gearLevel >= 8 && gear < 3 && value > 0)
         {
-            gear = 1;
+            gear += 1;
+            gearLevel = 1;
+            AkSoundEngine.PostEvent("SFX_GearShift", gameObject);
+        }
+        else if (gearLevel <= 1 && gear > 1 && value < 0)
+        {
+            gear -= 1;
+            gearLevel = 4;
+            //AkSoundEngine.PostEvent("SFX_GearShiftDown", gameObject);
         }
         else
         {
-            gear -= 1;
-        }        
-        gearLevel = 1;
+            gearLevel = Mathf.Clamp(gearLevel + value, 1, 8);
+        }
 
         PoliceEffects();
-        RPM.SetGlobalValue((gearLevel + gear) * 10);
+        AmbientEffects();
     }
 
     //needs to be called as a player calls a user defined threshold
@@ -167,11 +158,13 @@ public class ScoreScript : MonoBehaviour
     {
         Debug.Log("AssessPerformanceCalled");
         PoliceEffects();
+        AmbientEffects();
 
         UnityEngine.Vector3 currentPosition = new UnityEngine.Vector3();
 
         if (gear == 1)
         {
+            //change speed of BG
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -40;
             backBG.GetComponent<BackgroundMovement>().speed = -30;
@@ -191,9 +184,9 @@ public class ScoreScript : MonoBehaviour
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 1;
                 //CHANGE TO LOW MUSIC TRACK
-                AkSoundEngine.PostEvent("SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundHIGHMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundLOWUnmute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWUnmute", gameObject);
                 Debug.Log("LOW MUSIC TRACK PLAYING");
                 
             }
@@ -224,16 +217,16 @@ public class ScoreScript : MonoBehaviour
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 2;
                 //CHANGE TO MEDIUM MUSIC TRACK
-                AkSoundEngine.PostEvent("SpeedOfSoundMEDUnmute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundHIGHMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundLOWMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDUnmute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWMute", gameObject);
                 Debug.Log("MEDIUM MUSIC TRACK PLAYING");
             }
 
             //diff2Road.transform.position.x == 
         }
 
-        if (gear ==3)
+        if (gear == 3)
         {
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -100;
@@ -256,12 +249,19 @@ public class ScoreScript : MonoBehaviour
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 3;
                 //CHANGE TO HIGH MUSIC TRACK
-                AkSoundEngine.PostEvent("SpeedOfSoundHIGHUnmute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("SpeedOfSoundLOWMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHUnmute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDMute", gameObject);
+                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWMute", gameObject);
                 Debug.Log("HIGH MUSIC TRACK PLAYING");
             }
         }
+    }
+
+    
+    void AmbientEffects()
+    {
+        WindSpeed.SetGlobalValue(gearLevel + (gear - 1) * 8 + (currentPhraseLevel - 1) * 24);
+        RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 
     void PoliceEffects() // Called at every gearLevel change and performanceassess

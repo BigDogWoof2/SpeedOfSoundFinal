@@ -778,8 +778,8 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>60.15108</XPos>
-																		<YPos>0.09909</YPos>
+																		<XPos>59.96222</XPos>
+																		<YPos>2.40791</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -818,7 +818,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>59.96223</XPos>
+																		<XPos>69.97167</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
@@ -856,6 +856,7 @@
 																		<XPos>0</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
+																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>69.87804</XPos>
@@ -879,6 +880,154 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967" ID="{6EE3E8C5-0EBB-4EA1-BBE6-67CDD1D6D6DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wind" ID="{C42DAA06-5700-40B0-894B-650D9F13A6F0}" ShortID="107251871">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wind, Designed, Phoebe Wind, Loop 01 SND76240" ID="{B35472D3-3F1F-46EF-A5D9-3E73B987A202}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3805.596"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.24121046892039"/>
+										<Property Name="LoopEnd" Type="Real64" Value="134.920870229008"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wind, Designed, Phoebe Wind, Loop 01 SND76240.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="113771076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5BFDB67F-8549-4234-BAAF-FCF8E48FA242}" ShortID="982425011">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{700776EB-8368-42BB-8D6F-A1994984FD8D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>5.58621</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{50A33042-C41C-4A71-B1F2-457C91AE912B}" ShortID="786507331">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1BBC529D-5F6F-4195-9EDA-41B043791D9A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-861</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>430</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{3EEE6F06-092A-4C99-BFA3-3FD212F7B8B0}" ShortID="664233969">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{4CBFE822-967C-4362-B7BA-E2DCF570502A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>31</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Wind, Designed, Phoebe Wind, Loop 01 SND76240" ID="{B35472D3-3F1F-46EF-A5D9-3E73B987A202}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
