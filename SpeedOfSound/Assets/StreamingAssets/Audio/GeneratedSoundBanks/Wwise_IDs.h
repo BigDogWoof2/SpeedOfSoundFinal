@@ -13,23 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BEEP = 1123068841U;
-        static const AkUniqueID ENGINESTART = 164866881U;
-        static const AkUniqueID ENGINESTOP = 2079244539U;
-        static const AkUniqueID GEARSHIFT = 2729209948U;
-        static const AkUniqueID POLICESIREN = 2666848490U;
-        static const AkUniqueID SPEEDOFSOUNDHIGH = 3860062838U;
-        static const AkUniqueID SPEEDOFSOUNDHIGHMUTE = 1108629473U;
-        static const AkUniqueID SPEEDOFSOUNDHIGHUNMUTE = 3987112624U;
-        static const AkUniqueID SPEEDOFSOUNDLOW = 1886138784U;
-        static const AkUniqueID SPEEDOFSOUNDLOWMUTE = 116907507U;
-        static const AkUniqueID SPEEDOFSOUNDLOWUNMUTE = 2887728430U;
-        static const AkUniqueID SPEEDOFSOUNDMED = 2255393652U;
-        static const AkUniqueID SPEEDOFSOUNDMEDMUTE = 1668046471U;
-        static const AkUniqueID SPEEDOFSOUNDMEDUNMUTE = 3740494770U;
-        static const AkUniqueID STARTUPJINGLE = 3806065263U;
-        static const AkUniqueID STOPTITLESCREENMUSIC = 4294539114U;
-        static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
+        static const AkUniqueID AMB_ENGINESTART = 2354163696U;
+        static const AkUniqueID AMB_ENGINESTOP = 3934538588U;
+        static const AkUniqueID AMB_POLICESIREN = 3406798923U;
+        static const AkUniqueID AMB_WIND = 1439088316U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDHIGH = 727601679U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDHIGHMUTE = 4033530100U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDHIGHUNMUTE = 486837953U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDLOW = 3015314043U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDLOWMUTE = 2822983600U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDLOWUNMUTE = 1166788669U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDMED = 3652716323U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDMEDMUTE = 2814283976U;
+        static const AkUniqueID BGM_SPEEDOFSOUNDMEDUNMUTE = 209522661U;
+        static const AkUniqueID BGM_STARTUPJINGLE = 1281301044U;
+        static const AkUniqueID BGM_STOPTITLESCREENMUSIC = 26516739U;
+        static const AkUniqueID BGM_TITLESCREENMUSIC = 2278664411U;
+        static const AkUniqueID DEBUGBEEP = 2928919970U;
+        static const AkUniqueID SFX_GEARSHIFT = 3708240220U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;
         static const AkUniqueID UI_CONTEXTCLOSE = 4003678909U;
         static const AkUniqueID UI_CONTEXTOPEN = 1475854423U;
@@ -41,6 +42,7 @@ namespace AK
     {
         static const AkUniqueID POLICEDISTANCE = 1887703654U;
         static const AkUniqueID RPM = 796049864U;
+        static const AkUniqueID WINDSPEED = 1726592700U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

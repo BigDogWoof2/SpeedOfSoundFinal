@@ -1,34 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
-	116907507	SpeedOfSoundLOWMute			\Default Work Unit\Music\SpeedOfSoundLOWMute	
-	164866881	EngineStart			\Default Work Unit\Ambient\EngineStart	
-	1042789154	TitleScreenMusic			\Default Work Unit\Music\TitleScreenMusic	
-	1108629473	SpeedOfSoundHIGHMute			\Default Work Unit\Music\SpeedOfSoundHIGHMute	
-	1123068841	Beep			\Default Work Unit\Beep	
+	26516739	BGM_StopTitleScreenMusic			\Default Work Unit\Music\BGM_StopTitleScreenMusic	
+	209522661	BGM_SpeedOfSoundMEDUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundMEDUnmute	
+	486837953	BGM_SpeedOfSoundHIGHUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundHIGHUnmute	
+	727601679	BGM_SpeedOfSoundHIGH			\Default Work Unit\Music\BGM_SpeedOfSoundHIGH	
+	1166788669	BGM_SpeedOfSoundLOWUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundLOWUnmute	
+	1281301044	BGM_StartupJingle			\Default Work Unit\Music\BGM_StartupJingle	
+	1439088316	AMB_Wind			\Default Work Unit\Ambient\AMB_Wind	
 	1475854423	UI_ContextOpen			\Default Work Unit\UI\UI_ContextOpen	
-	1668046471	SpeedOfSoundMEDMute			\Default Work Unit\Music\SpeedOfSoundMEDMute	
-	1886138784	SpeedOfSoundLOW			\Default Work Unit\Music\SpeedOfSoundLOW	
 	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
-	2079244539	EngineStop			\Default Work Unit\Ambient\EngineStop	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
-	2255393652	SpeedOfSoundMED			\Default Work Unit\Music\SpeedOfSoundMED	
-	2666848490	PoliceSiren			\Default Work Unit\Ambient\PoliceSiren	
-	2729209948	GearShift			\Default Work Unit\SFX\GearShift	
-	2887728430	SpeedOfSoundLOWUnmute			\Default Work Unit\Music\SpeedOfSoundLOWUnmute	
-	3740494770	SpeedOfSoundMEDUnmute			\Default Work Unit\Music\SpeedOfSoundMEDUnmute	
-	3806065263	StartupJingle			\Default Work Unit\Music\StartupJingle	
-	3860062838	SpeedOfSoundHIGH			\Default Work Unit\Music\SpeedOfSoundHIGH	
-	3987112624	SpeedOfSoundHIGHUnmute			\Default Work Unit\Music\SpeedOfSoundHIGHUnmute	
+	2278664411	BGM_TitleScreenMusic			\Default Work Unit\Music\BGM_TitleScreenMusic	
+	2354163696	AMB_EngineStart			\Default Work Unit\Ambient\AMB_EngineStart	
+	2814283976	BGM_SpeedOfSoundMEDMute			\Default Work Unit\Music\BGM_SpeedOfSoundMEDMute	
+	2822983600	BGM_SpeedOfSoundLOWMute			\Default Work Unit\Music\BGM_SpeedOfSoundLOWMute	
+	2928919970	DebugBeep			\Default Work Unit\DebugBeep	
+	3015314043	BGM_SpeedOfSoundLOW			\Default Work Unit\Music\BGM_SpeedOfSoundLOW	
+	3406798923	AMB_PoliceSiren			\Default Work Unit\Ambient\AMB_PoliceSiren	
+	3652716323	BGM_SpeedOfSoundMED			\Default Work Unit\Music\BGM_SpeedOfSoundMED	
+	3708240220	SFX_GearShift			\Default Work Unit\SFX\SFX_GearShift	
+	3934538588	AMB_EngineStop			\Default Work Unit\Ambient\AMB_EngineStop	
 	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
+	4033530100	BGM_SpeedOfSoundHIGHMute			\Default Work Unit\Music\BGM_SpeedOfSoundHIGHMute	
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
-	4294539114	StopTitleScreenMusic			\Default Work Unit\Music\StopTitleScreenMusic	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	796049864	RPM			\Default Work Unit\RPM	
+	1726592700	WindSpeed			\Default Work Unit\WindSpeed	
 	1887703654	PoliceDistance			\Default Work Unit\PoliceDistance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	38756479	TitleScreenMusic	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\TitleScreenVersion2Finished_7DD98C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\TitleScreenMusic		15464996
 	92911097	ContextOpen	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextOpen		28194
+	113771076	Wind	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Wind, Designed, Phoebe Wind, Loop 01 SND76240_493C6F02.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Wind		26306576
 	130700730	ButtonHover	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ButtonHover		1556
 	261557266	EngineOff	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\EngineOff		2242336
 	273898768	newgame3	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame3		210824

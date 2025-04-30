@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("StartupJingle", gameObject);
+        AkSoundEngine.PostEvent("BGM_StartupJingle", gameObject);
         Invoke("ShowMainMenu", 3);
     }
 
@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
     {
         Splash.SetActive(false);
         MainMenu.SetActive(true);
-        AkSoundEngine.PostEvent("TitleScreenMusic", gameObject);
+        AkSoundEngine.PostEvent("BGM_TitleScreenMusic", gameObject);
     }
 
     public void OnButtonHover()
@@ -32,7 +32,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadLevel(){
         AkSoundEngine.PostEvent("UI_NewGame", gameObject);
-        AkSoundEngine.PostEvent("StopTitleScreenMusic", gameObject);
+        AkSoundEngine.PostEvent("BGM_StopTitleScreenMusic", gameObject);
         SceneManager.LoadScene("SampleScene");
     }
 

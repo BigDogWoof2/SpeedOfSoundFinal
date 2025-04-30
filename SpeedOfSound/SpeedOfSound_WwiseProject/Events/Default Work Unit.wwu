@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8499D1CC-50FB-47D5-8061-961793EF505E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Beep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}">
+				<Event Name="DebugBeep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}">
 					<ChildrenList>
 						<Action Name="" ID="{BE8B41E2-DA11-4579-90E4-F8BB615AA910}" ShortID="682268780">
 							<ReferenceList>
@@ -75,7 +75,7 @@
 				</Folder>
 				<Folder Name="Music" ID="{8F9B9F2D-550D-4CA4-8B32-A0091CCC0D54}" ShortID="164676567">
 					<ChildrenList>
-						<Event Name="TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
+						<Event Name="BGM_TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}">
 							<ChildrenList>
 								<Action Name="" ID="{2FAA7D0C-B3BA-46E1-B199-78CF1A8126D5}" ShortID="242600487">
 									<ReferenceList>
@@ -86,7 +86,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}">
+						<Event Name="BGM_StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}">
 							<ChildrenList>
 								<Action Name="" ID="{14D7402E-D289-4478-9202-A3433BE2B9F0}" ShortID="309638173">
 									<PropertyList>
@@ -100,7 +100,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundHIGH" ID="{AA1FE555-AAE2-4E65-B2BD-7B807F16506E}">
+						<Event Name="BGM_SpeedOfSoundHIGH" ID="{AA1FE555-AAE2-4E65-B2BD-7B807F16506E}">
 							<ChildrenList>
 								<Action Name="" ID="{82C51D37-447C-44D8-80FE-96F181339154}" ShortID="182059258">
 									<ReferenceList>
@@ -121,7 +121,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}">
+						<Event Name="BGM_SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}">
 							<ChildrenList>
 								<Action Name="" ID="{5B223F31-9D86-4D6A-BF60-5C79EF107138}" ShortID="94839877">
 									<ReferenceList>
@@ -142,7 +142,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundLOW" ID="{C23FC8BE-94AB-4D9E-9B1E-83F1876A823A}">
+						<Event Name="BGM_SpeedOfSoundLOW" ID="{C23FC8BE-94AB-4D9E-9B1E-83F1876A823A}">
 							<ChildrenList>
 								<Action Name="" ID="{BB7A51A3-225A-4814-A7EA-0689F31D2464}" ShortID="1009354883">
 									<ReferenceList>
@@ -163,7 +163,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundHIGHUnmute" ID="{C31C759E-8D07-49AD-87E1-614ABD7F96E1}">
+						<Event Name="BGM_SpeedOfSoundHIGHUnmute" ID="{C31C759E-8D07-49AD-87E1-614ABD7F96E1}">
 							<ChildrenList>
 								<Action Name="" ID="{FDCF626F-CC07-4AB3-A9B9-8AE60AF12A62}" ShortID="176864411">
 									<PropertyList>
@@ -177,7 +177,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundMEDUnmute" ID="{E8259867-C74C-424F-9B4C-9C11CBD9241D}">
+						<Event Name="BGM_SpeedOfSoundMEDUnmute" ID="{E8259867-C74C-424F-9B4C-9C11CBD9241D}">
 							<ChildrenList>
 								<Action Name="" ID="{077B37C5-6FF5-4E6A-BAA8-43439BFE66C3}" ShortID="337802802">
 									<PropertyList>
@@ -191,7 +191,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundLOWUnmute" ID="{2400E1E8-30BE-4A21-9092-CF813213D699}">
+						<Event Name="BGM_SpeedOfSoundLOWUnmute" ID="{2400E1E8-30BE-4A21-9092-CF813213D699}">
 							<ChildrenList>
 								<Action Name="" ID="{C21CF911-BBFB-43C3-AC88-F9573E2EDA20}" ShortID="754650254">
 									<PropertyList>
@@ -205,7 +205,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundHIGHMute" ID="{7C4FAAF7-E1F1-4EC8-A8A1-67CCAE56B474}">
+						<Event Name="BGM_SpeedOfSoundHIGHMute" ID="{7C4FAAF7-E1F1-4EC8-A8A1-67CCAE56B474}">
 							<ChildrenList>
 								<Action Name="" ID="{38718748-8DA7-4FCF-A862-9629623BB580}" ShortID="327130035">
 									<PropertyList>
@@ -219,7 +219,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundMEDMute" ID="{3DA19D20-0B98-4ED2-87E9-E9743733E1D4}">
+						<Event Name="BGM_SpeedOfSoundMEDMute" ID="{3DA19D20-0B98-4ED2-87E9-E9743733E1D4}">
 							<ChildrenList>
 								<Action Name="" ID="{FD4AC8A0-37D2-4DB3-B704-904B0E2016C9}" ShortID="748374844">
 									<PropertyList>
@@ -233,7 +233,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SpeedOfSoundLOWMute" ID="{7735A26B-A257-4608-B442-05BFF0BB5A17}">
+						<Event Name="BGM_SpeedOfSoundLOWMute" ID="{7735A26B-A257-4608-B442-05BFF0BB5A17}">
 							<ChildrenList>
 								<Action Name="" ID="{027DBFAB-933D-4494-B636-A668D7940B00}" ShortID="161206058">
 									<PropertyList>
@@ -247,7 +247,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}">
+						<Event Name="BGM_StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}">
 							<ChildrenList>
 								<Action Name="" ID="{B5273DCA-4EEF-40D1-A89F-5EA12C063F96}" ShortID="821397772">
 									<ReferenceList>
@@ -262,7 +262,7 @@
 				</Folder>
 				<Folder Name="Ambient" ID="{7C602F65-5DC6-4255-AB6B-980136179C52}" ShortID="346550297">
 					<ChildrenList>
-						<Event Name="EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}">
+						<Event Name="AMB_EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}">
 							<ChildrenList>
 								<Action Name="" ID="{BC5D215C-44A4-4990-B8EA-065660ED8670}" ShortID="665267972">
 									<ReferenceList>
@@ -273,7 +273,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}">
+						<Event Name="AMB_EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}">
 							<ChildrenList>
 								<Action Name="" ID="{3307AB9A-CA41-4835-B8E8-2756FC2528AD}" ShortID="786720366">
 									<PropertyList>
@@ -294,7 +294,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}">
+						<Event Name="AMB_PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}">
 							<ChildrenList>
 								<Action Name="" ID="{AD4D5C49-00D1-4C53-87BC-C70AFC7F8951}" ShortID="795240694">
 									<ReferenceList>
@@ -305,11 +305,22 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AMB_Wind" ID="{B8D24E53-2A7A-46BB-A973-C6ED1BB8EFB0}">
+							<ChildrenList>
+								<Action Name="" ID="{926409DF-BA18-4E8A-95B0-1DCBA63A26CB}" ShortID="86575161">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{C42DAA06-5700-40B0-894B-650D9F13A6F0}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BBC9F5FC-02BE-429E-93A5-2B35B8856178}" ShortID="860659238">
 					<ChildrenList>
-						<Event Name="GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}">
+						<Event Name="SFX_GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}">
 							<ChildrenList>
 								<Action Name="" ID="{7151F62E-CA52-421D-A8D0-8BFA253C26CC}" ShortID="806243545">
 									<ReferenceList>

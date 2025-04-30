@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2BBB5583-1506-244A-8CF7-A705CCEA428F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EB9A9C8C-002B-52D8-E3A8-6565AD6E5E82}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -51,10 +51,11 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{882A3049-5369-5520-22A5-DD6812263FF9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{39D930A8-C129-7934-4EBF-B29D0B13B28D}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -65,6 +66,10 @@
 				<File Id="92911097" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Motion, Lazer, Maximize, Short SND31021 2.wav</ShortName>
 					<CachePath>SFX/User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="113771076" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind, Designed, Phoebe Wind, Loop 01 SND76240.wav</ShortName>
+					<CachePath>SFX/Wind, Designed, Phoebe Wind, Loop 01 SND76240_493C6F02.wem</CachePath>
 				</File>
 				<File Id="130700730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
@@ -144,12 +149,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1123068841" Name="Beep" DurationType="OneShot" DurationMin="0.7853288" DurationMax="0.7853288">
-					<MediaRefs>
-						<MediaRef Id="880395594"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="164866881" Name="EngineStart" DurationType="Infinite">
+				<Event Id="2354163696" Name="AMB_EngineStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="968679976"/>
 					</MediaRefs>
@@ -157,7 +157,7 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2079244539" Name="EngineStop" DurationType="OneShot" DurationMin="13.108486" DurationMax="13.108486">
+				<Event Id="3934538588" Name="AMB_EngineStop" DurationType="OneShot" DurationMin="13.108486" DurationMax="13.108486">
 					<MediaRefs>
 						<MediaRef Id="261557266"/>
 					</MediaRefs>
@@ -165,7 +165,80 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2729209948" Name="GearShift" DurationType="OneShot" DurationMin="0.319161" DurationMax="0.4554195">
+				<Event Id="3406798923" Name="AMB_PoliceSiren" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="488550204"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2041057431" Name="Reverb_Siren"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1439088316" Name="AMB_Wind" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="113771076"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="727601679" Name="BGM_SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
+					<MediaRefs>
+						<MediaRef Id="936928125"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4033530100" Name="BGM_SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="936928125"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="486837953" Name="BGM_SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="936928125"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3015314043" Name="BGM_SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
+					<MediaRefs>
+						<MediaRef Id="810624198"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2822983600" Name="BGM_SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1166788669" Name="BGM_SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3652716323" Name="BGM_SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.4522" DurationMax="263.4522">
+					<MediaRefs>
+						<MediaRef Id="344589538"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2814283976" Name="BGM_SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="344589538"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="209522661" Name="BGM_SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="344589538"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1281301044" Name="BGM_StartupJingle" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="658922471"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="26516739" Name="BGM_StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="38756479"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2278664411" Name="BGM_TitleScreenMusic" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="38756479"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2928919970" Name="DebugBeep" DurationType="OneShot" DurationMin="0.7853288" DurationMax="0.7853288">
+					<MediaRefs>
+						<MediaRef Id="880395594"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3708240220" Name="SFX_GearShift" DurationType="OneShot" DurationMin="0.319161" DurationMax="0.4554195">
 					<MediaRefs>
 						<MediaRef Id="318308067"/>
 						<MediaRef Id="329238730"/>
@@ -175,66 +248,6 @@
 					<AuxBusRefs>
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
-				</Event>
-				<Event Id="2666848490" Name="PoliceSiren" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="488550204"/>
-					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="2041057431" Name="Reverb_Siren"/>
-					</AuxBusRefs>
-				</Event>
-				<Event Id="3860062838" Name="SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1108629473" Name="SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3987112624" Name="SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1886138784" Name="SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
-					<MediaRefs>
-						<MediaRef Id="810624198"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="116907507" Name="SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2887728430" Name="SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2255393652" Name="SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.4522" DurationMax="263.4522">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1668046471" Name="SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3740494770" Name="SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3806065263" Name="StartupJingle" DurationType="OneShot" DurationMin="2" DurationMax="2">
-					<MediaRefs>
-						<MediaRef Id="658922471"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4294539114" Name="StopTitleScreenMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="38756479"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1042789154" Name="TitleScreenMusic" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="38756479"/>
-					</MediaRefs>
 				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
 					<MediaRefs>
@@ -267,9 +280,10 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8EC58AAD-27A5-12CB-C8E6-94298AF4BD8E}</FileHash>
+	<FileHash>{7C4ADCD8-BCF9-58E5-B093-E89E764A603D}</FileHash>
 </SoundBanksInfo>
