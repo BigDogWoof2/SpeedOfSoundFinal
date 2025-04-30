@@ -7,16 +7,22 @@ using static ak;
 
 public class MenuManager : MonoBehaviour
 {
+
+    public GameObject MainMenu;
+    public GameObject Splash;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        AkSoundEngine.PostEvent("StartupJingle", gameObject);
+        Invoke("ShowMainMenu", 3);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowMainMenu()
     {
-        
+        Splash.SetActive(false);
+        MainMenu.SetActive(true);
+        AkSoundEngine.PostEvent("TitleScreenMusic", gameObject);
     }
 
     public void OnButtonHover()
@@ -38,5 +44,19 @@ public class MenuManager : MonoBehaviour
     public void QuitClick()
     {
         AkSoundEngine.PostEvent("UI_Quit", gameObject);
+        Invoke("QuitGame", 1);
+    }
+
+    public void QuitGame()
+    {
+        // This will quit the game regardless of if it's in editor or in a build
+        Debug.Log("Quitting game...");
+        if (Application.isEditor)
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+        } else
+        {
+            Application.Quit();
+        }
     }
 }

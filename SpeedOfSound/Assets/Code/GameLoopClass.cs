@@ -96,6 +96,8 @@ public class GameLoopClass : MonoBehaviour
         {
 
             Debug.Log("Spacebarhit");
+
+            // strumValue is set in NoteDetector.cs
             switch (strumValue)
             {
                 case Strum.fail: 

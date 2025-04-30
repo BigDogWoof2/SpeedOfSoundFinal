@@ -7,13 +7,18 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundMEDUnmute" ID="{E8259867-C74C-424F-9B4C-9C11CBD9241D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Beep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ButtonHover" ID="{F3AA7A81-F121-449B-863E-673B850C0456}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ContextOpen" ID="{0839CFE9-308B-4578-BEFA-658BC1CF9A0D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundLOWMute" ID="{7735A26B-A257-4608-B442-05BFF0BB5A17}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Quit" ID="{5A1D9308-9BAF-4816-B9F4-98303736B050}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundHIGHUnmute" ID="{C31C759E-8D07-49AD-87E1-614ABD7F96E1}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundLOWUnmute" ID="{2400E1E8-30BE-4A21-9092-CF813213D699}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_NewGame" ID="{C14A4514-5759-4AE7-A795-3CCDCE41D7D5}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>

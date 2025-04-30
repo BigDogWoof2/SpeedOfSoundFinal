@@ -24,12 +24,9 @@ public class NoteDetector : MonoBehaviour
     void OnTriggerEnter(Collider otherCollider)
     {
 
-        
-
-        
-
         if(otherCollider.gameObject.tag == "Note"){
 
+            // Set strumValue in GameLoopClass based on other's collider type
             if (otherCollider.GetType().ToString().Equals("UnityEngine.CapsuleCollider"))
             {
 
@@ -38,8 +35,6 @@ public class NoteDetector : MonoBehaviour
 
             }
 
-            //Debug.Log("decector collides with note" + otherCollider.name);
-
             if (otherCollider.GetType().ToString().Equals("UnityEngine.BoxCollider"))
             {
                 Debug.Log("Collide with perfect");
@@ -47,39 +42,34 @@ public class NoteDetector : MonoBehaviour
 
             }
             
+            // Send lane value to GameLoop
             if (otherCollider.gameObject.transform.parent.name == "Lane0")
             {
-                //need to sent this information to GameLoop
                 Debug.Log("Lane0");
                 laneNumber = 0; 
                 SendLane(laneNumber);
             }
 
-            if (otherCollider.gameObject.transform.parent.name == "Lane1")
+            else if (otherCollider.gameObject.transform.parent.name == "Lane1")
             {
-                //need to sent this information to GameLoop
                 Debug.Log("Lane1");
                 laneNumber = 1; 
                 SendLane(laneNumber);
             }
 
-            if (otherCollider.gameObject.transform.parent.name == "Lane2")
+            else if (otherCollider.gameObject.transform.parent.name == "Lane2")
             {
-                //need to sent this information to GameLoop
                 Debug.Log("Lane2");
                 laneNumber = 2; 
                 SendLane(laneNumber);
             }
 
-            if (otherCollider.gameObject.transform.parent.name == "Lane3")
+            else if (otherCollider.gameObject.transform.parent.name == "Lane3")
             {
-                //need to sent this information to GameLoop
                 Debug.Log("Lane3");
                 laneNumber = 3; 
                 SendLane(laneNumber);
             }
-
-            
 
         }
     }
@@ -90,6 +80,7 @@ public class NoteDetector : MonoBehaviour
 
             Debug.Log("detector exits note " + otherCollider.name);
 
+            // Set strumValue in GameLoopClass based on other's collider type
             if (otherCollider.GetType().ToString().Equals("UnityEngine.BoxCollider"))
             {
                 GameManagerObject.GetComponent<GameLoopClass>().strumValue = GameLoopClass.Strum.decent;

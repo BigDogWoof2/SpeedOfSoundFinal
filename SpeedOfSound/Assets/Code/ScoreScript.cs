@@ -64,10 +64,14 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] public float gearThreeFOV = 60f;
 
     //Police Siren
+    [SerializeField] private float policeDistance;
     [SerializeField] private GameObject policeLights;
     private UnityEngine.Vector3 plStartPos;
     private UnityEngine.Vector3 plEndPos;
 
+    //Wwise RealTime Parameter Controls
+    [SerializeField] AK.Wwise.RTPC RPM = null;
+    [SerializeField] AK.Wwise.RTPC PoliceDistance = null;
 
 
     void Start()
@@ -78,7 +82,8 @@ public class ScoreScript : MonoBehaviour
         currentScore = 0;
         gearLevel = 0;
         currentPhraseLevel = 1;
-
+          
+        PoliceEffects();
     }
 
     void Update()
@@ -88,7 +93,6 @@ public class ScoreScript : MonoBehaviour
         gearLevelText.text = gearLevel.ToString();
 
         AddDistanceScore();
-        PoliceLights();
         
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -117,7 +121,6 @@ public class ScoreScript : MonoBehaviour
     public void ObstacleHit()
     {
         currentScore -= 5000*gear; 
-        
     }
 
     public void UpgradeHit()
@@ -130,13 +133,16 @@ public class ScoreScript : MonoBehaviour
         if (gearLevel < 8)
         {
             gearLevel += 1;
-
         }
         if (gearLevel == 8 && gear < 3)
         {
             gearLevel = 0;
             gear +=1;
+            AkSoundEngine.PostEvent("GearShift", gameObject);
         }
+
+        PoliceEffects();
+        RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 
     public void LostStreak()
@@ -152,13 +158,15 @@ public class ScoreScript : MonoBehaviour
         }        
         gearLevel = 1;
 
+        PoliceEffects();
+        RPM.SetGlobalValue((gearLevel + gear) * 10);
     }
 
     //needs to be called as a player calls a user defined threshold
     public void AssessPerformance()
     {
-        
         Debug.Log("AssessPerformanceCalled");
+        PoliceEffects();
 
         UnityEngine.Vector3 currentPosition = new UnityEngine.Vector3();
 
@@ -173,7 +181,6 @@ public class ScoreScript : MonoBehaviour
 
             if (currentPhraseLevel != 1)
             {
-                
                 //translate current road to placeholder xposition;
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
@@ -208,7 +215,6 @@ public class ScoreScript : MonoBehaviour
 
             if (currentPhraseLevel != 2)
             {
-
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
                 //translate road 1 to road xposition;
@@ -255,23 +261,45 @@ public class ScoreScript : MonoBehaviour
                 AkSoundEngine.PostEvent("SpeedOfSoundLOWMute", gameObject);
                 Debug.Log("HIGH MUSIC TRACK PLAYING");
             }
-
         }
-
-        
     }
 
-    void PoliceLights()
+    void PoliceEffects() // Called at every gearLevel change and performanceassess
     {
-        if (gear == 1 && gearLevel <= 3 && currentPhraseLevel == 1)
+        if (currentPhraseLevel == 1)
         {
-            policeLights.SetActive(true);
+            switch (gear)
+            {
+                case 1: // Distance will be between 0 and 64
+                    policeDistance = 0 + gearLevel * 8;
+                    // Enable police lights if below gearLevel 4
+                    if (gearLevel <= 4) { 
+                        policeLights.SetActive(true);
+                        // Move lights closer the lower the gearLevel is
+                        policeLights.transform.position = new UnityEngine.Vector3(229, 7, gearLevel * -8);
+                    } else { 
+                        policeLights.SetActive(false);
+                    }
+                    break;
 
+                case 2: // Distance will be between 68 and 100
+                    policeDistance = 68 + gearLevel * 4;
+                    policeLights.SetActive(false);
+                    break;
+
+                case 3:
+                    policeDistance = 100;
+                    policeLights.SetActive(false);
+                    break;
+            }
         }
         else
         {
+            policeDistance = 100;
             policeLights.SetActive(false);
         }
+
+        PoliceDistance.SetGlobalValue(policeDistance);
     }
 
 }

@@ -247,6 +247,79 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}">
+							<ChildrenList>
+								<Action Name="" ID="{B5273DCA-4EEF-40D1-A89F-5EA12C063F96}" ShortID="821397772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartupJingle" ID="{723A276A-DD9A-46FE-9BA1-17FC00C32CEA}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambient" ID="{7C602F65-5DC6-4255-AB6B-980136179C52}" ShortID="346550297">
+					<ChildrenList>
+						<Event Name="EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}">
+							<ChildrenList>
+								<Action Name="" ID="{BC5D215C-44A4-4990-B8EA-065660ED8670}" ShortID="665267972">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}">
+							<ChildrenList>
+								<Action Name="" ID="{3307AB9A-CA41-4835-B8E8-2756FC2528AD}" ShortID="786720366">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B4E7743F-380E-44A4-A060-DE4461ACDB88}" ShortID="370856037">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineOff" ID="{DD826D50-5D3B-46B8-B74B-9750419D9E5E}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}">
+							<ChildrenList>
+								<Action Name="" ID="{AD4D5C49-00D1-4C53-87BC-C70AFC7F8951}" ShortID="795240694">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PoliceSiren" ID="{C427946E-760B-474D-B893-1FCA280AE7A5}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{BBC9F5FC-02BE-429E-93A5-2B35B8856178}" ShortID="860659238">
+					<ChildrenList>
+						<Event Name="GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}">
+							<ChildrenList>
+								<Action Name="" ID="{7151F62E-CA52-421D-A8D0-8BFA253C26CC}" ShortID="806243545">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GearShift" ID="{32A44AEF-F5EA-4EC9-BF22-71D021476D9F}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
