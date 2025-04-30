@@ -165,7 +165,6 @@ public class ScoreScript : MonoBehaviour
         if (gear == 1)
         {
             //change speed of BG
-            //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -40;
             backBG.GetComponent<BackgroundMovement>().speed = -30;
             clutter.GetComponent<BackgroundMovement>().speed = -40;

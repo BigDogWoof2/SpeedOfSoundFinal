@@ -55,7 +55,7 @@
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EBB2FAB8-1222-5C08-80D5-F4CE3DA4EF37}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{17A50CBC-8A16-C93E-24D0-698DB71EDAD7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -69,7 +69,7 @@
 				</File>
 				<File Id="113771076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Designed, Phoebe Wind, Loop 01 SND76240.wav</ShortName>
-					<CachePath>SFX/Wind, Designed, Phoebe Wind, Loop 01 SND76240_493C6F02.wem</CachePath>
+					<CachePath>SFX/Wind, Designed, Phoebe Wind, Loop 01 SND76240_1BF56D0E.wem</CachePath>
 				</File>
 				<File Id="130700730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
@@ -101,7 +101,7 @@
 				</File>
 				<File Id="488550204" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967.wav</ShortName>
-					<CachePath>SFX/Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_58EF1FC2.wem</CachePath>
+					<CachePath>SFX/Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_A0A333C6.wem</CachePath>
 				</File>
 				<File Id="501775720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Motion, Lazer, Minimize, Short SND31020.wav</ShortName>
@@ -285,5 +285,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CED4374E-C532-FF71-69F1-3D92F62756C5}</FileHash>
+	<FileHash>{9F1E6711-DE28-A68E-A1C2-559BAE6FA04E}</FileHash>
 </SoundBanksInfo>
