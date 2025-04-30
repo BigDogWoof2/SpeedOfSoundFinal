@@ -55,7 +55,7 @@
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{39D930A8-C129-7934-4EBF-B29D0B13B28D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EBB2FAB8-1222-5C08-80D5-F4CE3DA4EF37}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -285,5 +285,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8F326E58-906E-3D70-45FB-3E281454D70F}</FileHash>
+	<FileHash>{1E39A28E-BE27-848B-BA29-FC6F105B7785}</FileHash>
 </SoundBanksInfo>

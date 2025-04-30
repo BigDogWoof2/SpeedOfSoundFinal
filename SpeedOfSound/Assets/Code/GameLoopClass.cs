@@ -149,7 +149,7 @@ public class GameLoopClass : MonoBehaviour
         //noteParticles.Play();
         Instantiate(perfectText, transform.position, Quaternion.identity);
 
-        scoreScriptRef.IncrementGearLevel();
+        scoreScriptRef.IncrementGearLevel(1);
         scoreScriptRef.AddPerfectNoteScore();
         portrait.GetComponent<UIFunctionality>().PerfectNote();
     }
@@ -175,7 +175,7 @@ public class GameLoopClass : MonoBehaviour
         //noteParticles.Play();
         Instantiate(missText, transform.position, Quaternion.identity);
 
-        scoreScriptRef.LostStreak();
+        scoreScriptRef.IncrementGearLevel(-2);
         portrait.GetComponent<UIFunctionality>().MissedNote();
 
     }

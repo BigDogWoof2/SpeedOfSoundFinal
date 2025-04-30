@@ -129,35 +129,25 @@ public class ScoreScript : MonoBehaviour
         upgradesHit +=1; 
     }
 
-    public void IncrementGearLevel()
+    public void IncrementGearLevel(int value)
     {
-        if (gearLevel < 8)
+
+        if (gearLevel >= 8 && gear < 3 && value > 0)
         {
-            gearLevel += 1;
-        }
-        if (gearLevel == 8 && gear < 3)
-        {
-            gearLevel = 0;
-            gear +=1;
+            gear += 1;
+            gearLevel = 1;
             AkSoundEngine.PostEvent("SFX_GearShift", gameObject);
         }
-
-        PoliceEffects();
-        AmbientEffects();
-    }
-
-    public void LostStreak()
-    {
-        Debug.Log("gear -1");
-        if (gear == 1)
+        else if (gearLevel <= 1 && gear > 1 && value < 0)
         {
-            gear = 1;
+            gear -= 1;
+            gearLevel = 4;
+            //AkSoundEngine.PostEvent("SFX_GearShiftDown", gameObject);
         }
         else
         {
-            gear -= 1;
-        }        
-        gearLevel = 1;
+            gearLevel = Mathf.Clamp(gearLevel + value, 1, 8);
+        }
 
         PoliceEffects();
         AmbientEffects();
