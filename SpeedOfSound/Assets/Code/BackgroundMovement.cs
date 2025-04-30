@@ -10,5 +10,6 @@ public class BackgroundMovement : MonoBehaviour
     {
         // Move the background sprites forward along the Z-axis every frame
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
     }
 }

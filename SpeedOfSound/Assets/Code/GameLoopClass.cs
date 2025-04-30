@@ -36,14 +36,9 @@ public class GameLoopClass : MonoBehaviour
 
     [SerializeField] private GameObject perfectText;
     [SerializeField] private GameObject decentText;
-    [SerializeField] private GameObject missText;    
-
-
-    //Particle System
-    //[SerializeField] private ParticleSystem noteParticles;
-    //private Color perfect = Color.green;
-    //private Color decent = Color.blue;
-    //private Color miss = Color.red;
+    [SerializeField] private GameObject missText;
+    [SerializeField] private GameObject portrait;
+    [SerializeField] public GameObject uiRef;    
 
     [SerializeField] private int notesInSection;
 
@@ -80,6 +75,10 @@ public class GameLoopClass : MonoBehaviour
          carRef.transform.Translate(3.84f, 0, 0);
 
          carLaneNumber +=1;
+
+         //rotate UI
+         uiRef.GetComponent<UIMovement>().MoveRight();
+
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -88,6 +87,9 @@ public class GameLoopClass : MonoBehaviour
          carRef.transform.Translate(-3.84f, 0, 0);
 
          carLaneNumber -=1;
+
+         //rotate UI
+         uiRef.GetComponent<UIMovement>().MoveLeft();
         }
                 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -149,6 +151,7 @@ public class GameLoopClass : MonoBehaviour
 
         scoreScriptRef.IncrementGearLevel();
         scoreScriptRef.AddPerfectNoteScore();
+        portrait.GetComponent<UIFunctionality>().PerfectNote();
     }
 
     void DecentNoteHit()
@@ -160,6 +163,8 @@ public class GameLoopClass : MonoBehaviour
         Instantiate(decentText, transform.position, Quaternion.identity);
 
         scoreScriptRef.AddNoteScore();
+        portrait.GetComponent<UIFunctionality>().OkayNote();
+
     }
 
     void FailedNote()
@@ -171,18 +176,13 @@ public class GameLoopClass : MonoBehaviour
         Instantiate(missText, transform.position, Quaternion.identity);
 
         scoreScriptRef.LostStreak();
+        portrait.GetComponent<UIFunctionality>().MissedNote();
+
     }
 
     void CameraBounce()
     {
 
     }
-
-    //void NoteParticles(Color hitColour)
-    //{
-    //    var main = noteParticles.main;
-    //    main.startColor = hitColour;
-    //}
-
     
 }
