@@ -7,10 +7,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1281301044	BGM_StartupJingle			\Default Work Unit\Music\BGM_StartupJingle	
 	1439088316	AMB_Wind			\Default Work Unit\Ambient\AMB_Wind	
 	1475854423	UI_ContextOpen			\Default Work Unit\UI\UI_ContextOpen	
+	1771235554	SFX_NotePress			\Default Work Unit\SFX\SFX_NotePress	
+	1870322745	SFX_NoteMiss			\Default Work Unit\SFX\SFX_NoteMiss	
 	2027123568	UI_ButtonHover			\Default Work Unit\UI\UI_ButtonHover	
 	2240351934	UI_NewGame			\Default Work Unit\UI\UI_NewGame	
 	2278664411	BGM_TitleScreenMusic			\Default Work Unit\Music\BGM_TitleScreenMusic	
 	2354163696	AMB_EngineStart			\Default Work Unit\Ambient\AMB_EngineStart	
+	2547397398	SFX_NoteDecent			\Default Work Unit\SFX\SFX_NoteDecent	
 	2814283976	BGM_SpeedOfSoundMEDMute			\Default Work Unit\Music\BGM_SpeedOfSoundMEDMute	
 	2822983600	BGM_SpeedOfSoundLOWMute			\Default Work Unit\Music\BGM_SpeedOfSoundLOWMute	
 	2928919970	DebugBeep			\Default Work Unit\DebugBeep	
@@ -21,6 +24,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3934538588	AMB_EngineStop			\Default Work Unit\Ambient\AMB_EngineStop	
 	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
 	4033530100	BGM_SpeedOfSoundHIGHMute			\Default Work Unit\Music\BGM_SpeedOfSoundHIGHMute	
+	4070368520	SFX_NotePerfect			\Default Work Unit\SFX\SFX_NotePerfect	
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -33,8 +37,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	92911097	ContextOpen	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Maximize, Short SND31021 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextOpen		28194
 	113771076	Wind	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Wind, Designed, Phoebe Wind, Loop 01 SND76240_1BF56D0E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Wind		26306576
 	130700730	ButtonHover	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ButtonHover		1556
+	166857561	NoteMiss1	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\notemiss1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\NoteMiss\NoteMiss1		71936
 	261557266	EngineOff	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\EngineOff		2242336
 	273898768	newgame3	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame3		210824
+	316644799	NotePress	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\notepress_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\NotePress		71936
 	318308067	gearshift4	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift4		56396
 	329238730	gearshift3	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift3		63984
 	344589538	SpeedOfSoundMED	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundMED2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundMED		46473112
@@ -43,12 +49,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	501775720	ContextClose	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Motion, Lazer, Minimize, Short SND31020_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ContextClose		28194
 	502578227	gearshift2	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift2		70944
 	503168787	Quit	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		152932
+	503778167	NoteDecent	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\notedecent_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\NoteDecent		39688
+	630400558	NoteMiss2	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\notemiss2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\NoteMiss\NoteMiss2		71936
 	658922471	StartupJingle	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\StartupJingle		384096
 	751472918	newgame4	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame4		210824
 	810624198	SpeedOfSoundLOW	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundLOW_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundLOW		46424472
 	812197760	newgame1	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\newgame1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NewGame\newgame1		256160
 	832444909	gearshift1	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\gearshift1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GearShift\gearshift1		80432
 	880395594	Beep	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\beep_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		138628
+	920396653	NotePerfect	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\noteperfect_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\NotePerfect		71936
 	936928125	SpeedOfSoundHIGH	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\SpeedOfSoundHIGH2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\SpeedOfSoundHIGH		46502296
 	968679976	EngineLoop	C:\Users\2302504\OneDrive - Abertay University\Documents\GitHub\SpeedOfSoundFinal\SpeedOfSound\SpeedOfSound_WwiseProject\.cache\Windows\SFX\Engine_61BD84BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\EngineLoop		12244068
 

@@ -6,9 +6,11 @@
 				<SoundBank Name="Main" ID="{F565C59B-4B63-4D43-9AD5-261BD631BB40}">
 					<ObjectInclusionList>
 						<ObjectRef Name="BGM_StopTitleScreenMusic" ID="{35039923-B0A4-40E2-BB7F-2F8CFBAFABBF}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_NotePress" ID="{9E224947-249E-423F-977E-06AC0A098051}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_SpeedOfSoundMEDUnmute" ID="{E8259867-C74C-424F-9B4C-9C11CBD9241D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DebugBeep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_NoteMiss" ID="{8B338F8F-BEFA-441A-96DD-C58ABAA26B3D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ButtonHover" ID="{F3AA7A81-F121-449B-863E-673B850C0456}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
@@ -17,6 +19,7 @@
 						<ObjectRef Name="BGM_SpeedOfSoundMED" ID="{A103AC98-17EA-4648-BE04-A9FF2EE6037D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Wind" ID="{B8D24E53-2A7A-46BB-A973-C6ED1BB8EFB0}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Quit" ID="{5A1D9308-9BAF-4816-B9F4-98303736B050}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_NotePerfect" ID="{10E4CF23-5D38-4824-9C61-7A1279EF000E}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX_GearShift" ID="{FDAF381B-8D58-4846-824D-594D232FDE3B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_StartupJingle" ID="{02D87C65-5B26-486C-B1D2-0B2869BE2F8B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_EngineStart" ID="{4AFEE940-844E-4960-9C2E-00E3C29B0A24}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
@@ -28,6 +31,7 @@
 						<ObjectRef Name="BGM_TitleScreenMusic" ID="{12DCEB90-3376-4C83-818B-EBB2F77D1AC7}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_SpeedOfSoundLOW" ID="{C23FC8BE-94AB-4D9E-9B1E-83F1876A823A}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_SpeedOfSoundHIGH" ID="{AA1FE555-AAE2-4E65-B2BD-7B807F16506E}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_NoteDecent" ID="{BF82117C-5384-4E67-A588-592FBA067C7B}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpeedOfSoundMED" ID="{7B5D5598-7101-4E7E-95CA-34730A3E3F6A}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_SpeedOfSoundHIGHMute" ID="{7C4FAAF7-E1F1-4EC8-A8A1-67CCAE56B474}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_SpeedOfSoundMEDMute" ID="{3DA19D20-0B98-4ED2-87E9-E9743733E1D4}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>

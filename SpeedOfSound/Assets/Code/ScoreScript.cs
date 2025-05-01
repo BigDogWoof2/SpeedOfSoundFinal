@@ -145,7 +145,7 @@ public class ScoreScript : MonoBehaviour
         {
             gear -= 1;
             gearLevel = 4;
-            //AkSoundEngine.PostEvent("SFX_GearShiftDown", gameObject);
+            AkSoundEngine.PostEvent("SFX_GearShift", gameObject);
         }
         else
         {

@@ -31,6 +31,10 @@ namespace AK
         static const AkUniqueID BGM_TITLESCREENMUSIC = 2278664411U;
         static const AkUniqueID DEBUGBEEP = 2928919970U;
         static const AkUniqueID SFX_GEARSHIFT = 3708240220U;
+        static const AkUniqueID SFX_NOTEDECENT = 2547397398U;
+        static const AkUniqueID SFX_NOTEMISS = 1870322745U;
+        static const AkUniqueID SFX_NOTEPERFECT = 4070368520U;
+        static const AkUniqueID SFX_NOTEPRESS = 1771235554U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;
         static const AkUniqueID UI_CONTEXTCLOSE = 4003678909U;
         static const AkUniqueID UI_CONTEXTOPEN = 1475854423U;

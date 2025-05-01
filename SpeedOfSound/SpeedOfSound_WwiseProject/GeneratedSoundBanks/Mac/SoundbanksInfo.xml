@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EB9A9C8C-002B-52D8-E3A8-6565AD6E5E82}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{052D0EAB-310A-A786-62A8-B8D562D7801F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,7 +55,7 @@
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{17A50CBC-8A16-C93E-24D0-698DB71EDAD7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{36714E59-3D5A-280A-155D-F0C9A58528CB}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -75,6 +75,10 @@
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
 					<CachePath>SFX/User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem</CachePath>
 				</File>
+				<File Id="166857561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notemiss1.wav</ShortName>
+					<CachePath>SFX/notemiss1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="261557266" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581.wav</ShortName>
 					<CachePath>SFX/Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581_818F3B66.wem</CachePath>
@@ -82,6 +86,10 @@
 				<File Id="273898768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame3.wav</ShortName>
 					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="316644799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notepress.wav</ShortName>
+					<CachePath>SFX/notepress_818F3B66.wem</CachePath>
 				</File>
 				<File Id="318308067" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gearshift4.wav</ShortName>
@@ -115,6 +123,14 @@
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
 					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
 				</File>
+				<File Id="503778167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notedecent.wav</ShortName>
+					<CachePath>SFX/notedecent_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630400558" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notemiss2.wav</ShortName>
+					<CachePath>SFX/notemiss2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
 					<CachePath>SFX/Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219_818F3B66.wem</CachePath>
@@ -138,6 +154,10 @@
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
+				</File>
+				<File Id="920396653" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>noteperfect.wav</ShortName>
+					<CachePath>SFX/noteperfect_818F3B66.wem</CachePath>
 				</File>
 				<File Id="936928125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpeedOfSoundHIGH2.wav</ShortName>
@@ -249,6 +269,28 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="2547397398" Name="SFX_NoteDecent" DurationType="OneShot" DurationMin="0.22444445" DurationMax="0.22444445">
+					<MediaRefs>
+						<MediaRef Id="503778167"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1870322745" Name="SFX_NoteMiss" DurationType="OneShot" DurationMin="0.36282405" DurationMax="0.4571297">
+					<MediaRefs>
+						<MediaRef Id="166857561"/>
+						<MediaRef Id="630400558"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+					<MediaRefs>
+						<MediaRef Id="503778167"/>
+						<MediaRef Id="920396653"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1771235554" Name="SFX_NotePress" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+					<MediaRefs>
+						<MediaRef Id="316644799"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
 					<MediaRefs>
 						<MediaRef Id="130700730"/>
@@ -285,5 +327,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9F1E6711-DE28-A68E-A1C2-559BAE6FA04E}</FileHash>
+	<FileHash>{F11A8B6D-CD97-623F-9ADE-1BF838F391F0}</FileHash>
 </SoundBanksInfo>
