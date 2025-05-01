@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sunset2
+  m_Shader: {fileID: 4800000, guid: eb3c6fb598ded4c71b8968e1c40a3b4d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _HorizonLineContribution: 0.496
+    - _HorizonLineExponent: 6
+    - _SkyGradientExponent: 16.34
+    - _SunDiscContribution: 1
+    - _SunDiscExponent: 249875.9
+    - _SunDiscMultiplier: 253.58
+    - _SunHaloContribution: 0.151
+    - _SunHaloExponent: 88.28
+    - _Title: 0
+    - __dirty: 0
+    m_Colors:
+    - _HorizonLineColor: {r: 0.04125135, g: 0.048435576, b: 0.084905684, a: 1}
+    - _SkyGradientBottom: {r: 0.0489498, g: 0.0966241, b: 0.18867922, a: 1}
+    - _SkyGradientTop: {r: 0.019624429, g: 0.030780395, b: 0.084905684, a: 1}
+    - _SunDiscColor: {r: 1, g: 0.9823533, b: 0.9198113, a: 1}
+    - _SunHaloColor: {r: 1, g: 0.9575472, b: 0.9575472, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

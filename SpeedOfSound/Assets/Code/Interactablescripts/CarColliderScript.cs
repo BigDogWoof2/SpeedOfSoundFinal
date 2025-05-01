@@ -6,10 +6,13 @@ public class CarColliderScript : MonoBehaviour
 {
    
 
-    [SerializeField] ScoreScript scoreScriptRef;
+    [SerializeField] private ScoreScript scoreScriptRef;
+    [SerializeField] private GameObject difficultyChecker;
 
-    [SerializeField] EndLevel endLevelRef;
-
+    void Start()
+    {
+        
+    }
 
 
     void OnTriggerEnter(Collider otherCollider)
@@ -26,11 +29,16 @@ public class CarColliderScript : MonoBehaviour
             scoreScriptRef.UpgradeHit();
         }
 
-        if (otherCollider.gameObject.tag == "EndLevel")
+        if ((otherCollider.gameObject.tag == "DiffCheck") && otherCollider.GetType().ToString().Equals("UnityEngine.CapsuleCollider"))
         {
-            Debug.Log("Hit EndLevel");
-            endLevelRef.EndLevelTriggered();
-            
+            Debug.Log("Change Text");
+            difficultyChecker.GetComponent<DifficultyChecker>().ChangeText();
+        }
+
+        if ((otherCollider.gameObject.tag == "DiffCheck") && otherCollider.GetType().ToString().Equals("UnityEngine.BoxCollider"))
+        {
+            Debug.Log("Change Difficulty");
+            scoreScriptRef.GetComponent<ScoreScript>().AssessPerformance();
         }
     }
 

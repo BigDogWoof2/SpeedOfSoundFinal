@@ -334,28 +334,6 @@
 				</Folder>
 				<Folder Name="Music" ID="{E2E0DA84-E708-41C5-96AB-03F776B859F7}" ShortID="380560708">
 					<ChildrenList>
-						<Sound Name="InGameMusic" ID="{4068DB7F-1282-4BE7-A735-8A28E3AD20C8}" ShortID="664569024">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="ReadSetGOBounceNormal" ID="{19E96B0F-C56C-4B43-89B2-4A1C5D967469}">
-									<Language>SFX</Language>
-									<AudioFile>ReadSetGOBounceNormal.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="426361641"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="ReadSetGOBounceNormal" ID="{19E96B0F-C56C-4B43-89B2-4A1C5D967469}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" ShortID="1050457566">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
@@ -399,9 +377,661 @@
 								<ActiveSource Name="TitleScreenVersion2Finished" ID="{B22C92CD-5576-431E-8DBD-8ACFC250653F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="InGameMusic" ID="{CDEFACFC-B043-4040-96AA-9C08E38149EB}" ShortID="730151625">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="final song" ID="{B3D11848-28E6-410E-9401-C8203DD0A05C}">
+									<Language>SFX</Language>
+									<AudioFile>final song.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="207187456"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="final song" ID="{B3D11848-28E6-410E-9401-C8203DD0A05C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpeedOfSoundLOW" ID="{E1112874-A366-4067-A583-D2E993F88062}" ShortID="75113716">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpeedOfSoundLOW" ID="{0FFE9C42-05BB-48A4-8007-8F904EE0CE3A}">
+									<Language>SFX</Language>
+									<AudioFile>SpeedOfSoundLOW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="810624198"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpeedOfSoundLOW" ID="{0FFE9C42-05BB-48A4-8007-8F904EE0CE3A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpeedOfSoundHIGH" ID="{443FFC7F-CB7E-4BAA-BFBC-0D2B9329DDD6}" ShortID="994961466">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpeedOfSoundHIGH2" ID="{E501FF8F-C743-4B94-A148-F3534A7EF430}">
+									<Language>SFX</Language>
+									<AudioFile>SpeedOfSoundHIGH2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="936928125"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpeedOfSoundHIGH2" ID="{E501FF8F-C743-4B94-A148-F3534A7EF430}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpeedOfSoundMED" ID="{7B5D5598-7101-4E7E-95CA-34730A3E3F6A}" ShortID="283636409">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpeedOfSoundMED2" ID="{DA1A9E3A-84B4-4CE0-B63B-078F6BB39B1F}">
+									<Language>SFX</Language>
+									<AudioFile>SpeedOfSoundMED2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="344589538"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpeedOfSoundMED2" ID="{DA1A9E3A-84B4-4CE0-B63B-078F6BB39B1F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="SFX" ID="{D5C7B7AF-1672-442D-B742-D0DE312C5BFE}" ShortID="811795823"/>
+				<Folder Name="SFX" ID="{D5C7B7AF-1672-442D-B742-D0DE312C5BFE}" ShortID="811795823">
+					<ChildrenList>
+						<RandomSequenceContainer Name="GearShift" ID="{32A44AEF-F5EA-4EC9-BF22-71D021476D9F}" ShortID="238505888">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="gearshift1" ID="{6474FFFB-EC56-4327-9104-42E0DA324BFC}" ShortID="444742160">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gearshift1" ID="{086E80BF-284C-4D38-BDC2-CC4E6F2EF406}">
+											<Language>SFX</Language>
+											<AudioFile>gearshift1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="832444909"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gearshift1" ID="{086E80BF-284C-4D38-BDC2-CC4E6F2EF406}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gearshift2" ID="{616A0110-8421-4162-B37E-558A8BA81582}" ShortID="1057678064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gearshift2" ID="{8675FB5F-5685-499B-A64B-2EC12A6FF55D}">
+											<Language>SFX</Language>
+											<AudioFile>gearshift2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="502578227"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gearshift2" ID="{8675FB5F-5685-499B-A64B-2EC12A6FF55D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gearshift3" ID="{08905216-96C5-4ECD-9073-A5EF4D152236}" ShortID="315854383">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gearshift3" ID="{574C7303-75D4-4177-BB70-D75BE9298343}">
+											<Language>SFX</Language>
+											<AudioFile>gearshift3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="329238730"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gearshift3" ID="{574C7303-75D4-4177-BB70-D75BE9298343}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gearshift4" ID="{03C8EC58-D5C9-4D74-82F6-31B2C2B31559}" ShortID="52306413">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gearshift4" ID="{9EDCF3DB-63A4-426E-8B2D-A9ED34134D69}">
+											<Language>SFX</Language>
+											<AudioFile>gearshift4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="318308067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gearshift4" ID="{9EDCF3DB-63A4-426E-8B2D-A9ED34134D69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambient" ID="{1D5D6C67-70E1-4384-A178-4AD8BB2196C7}" ShortID="726904957">
+					<ChildrenList>
+						<Sound Name="EngineLoop" ID="{BB34DDE7-A16A-45BB-A3FC-BF05E8084705}" ShortID="874161079">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Engine" ID="{903F4304-A1D4-49AD-AFF9-939C2128B5E9}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2191.895"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.29973451327434"/>
+										<Property Name="LoopEnd" Type="Real64" Value="66.4411356932153"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Engine.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="968679976"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D1D87204-02A3-4E2F-8392-5EEBACBCC414}" ShortID="455778798">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RPM" ID="{977005A0-48B6-488F-ABAE-AC7657BCA93D}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E94C2872-18D9-4E3A-A5D9-C57BC70FFD75}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-250</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>1384</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Engine" ID="{903F4304-A1D4-49AD-AFF9-939C2128B5E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EngineOff" ID="{DD826D50-5D3B-46B8-B74B-9750419D9E5E}" ShortID="685892230">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581" ID="{E31F2288-6BB7-4BE0-B23C-657783EF97A0}">
+									<Language>SFX</Language>
+									<AudioFile>Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="261557266"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581" ID="{E31F2288-6BB7-4BE0-B23C-657783EF97A0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PoliceSiren" ID="{C427946E-760B-474D-B893-1FCA280AE7A5}" ShortID="304935961">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Siren" ID="{E26BCBC6-008B-4C90-8DF2-AC9CD4649808}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967" ID="{6EE3E8C5-0EBB-4EA1-BBE6-67CDD1D6D6DD}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.227154761997351"/>
+										<Property Name="LoopEnd" Type="Real64" Value="34.8439097249833"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.149484008666873"/>
+										<Property Name="TrimEnd" Type="Real64" Value="34.9837170809782"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="488550204"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CE72AAE3-7983-4984-B559-0ACD87A9F2DA}" ShortID="608193650">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="UserAuxSendVolume0"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BB8AC0FE-AB78-4016-BF96-DF40F2432FC5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6.47786</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.96222</XPos>
+																		<YPos>2.40791</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{819C11D1-9867-4600-BBE4-4778199D83A4}" ShortID="845886755">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputBusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7D8004FE-2BFA-4AEF-B990-6DE66C53D759}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>69.97167</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{3AA1BFDC-E102-423B-9AEB-54C468B0C727}" ShortID="666991231">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{42E8471D-0A0C-4469-B32E-891ABE8970B7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>69.87804</XPos>
+																		<YPos>65</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967" ID="{6EE3E8C5-0EBB-4EA1-BBE6-67CDD1D6D6DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wind" ID="{C42DAA06-5700-40B0-894B-650D9F13A6F0}" ShortID="107251871">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outside" ID="{304A0FB8-7718-45A8-9DBA-FC23435C8C8E}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wind, Designed, Phoebe Wind, Loop 01 SND76240" ID="{B35472D3-3F1F-46EF-A5D9-3E73B987A202}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3805.596"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.24121046892039"/>
+										<Property Name="LoopEnd" Type="Real64" Value="134.920870229008"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wind, Designed, Phoebe Wind, Loop 01 SND76240.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="113771076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5BFDB67F-8549-4234-BAAF-FCF8E48FA242}" ShortID="982425011">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{700776EB-8368-42BB-8D6F-A1994984FD8D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>5.58621</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{50A33042-C41C-4A71-B1F2-457C91AE912B}" ShortID="786507331">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1BBC529D-5F6F-4195-9EDA-41B043791D9A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-861</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>430</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{3EEE6F06-092A-4C99-BFA3-3FD212F7B8B0}" ShortID="664233969">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}" WorkUnitID="{D73F9060-25C9-44D3-A0F7-23C87D234DC6}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{4CBFE822-967C-4362-B7BA-E2DCF570502A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>31</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Wind, Designed, Phoebe Wind, Loop 01 SND76240" ID="{B35472D3-3F1F-46EF-A5D9-3E73B987A202}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
