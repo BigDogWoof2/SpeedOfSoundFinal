@@ -6,27 +6,27 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
-
+//Base class for handling score by Fraser Sutherland, additional work by Lou Ling and Fraser Welsh
 public class ScoreScript : MonoBehaviour
 {
    
-
+    //UI text for various elements of the score
     [SerializeField] private TextMeshProUGUI multText;
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
     [SerializeField] private TextMeshProUGUI gearLevelText;
-
+    //base amount note awards to the player
     [SerializeField] int baseNoteScore;
-
+    //the gear the player is in, determines how much score the player gets for a perfect note. Also determines the difficulty of the next section the player is loaded into. higher gear = higher difficulty
     [SerializeField] int gear;
-
+    //effecitvely incremental steps towards the next gear, once a threshold is reached, increase the players gear. Gained by hitting perfect notes
     [SerializeField] public int gearLevel;
-
+    //holds the players current total score
     public int currentScore;
-
+    //base score player gains passively for progressing in the level
     [SerializeField] private int baseDistanceScore;
-
+    //could be used to calculate percentage of notes hit potentially
     [SerializeField] private int notesThisSection;
 
     private int sectionNotesHit;
@@ -37,10 +37,10 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] private int currentDifficulty;
 
     [SerializeField] private int nextDifficulty;
-
+    //holds which difficulty level of road the player is currently on
     [SerializeField] public int currentPhraseLevel;
 
-    //roads object references
+    //roads object references, diff1 is lowest diff, diff 3 is the highest. Code works by swapping one of these for the other when a new difficulty is to be loaded
     [SerializeField] private GameObject currentRoad;
 
     [SerializeField] private GameObject diff1Road;
@@ -77,6 +77,7 @@ public class ScoreScript : MonoBehaviour
 
     void Start()
     {
+        //initialise variables to base values
         baseNoteScore = 500;
         baseDistanceScore = 1;
         gear = 2;
@@ -89,10 +90,11 @@ public class ScoreScript : MonoBehaviour
 
     void Update()
     {
+        //update various UItext correctly based on current values
         scoreText.text = currentScore.ToString();
         multText.text = gear.ToString();
         gearLevelText.text = gearLevel.ToString();
-
+        //add the baseline passive distance score
         AddDistanceScore();
         
         if(Input.GetKeyDown(KeyCode.P))
@@ -102,33 +104,34 @@ public class ScoreScript : MonoBehaviour
     }
 
 
-
+    //adds some extra passive score constantly based on the current difficulty
     void AddDistanceScore()
     {
         currentScore+=baseDistanceScore * currentPhraseLevel;
     }
-
+    //adds note score for a decent note
     public void AddNoteScore()
     {
         currentScore += baseNoteScore;
     }
-
-
+    //called after hitting a perfect note
+    //adds note score for a perfect note based on gear level
     public void AddPerfectNoteScore()
     {
         currentScore += (gear * baseNoteScore);
     }
-
+    //called for hitting obstacle
     public void ObstacleHit()
     {
         currentScore -= 5000*gear; 
     }
-
+    //called for hitting upgrade
+    //add to upgrade count when upgrade hit
     public void UpgradeHit()
     {
         upgradesHit +=1; 
     }
-
+    //adjust gear level based on perfect/fail note hits
     public void IncrementGearLevel(int value)
     {
 
@@ -153,7 +156,7 @@ public class ScoreScript : MonoBehaviour
         AmbientEffects();
     }
 
-    //needs to be called as a player calls a user defined threshold
+    //needs to be called as a player calls a user defined threshold, to check how they're doing, and accordingly raise, lower or maintain difficulty
     public void AssessPerformance()
     {
         Debug.Log("AssessPerformanceCalled");
@@ -240,7 +243,7 @@ public class ScoreScript : MonoBehaviour
             if (currentPhraseLevel != 3)
             {
                 currentPosition = currentRoad.transform.position;
-                //translate road 1 to road xposition;
+                //translate current road xposition far away so it can't be seen or interfere with gameplay
                 currentRoad.transform.position = new UnityEngine.Vector3(500, 0, 200);
 
                 diff3Road.transform.position = currentPosition;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using AK.Wwise;
 using static ak;
-
+//Initial class created by Fraser Sutherland just to load level, all additional functionality by Lou Ling
 public class MenuManager : MonoBehaviour
 {
 
