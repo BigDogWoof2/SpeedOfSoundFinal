@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//At one point an imagined version of handling difficulty by breaking each difficulty down into sections called phrases and then loading these individually. Ran out of time to get working
+//would have required potentially dozens of individual sections to be created, perhaps would have been too complex 
 public class PhraseLoader : MonoBehaviour
 {
 
