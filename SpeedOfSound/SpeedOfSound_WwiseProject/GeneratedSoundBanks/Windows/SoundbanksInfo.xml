@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{61846563-F2D5-341B-4229-1B7B1E0F9367}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{71756B84-8831-E51C-9D0D-C3C053279C2E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,7 +55,7 @@
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EBB2FAB8-1222-5C08-80D5-F4CE3DA4EF37}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{36714E59-3D5A-280A-155D-F0C9A58528CB}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -69,11 +69,15 @@
 				</File>
 				<File Id="113771076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind, Designed, Phoebe Wind, Loop 01 SND76240.wav</ShortName>
-					<CachePath>SFX/Wind, Designed, Phoebe Wind, Loop 01 SND76240_493C6F02.wem</CachePath>
+					<CachePath>SFX/Wind, Designed, Phoebe Wind, Loop 01 SND76240_1BF56D0E.wem</CachePath>
 				</File>
 				<File Id="130700730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Click, Pops, Cute, UI, Pops SND115493.wav</ShortName>
 					<CachePath>SFX/User Interface, Click, Pops, Cute, UI, Pops SND115493_818F3B66.wem</CachePath>
+				</File>
+				<File Id="166857561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notemiss1.wav</ShortName>
+					<CachePath>SFX/notemiss1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="261557266" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scifi, Spaceship, Vibrating, Onboard, Engine Off SND112581.wav</ShortName>
@@ -82,6 +86,10 @@
 				<File Id="273898768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>newgame3.wav</ShortName>
 					<CachePath>SFX/newgame3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="316644799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notepress.wav</ShortName>
+					<CachePath>SFX/notepress_818F3B66.wem</CachePath>
 				</File>
 				<File Id="318308067" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gearshift4.wav</ShortName>
@@ -101,7 +109,7 @@
 				</File>
 				<File Id="488550204" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967.wav</ShortName>
-					<CachePath>SFX/Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_58EF1FC2.wem</CachePath>
+					<CachePath>SFX/Alarms, Electronic, Burglar Alarm, Pitch Oscilliating SND46967_A0A333C6.wem</CachePath>
 				</File>
 				<File Id="501775720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Motion, Lazer, Minimize, Short SND31020.wav</ShortName>
@@ -114,6 +122,14 @@
 				<File Id="503168787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>User Interface, Beep, Laser, Bright Pitch Down SND59399.wav</ShortName>
 					<CachePath>SFX/User Interface, Beep, Laser, Bright Pitch Down SND59399_818F3B66.wem</CachePath>
+				</File>
+				<File Id="503778167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notedecent.wav</ShortName>
+					<CachePath>SFX/notedecent_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630400558" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>notemiss2.wav</ShortName>
+					<CachePath>SFX/notemiss2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
@@ -138,6 +154,10 @@
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
+				</File>
+				<File Id="920396653" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>noteperfect.wav</ShortName>
+					<CachePath>SFX/noteperfect_818F3B66.wem</CachePath>
 				</File>
 				<File Id="936928125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpeedOfSoundHIGH2.wav</ShortName>
@@ -249,6 +269,28 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="2547397398" Name="SFX_NoteDecent" DurationType="OneShot" DurationMin="0.22444445" DurationMax="0.22444445">
+					<MediaRefs>
+						<MediaRef Id="503778167"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1870322745" Name="SFX_NoteMiss" DurationType="OneShot" DurationMin="0.36282405" DurationMax="0.4571297">
+					<MediaRefs>
+						<MediaRef Id="166857561"/>
+						<MediaRef Id="630400558"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+					<MediaRefs>
+						<MediaRef Id="503778167"/>
+						<MediaRef Id="920396653"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1771235554" Name="SFX_NotePress" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+					<MediaRefs>
+						<MediaRef Id="316644799"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
 					<MediaRefs>
 						<MediaRef Id="130700730"/>
@@ -285,5 +327,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1E39A28E-BE27-848B-BA29-FC6F105B7785}</FileHash>
+	<FileHash>{80A4B870-09CA-2E90-13CF-98E2D59A205E}</FileHash>
 </SoundBanksInfo>

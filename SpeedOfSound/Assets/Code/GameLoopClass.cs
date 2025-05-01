@@ -112,6 +112,8 @@ public class GameLoopClass : MonoBehaviour
         {
             Debug.Log("Spacebarhit");
 
+            AkSoundEngine.PostEvent("SFX_NotePress", gameObject);
+
             // strumValue is set in NoteDetector.cs. Strum value is determined by a collision with a succession of colliders to determine if a note is a fail (base state), decent (positive), or perfect (more score and extra mult)
             switch (strumValue)
             {
@@ -170,6 +172,8 @@ public class GameLoopClass : MonoBehaviour
 
         //NoteParticles(perfect);
         //noteParticles.Play();
+        AkSoundEngine.PostEvent("SFX_NotePerfect", gameObject);
+
         Instantiate(perfectText, transform.position, Quaternion.identity);
         //increase gear level, add perfect note score 
         scoreScriptRef.IncrementGearLevel(1);
@@ -183,6 +187,8 @@ public class GameLoopClass : MonoBehaviour
 
         //NoteParticles(decent);
         //noteParticles.Play();
+        AkSoundEngine.PostEvent("SFX_NoteDecent", gameObject);
+
         Instantiate(decentText, transform.position, Quaternion.identity);
         //add the base note score, no gear level bonus
         scoreScriptRef.AddNoteScore();
@@ -195,6 +201,8 @@ public class GameLoopClass : MonoBehaviour
         Debug.Log("NoteFailed");
         //NoteParticles(miss);
         //noteParticles.Play();
+        AkSoundEngine.PostEvent("SFX_NoteMiss", gameObject);
+
         Instantiate(missText, transform.position, Quaternion.identity);
         //Lose gear level for missing note
         scoreScriptRef.IncrementGearLevel(-2);

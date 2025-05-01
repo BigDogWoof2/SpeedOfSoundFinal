@@ -145,7 +145,7 @@ public class ScoreScript : MonoBehaviour
         {
             gear -= 1;
             gearLevel = 4;
-            //AkSoundEngine.PostEvent("SFX_GearShiftDown", gameObject);
+            AkSoundEngine.PostEvent("SFX_GearShift", gameObject);
         }
         else
         {
@@ -167,7 +167,6 @@ public class ScoreScript : MonoBehaviour
 
         if (gear == 1)
         {
-            //change speed of BG
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -40;
             backBG.GetComponent<BackgroundMovement>().speed = -30;

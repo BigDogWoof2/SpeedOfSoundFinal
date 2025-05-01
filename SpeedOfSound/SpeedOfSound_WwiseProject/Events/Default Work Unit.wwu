@@ -331,6 +331,57 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SFX_NotePress" ID="{9E224947-249E-423F-977E-06AC0A098051}">
+							<ChildrenList>
+								<Action Name="" ID="{50C41638-AA10-4F32-A38B-48A2EF00DF69}" ShortID="855174417">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NotePress" ID="{4500A0E1-86F7-4CE4-962F-DC3A90321AE2}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_NoteDecent" ID="{BF82117C-5384-4E67-A588-592FBA067C7B}">
+							<ChildrenList>
+								<Action Name="" ID="{8020192D-DCF0-4C13-B0D4-00A68C25A2EE}" ShortID="410242574">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NoteDecent" ID="{66342B43-7E85-4644-A662-03D65549130C}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_NotePerfect" ID="{10E4CF23-5D38-4824-9C61-7A1279EF000E}">
+							<ChildrenList>
+								<Action Name="" ID="{88E996CE-D838-4A4C-8DB9-FADF67ECEA58}" ShortID="653285833">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NotePerfect" ID="{4743B26B-41E1-4E01-B38C-7B962FD842FF}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A84B6E93-DF09-493F-87CA-C9564B7DB83E}" ShortID="900589222">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NoteDecent" ID="{66342B43-7E85-4644-A662-03D65549130C}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_NoteMiss" ID="{8B338F8F-BEFA-441A-96DD-C58ABAA26B3D}">
+							<ChildrenList>
+								<Action Name="" ID="{038D5A18-4FCC-408D-9C5B-769824D10422}" ShortID="857305738">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NoteMiss" ID="{FDB2F1B9-B044-4E56-8FE8-773899C3BC8B}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
