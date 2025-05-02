@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1A7B213B-4A4E-EB85-966E-2F05FCC9CE88}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2441230A-C491-2756-0B21-12011D0168A0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,8 +55,18 @@
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3727984986" Name="BGM_Level">
+					<States>
+						<State Id="545371365" Name="Low"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B0C5FB9F-C608-7E0E-F557-E1ED6E784E05}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E09DEFF5-D679-BE3F-0021-94D5AC641C94}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -222,42 +232,15 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="727601679" Name="BGM_SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
+				<Event Id="3940797748" Name="BGM_Start_SpeedOfSound" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
 					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4033530100" Name="BGM_SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="486837953" Name="BGM_SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3015314043" Name="BGM_SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
-					<MediaRefs>
+						<MediaRef Id="344589538"/>
 						<MediaRef Id="810624198"/>
+						<MediaRef Id="936928125"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="2822983600" Name="BGM_SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1166788669" Name="BGM_SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3652716323" Name="BGM_SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.4522" DurationMax="263.4522">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2814283976" Name="BGM_SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="209522661" Name="BGM_SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3727984986" Id="2849147824" Name="Medium"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1281301044" Name="BGM_StartupJingle" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -368,7 +351,17 @@
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3727984986" Name="BGM_Level">
+					<States>
+						<State Id="545371365" Name="Low"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EA7E3504-B713-8D27-0031-CCAB7F934296}</FileHash>
+	<FileHash>{7D13111D-D2C4-8BB2-73B3-6826E0047937}</FileHash>
 </SoundBanksInfo>

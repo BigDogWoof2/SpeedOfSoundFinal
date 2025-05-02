@@ -424,6 +424,35 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_Level" ID="{4AB94FC0-B0EF-4013-8AF1-1D427F2FC77D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+										<CustomState Name="" ID="{72033FB1-172D-4CF9-8304-2CBCA7D63F88}" ShortID="785497559"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+										<CustomState Name="" ID="{2A008BB4-11A3-4D56-9283-89099D526B6A}" ShortID="222457263">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+										<CustomState Name="" ID="{1032A5BF-3009-49DC-9ECC-560121A0541F}" ShortID="215632660">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="SpeedOfSoundLOW" ID="{0FFE9C42-05BB-48A4-8007-8F904EE0CE3A}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -453,6 +482,35 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_Level" ID="{4AB94FC0-B0EF-4013-8AF1-1D427F2FC77D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+										<CustomState Name="" ID="{C6F8822B-4EDA-4208-8317-C4C55BADF384}" ShortID="287683867">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+										<CustomState Name="" ID="{D50CA838-7AD9-4C55-A6AA-68EA8A5B9F98}" ShortID="1053988146">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+										<CustomState Name="" ID="{B66DB0AF-A7A5-4A23-87E3-EFB9AD47D934}" ShortID="870979327"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="SpeedOfSoundHIGH2" ID="{E501FF8F-C743-4B94-A148-F3534A7EF430}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -482,6 +540,35 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_Level" ID="{4AB94FC0-B0EF-4013-8AF1-1D427F2FC77D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+										<CustomState Name="" ID="{489CB3EA-19E1-4619-9788-85B27C8298BA}" ShortID="1049985087">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+										<CustomState Name="" ID="{7EF98D98-5108-477F-9087-B552902BF279}" ShortID="633532800"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+										<CustomState Name="" ID="{B5195414-DC90-414E-8141-55896186D1A4}" ShortID="210065930">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="SpeedOfSoundMED2" ID="{DA1A9E3A-84B4-4CE0-B63B-078F6BB39B1F}" Platform="Linked"/>
 							</ActiveSourceList>

@@ -1,9 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	26516739	BGM_StopTitleScreenMusic			\Default Work Unit\Music\BGM_StopTitleScreenMusic	
-	209522661	BGM_SpeedOfSoundMEDUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundMEDUnmute	
-	486837953	BGM_SpeedOfSoundHIGHUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundHIGHUnmute	
-	727601679	BGM_SpeedOfSoundHIGH			\Default Work Unit\Music\BGM_SpeedOfSoundHIGH	
-	1166788669	BGM_SpeedOfSoundLOWUnmute			\Default Work Unit\Music\BGM_SpeedOfSoundLOWUnmute	
 	1281301044	BGM_StartupJingle			\Default Work Unit\Music\BGM_StartupJingle	
 	1302786983	SFX_SwitchLane			\Default Work Unit\SFX\SFX_SwitchLane	
 	1439088316	AMB_Wind			\Default Work Unit\Ambient\AMB_Wind	
@@ -15,18 +11,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	2278664411	BGM_TitleScreenMusic			\Default Work Unit\Music\BGM_TitleScreenMusic	
 	2354163696	AMB_EngineStart			\Default Work Unit\Ambient\AMB_EngineStart	
 	2547397398	SFX_NoteDecent			\Default Work Unit\SFX\SFX_NoteDecent	
-	2814283976	BGM_SpeedOfSoundMEDMute			\Default Work Unit\Music\BGM_SpeedOfSoundMEDMute	
-	2822983600	BGM_SpeedOfSoundLOWMute			\Default Work Unit\Music\BGM_SpeedOfSoundLOWMute	
 	2928919970	DebugBeep			\Default Work Unit\DebugBeep	
-	3015314043	BGM_SpeedOfSoundLOW			\Default Work Unit\Music\BGM_SpeedOfSoundLOW	
 	3406798923	AMB_PoliceSiren			\Default Work Unit\Ambient\AMB_PoliceSiren	
-	3652716323	BGM_SpeedOfSoundMED			\Default Work Unit\Music\BGM_SpeedOfSoundMED	
 	3708240220	SFX_GearShift			\Default Work Unit\SFX\SFX_GearShift	
 	3934538588	AMB_EngineStop			\Default Work Unit\Ambient\AMB_EngineStop	
+	3940797748	BGM_Start_SpeedOfSound			\Default Work Unit\Music\BGM_Start_SpeedOfSound	
 	4003678909	UI_ContextClose			\Default Work Unit\UI\UI_ContextClose	
-	4033530100	BGM_SpeedOfSoundHIGHMute			\Default Work Unit\Music\BGM_SpeedOfSoundHIGHMute	
 	4070368520	SFX_NotePerfect			\Default Work Unit\SFX\SFX_NotePerfect	
 	4273572087	UI_Quit			\Default Work Unit\UI\UI_Quit	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3727984986	BGM_Level			\Default Work Unit\BGM_Level	
+
+State	ID	Name	State Group			Notes
+	545371365	Low	BGM_Level			
+	748895195	None	BGM_Level			
+	2849147824	Medium	BGM_Level			
+	3550808449	High	BGM_Level			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	796049864	RPM			\Default Work Unit\RPM	
