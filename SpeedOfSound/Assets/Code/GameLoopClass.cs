@@ -81,14 +81,15 @@ public class GameLoopClass : MonoBehaviour
             if (carLaneNumber !=3)
             {
                 //lane check here
-            //move object to adjacent lane
-            carRef.transform.Translate(3.84f, 0, 0);
-            //update lane number
-             carLaneNumber +=1;
+                //move object to adjacent lane
+                carRef.transform.Translate(3.84f, 0, 0);
+                //update lane number
+                carLaneNumber +=1;
 
-            //rotate UI
-            uiRef.GetComponent<UIMovement>().MoveRight();
+                //rotate UI
+                uiRef.GetComponent<UIMovement>().MoveRight();
 
+                AkSoundEngine.PostEvent("SFX_SwitchLane", gameObject);
             }
             
         }
@@ -98,7 +99,7 @@ public class GameLoopClass : MonoBehaviour
 
             if (carLaneNumber !=0)
             {
-                 //lane check here
+                //lane check here
                 //moveobject to adjacent lane
                 carRef.transform.Translate(-3.84f, 0, 0);
                 //update lane number
@@ -107,6 +108,7 @@ public class GameLoopClass : MonoBehaviour
                 //rotate UI
                 uiRef.GetComponent<UIMovement>().MoveLeft();
 
+                AkSoundEngine.PostEvent("SFX_SwitchLane", gameObject);
             }
            
         }

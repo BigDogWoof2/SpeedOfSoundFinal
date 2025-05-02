@@ -56,10 +56,14 @@
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8CA74376-30C2-28EE-A18A-BF85153BE393}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B0C5FB9F-C608-7E0E-F557-E1ED6E784E05}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="12831781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane2.wav</ShortName>
+					<CachePath>SFX/switchlane2_25A9C377.wem</CachePath>
+				</File>
 				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
 					<CachePath>SFX/TitleScreenVersion2Finished_7DD98C96.wem</CachePath>
@@ -128,9 +132,21 @@
 					<ShortName>notedecent.wav</ShortName>
 					<CachePath>SFX/notedecent_818F3B66.wem</CachePath>
 				</File>
+				<File Id="592837917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane1.wav</ShortName>
+					<CachePath>SFX/switchlane1_9A8CBF25.wem</CachePath>
+				</File>
 				<File Id="630400558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>notemiss2.wav</ShortName>
 					<CachePath>SFX/notemiss2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630725894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane5.wav</ShortName>
+					<CachePath>SFX/switchlane5_0951AD99.wem</CachePath>
+				</File>
+				<File Id="654260003" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane4.wav</ShortName>
+					<CachePath>SFX/switchlane4_36FA8825.wem</CachePath>
 				</File>
 				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
@@ -155,6 +171,10 @@
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
+				</File>
+				<File Id="897807038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane3.wav</ShortName>
+					<CachePath>SFX/switchlane3_4CB570D7.wem</CachePath>
 				</File>
 				<File Id="920396653" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>noteperfect.wav</ShortName>
@@ -304,6 +324,15 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="1302786983" Name="SFX_SwitchLane" DurationType="OneShot" DurationMin="0.6448802" DurationMax="0.8093682">
+					<MediaRefs>
+						<MediaRef Id="12831781"/>
+						<MediaRef Id="592837917"/>
+						<MediaRef Id="630725894"/>
+						<MediaRef Id="654260003"/>
+						<MediaRef Id="897807038"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
 					<MediaRefs>
 						<MediaRef Id="130700730"/>
@@ -341,5 +370,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{496EBF7B-8E10-78B5-F741-7D4EC5D9C050}</FileHash>
+	<FileHash>{48197D26-F225-1285-BA77-6566DEA2ED29}</FileHash>
 </SoundBanksInfo>

@@ -902,6 +902,155 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SwitchLane" ID="{CF577856-EA6E-4D73-995D-1A0F4C2F5617}" ShortID="131435537">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="switchlane1" ID="{B7E62987-8CAC-4C69-97DE-C6EFEFC8E152}" ShortID="853222347">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="switchlane1" ID="{20199D4B-BEF9-4F47-A870-76A4306474D7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.355119825708061"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>switchlane1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="592837917"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="switchlane1" ID="{20199D4B-BEF9-4F47-A870-76A4306474D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="switchlane2" ID="{9F56CBE6-FDFF-4D9D-BC2C-9EA0D079257A}" ShortID="412785593">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="switchlane2" ID="{E16E726D-4FB9-4994-860F-10122A422C7B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.229847494553377"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>switchlane2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="12831781"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="switchlane2" ID="{E16E726D-4FB9-4994-860F-10122A422C7B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="switchlane3" ID="{850A4C17-B653-4342-90B4-AA332FCA8229}" ShortID="795283328">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="switchlane3" ID="{DDFCA3B6-7A45-4F9F-9206-85069085EC21}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.250544662309368"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>switchlane3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="897807038"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="switchlane3" ID="{DDFCA3B6-7A45-4F9F-9206-85069085EC21}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="switchlane4" ID="{C7467DF3-5FD5-43B4-B1B5-C677A086F833}" ShortID="229636198">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="switchlane4" ID="{EBAE74DA-45BE-47C2-9C38-234541545212}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.190631808278867"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>switchlane4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="654260003"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="switchlane4" ID="{EBAE74DA-45BE-47C2-9C38-234541545212}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="switchlane5" ID="{CC937257-A8DB-427F-BF9F-6FF6D6C86328}" ShortID="694467757">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="switchlane5" ID="{AADD82D7-531E-4A73-8CDF-470942087181}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.225490196078431"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>switchlane5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="630725894"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="switchlane5" ID="{AADD82D7-531E-4A73-8CDF-470942087181}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambient" ID="{1D5D6C67-70E1-4384-A178-4AD8BB2196C7}" ShortID="726904957">

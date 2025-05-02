@@ -382,6 +382,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SFX_SwitchLane" ID="{4BC3076B-165D-46D3-B8D3-B1C64226B6DD}">
+							<ChildrenList>
+								<Action Name="" ID="{45C3F6F9-CD04-4D3C-BE22-2B4DCCC707FF}" ShortID="601809841">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SwitchLane" ID="{CF577856-EA6E-4D73-995D-1A0F4C2F5617}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
