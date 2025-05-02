@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{052D0EAB-310A-A786-62A8-B8D562D7801F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B91B7603-467D-CA90-D6EB-3B8706654596}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -51,11 +51,12 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1517363770" Name="PerfectCombo"/>
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{36714E59-3D5A-280A-155D-F0C9A58528CB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8CA74376-30C2-28EE-A18A-BF85153BE393}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -273,23 +274,35 @@
 					<MediaRefs>
 						<MediaRef Id="503778167"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1870322745" Name="SFX_NoteMiss" DurationType="OneShot" DurationMin="0.36282405" DurationMax="0.4571297">
 					<MediaRefs>
 						<MediaRef Id="166857561"/>
 						<MediaRef Id="630400558"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.40725625" DurationMax="0.40725625">
 					<MediaRefs>
 						<MediaRef Id="503778167"/>
 						<MediaRef Id="920396653"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1771235554" Name="SFX_NotePress" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
 					<MediaRefs>
 						<MediaRef Id="316644799"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
 					<MediaRefs>
@@ -322,10 +335,11 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1517363770" Name="PerfectCombo"/>
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F11A8B6D-CD97-623F-9ADE-1BF838F391F0}</FileHash>
+	<FileHash>{496EBF7B-8E10-78B5-F741-7D4EC5D9C050}</FileHash>
 </SoundBanksInfo>

@@ -44,6 +44,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID PERFECTCOMBO = 1517363770U;
         static const AkUniqueID POLICEDISTANCE = 1887703654U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID WINDSPEED = 1726592700U;

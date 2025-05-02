@@ -29,6 +29,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	796049864	RPM			\Default Work Unit\RPM	
+	1517363770	PerfectCombo			\Default Work Unit\PerfectCombo	
 	1726592700	WindSpeed			\Default Work Unit\WindSpeed	
 	1887703654	PoliceDistance			\Default Work Unit\PoliceDistance	
 
