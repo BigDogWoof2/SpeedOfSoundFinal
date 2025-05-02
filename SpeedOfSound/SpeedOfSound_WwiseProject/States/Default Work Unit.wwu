@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6AB40571-662C-4FE5-A539-449F01B4B81B}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{6AB40571-662C-4FE5-A539-449F01B4B81B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6AB40571-662C-4FE5-A539-449F01B4B81B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BGM_Level" ID="{4AB94FC0-B0EF-4013-8AF1-1D427F2FC77D}">
+					<ChildrenList>
+						<State Name="None" ID="{0CBE5C2C-7A1F-47A5-8944-928A92BEC6B1}"/>
+						<State Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+						<State Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+						<State Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+							<EndState Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Medium" ID="{DB319ED5-4C7B-46B0-837E-239FF4463236}"/>
+							<EndState Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Low" ID="{3CEFD366-6671-4342-BB5E-2F29CF444564}"/>
+							<EndState Name="High" ID="{9FA827B2-FE5B-4ED5-904B-09441FEDD61A}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

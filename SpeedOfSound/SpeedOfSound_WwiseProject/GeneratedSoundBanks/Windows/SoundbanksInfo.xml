@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{71756B84-8831-E51C-9D0D-C3C053279C2E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2441230A-C491-2756-0B21-12011D0168A0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -51,14 +51,29 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1517363770" Name="PerfectCombo"/>
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3727984986" Name="BGM_Level">
+					<States>
+						<State Id="545371365" Name="Low"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{36714E59-3D5A-280A-155D-F0C9A58528CB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E09DEFF5-D679-BE3F-0021-94D5AC641C94}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="12831781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane2.wav</ShortName>
+					<CachePath>SFX/switchlane2_25A9C377.wem</CachePath>
+				</File>
 				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
 					<CachePath>SFX/TitleScreenVersion2Finished_7DD98C96.wem</CachePath>
@@ -127,9 +142,21 @@
 					<ShortName>notedecent.wav</ShortName>
 					<CachePath>SFX/notedecent_818F3B66.wem</CachePath>
 				</File>
+				<File Id="592837917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane1.wav</ShortName>
+					<CachePath>SFX/switchlane1_9A8CBF25.wem</CachePath>
+				</File>
 				<File Id="630400558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>notemiss2.wav</ShortName>
 					<CachePath>SFX/notemiss2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630725894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane5.wav</ShortName>
+					<CachePath>SFX/switchlane5_0951AD99.wem</CachePath>
+				</File>
+				<File Id="654260003" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane4.wav</ShortName>
+					<CachePath>SFX/switchlane4_36FA8825.wem</CachePath>
 				</File>
 				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
@@ -154,6 +181,10 @@
 				<File Id="880395594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep.wav</ShortName>
 					<CachePath>SFX/beep_818F3B66.wem</CachePath>
+				</File>
+				<File Id="897807038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switchlane3.wav</ShortName>
+					<CachePath>SFX/switchlane3_4CB570D7.wem</CachePath>
 				</File>
 				<File Id="920396653" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>noteperfect.wav</ShortName>
@@ -201,42 +232,15 @@
 						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="727601679" Name="BGM_SpeedOfSoundHIGH" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
+				<Event Id="3940797748" Name="BGM_Start_SpeedOfSound" DurationType="OneShot" DurationMin="263.61765" DurationMax="263.61765">
 					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4033530100" Name="BGM_SpeedOfSoundHIGHMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="486837953" Name="BGM_SpeedOfSoundHIGHUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="936928125"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3015314043" Name="BGM_SpeedOfSoundLOW" DurationType="OneShot" DurationMin="263.17645" DurationMax="263.17645">
-					<MediaRefs>
+						<MediaRef Id="344589538"/>
 						<MediaRef Id="810624198"/>
+						<MediaRef Id="936928125"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="2822983600" Name="BGM_SpeedOfSoundLOWMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1166788669" Name="BGM_SpeedOfSoundLOWUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3652716323" Name="BGM_SpeedOfSoundMED" DurationType="OneShot" DurationMin="263.4522" DurationMax="263.4522">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2814283976" Name="BGM_SpeedOfSoundMEDMute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="209522661" Name="BGM_SpeedOfSoundMEDUnmute" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="344589538"/>
-					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3727984986" Id="2849147824" Name="Medium"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1281301044" Name="BGM_StartupJingle" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -273,22 +277,43 @@
 					<MediaRefs>
 						<MediaRef Id="503778167"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1870322745" Name="SFX_NoteMiss" DurationType="OneShot" DurationMin="0.36282405" DurationMax="0.4571297">
 					<MediaRefs>
 						<MediaRef Id="166857561"/>
 						<MediaRef Id="630400558"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
+				<Event Id="4070368520" Name="SFX_NotePerfect" DurationType="OneShot" DurationMin="0.40725625" DurationMax="0.40725625">
 					<MediaRefs>
 						<MediaRef Id="503778167"/>
 						<MediaRef Id="920396653"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1771235554" Name="SFX_NotePress" DurationType="OneShot" DurationMin="0.38439867" DurationMax="0.431473">
 					<MediaRefs>
 						<MediaRef Id="316644799"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2098287461" Name="Reverb_Outside"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1302786983" Name="SFX_SwitchLane" DurationType="OneShot" DurationMin="0.6448802" DurationMax="0.8093682">
+					<MediaRefs>
+						<MediaRef Id="12831781"/>
+						<MediaRef Id="592837917"/>
+						<MediaRef Id="630725894"/>
+						<MediaRef Id="654260003"/>
+						<MediaRef Id="897807038"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2027123568" Name="UI_ButtonHover" DurationType="OneShot" DurationMin="0.014354754" DurationMax="0.016112668">
@@ -322,10 +347,21 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM"/>
+				<GameParameter Id="1517363770" Name="PerfectCombo"/>
 				<GameParameter Id="1726592700" Name="WindSpeed"/>
 				<GameParameter Id="1887703654" Name="PoliceDistance"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3727984986" Name="BGM_Level">
+					<States>
+						<State Id="545371365" Name="Low"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{80A4B870-09CA-2E90-13CF-98E2D59A205E}</FileHash>
+	<FileHash>{7D13111D-D2C4-8BB2-73B3-6826E0047937}</FileHash>
 </SoundBanksInfo>

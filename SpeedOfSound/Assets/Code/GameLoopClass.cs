@@ -43,6 +43,9 @@ public class GameLoopClass : MonoBehaviour
 
     [SerializeField] private int notesInSection;
 
+    // Wwise RealTime Parameter Controls
+    [SerializeField] AK.Wwise.RTPC PerfectCombo = null;
+
     void Awake()
     {
         Application.targetFrameRate = 60;
@@ -78,14 +81,15 @@ public class GameLoopClass : MonoBehaviour
             if (carLaneNumber !=3)
             {
                 //lane check here
-            //move object to adjacent lane
-            carRef.transform.Translate(3.84f, 0, 0);
-            //update lane number
-             carLaneNumber +=1;
+                //move object to adjacent lane
+                carRef.transform.Translate(3.84f, 0, 0);
+                //update lane number
+                carLaneNumber +=1;
 
-            //rotate UI
-            uiRef.GetComponent<UIMovement>().MoveRight();
+                //rotate UI
+                uiRef.GetComponent<UIMovement>().MoveRight();
 
+                AkSoundEngine.PostEvent("SFX_SwitchLane", gameObject);
             }
             
         }
@@ -95,7 +99,7 @@ public class GameLoopClass : MonoBehaviour
 
             if (carLaneNumber !=0)
             {
-                 //lane check here
+                //lane check here
                 //moveobject to adjacent lane
                 carRef.transform.Translate(-3.84f, 0, 0);
                 //update lane number
@@ -104,9 +108,11 @@ public class GameLoopClass : MonoBehaviour
                 //rotate UI
                 uiRef.GetComponent<UIMovement>().MoveLeft();
 
+                AkSoundEngine.PostEvent("SFX_SwitchLane", gameObject);
             }
            
         }
+
          //input for hitting a note, like strumming the bar on guitar hero. We need to check if the player is in the right lane, and hitting the note with the right timing       
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -163,8 +169,8 @@ public class GameLoopClass : MonoBehaviour
         }
 
         //Debug.Log(noteLaneNumber.ToString()); Debugging notelanes
-
     }
+
     //Carry out perfect hit behaviour
     void PerfectNoteHit()
     {
@@ -172,7 +178,12 @@ public class GameLoopClass : MonoBehaviour
 
         //NoteParticles(perfect);
         //noteParticles.Play();
+
         AkSoundEngine.PostEvent("SFX_NotePerfect", gameObject);
+        //increment combo value for perfect SFX
+        var pc = PerfectCombo.GetGlobalValue();
+        PerfectCombo.SetGlobalValue(pc + 15);
+        
 
         Instantiate(perfectText, transform.position, Quaternion.identity);
         //increase gear level, add perfect note score 
@@ -180,6 +191,7 @@ public class GameLoopClass : MonoBehaviour
         scoreScriptRef.AddPerfectNoteScore();
         portrait.GetComponent<UIFunctionality>().PerfectNote();
     }
+
     //Decent note behaviour
     void DecentNoteHit()
     {
@@ -187,7 +199,10 @@ public class GameLoopClass : MonoBehaviour
 
         //NoteParticles(decent);
         //noteParticles.Play();
+
         AkSoundEngine.PostEvent("SFX_NoteDecent", gameObject);
+        //reset combo value
+        PerfectCombo.SetGlobalValue(0);
 
         Instantiate(decentText, transform.position, Quaternion.identity);
         //add the base note score, no gear level bonus
@@ -195,13 +210,17 @@ public class GameLoopClass : MonoBehaviour
         portrait.GetComponent<UIFunctionality>().OkayNote();
 
     }
+
     //failed note behaviour
     void FailedNote()
     {
         Debug.Log("NoteFailed");
         //NoteParticles(miss);
         //noteParticles.Play();
+
         AkSoundEngine.PostEvent("SFX_NoteMiss", gameObject);
+        //reset combo value
+        PerfectCombo.SetGlobalValue(0);
 
         Instantiate(missText, transform.position, Quaternion.identity);
         //Lose gear level for missing note

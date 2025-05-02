@@ -17,15 +17,7 @@ namespace AK
         static const AkUniqueID AMB_ENGINESTOP = 3934538588U;
         static const AkUniqueID AMB_POLICESIREN = 3406798923U;
         static const AkUniqueID AMB_WIND = 1439088316U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDHIGH = 727601679U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDHIGHMUTE = 4033530100U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDHIGHUNMUTE = 486837953U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDLOW = 3015314043U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDLOWMUTE = 2822983600U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDLOWUNMUTE = 1166788669U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDMED = 3652716323U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDMEDMUTE = 2814283976U;
-        static const AkUniqueID BGM_SPEEDOFSOUNDMEDUNMUTE = 209522661U;
+        static const AkUniqueID BGM_START_SPEEDOFSOUND = 3940797748U;
         static const AkUniqueID BGM_STARTUPJINGLE = 1281301044U;
         static const AkUniqueID BGM_STOPTITLESCREENMUSIC = 26516739U;
         static const AkUniqueID BGM_TITLESCREENMUSIC = 2278664411U;
@@ -35,6 +27,7 @@ namespace AK
         static const AkUniqueID SFX_NOTEMISS = 1870322745U;
         static const AkUniqueID SFX_NOTEPERFECT = 4070368520U;
         static const AkUniqueID SFX_NOTEPRESS = 1771235554U;
+        static const AkUniqueID SFX_SWITCHLANE = 1302786983U;
         static const AkUniqueID UI_BUTTONHOVER = 2027123568U;
         static const AkUniqueID UI_CONTEXTCLOSE = 4003678909U;
         static const AkUniqueID UI_CONTEXTOPEN = 1475854423U;
@@ -42,8 +35,26 @@ namespace AK
         static const AkUniqueID UI_QUIT = 4273572087U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace BGM_LEVEL
+        {
+            static const AkUniqueID GROUP = 3727984986U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID LOW = 545371365U;
+                static const AkUniqueID MEDIUM = 2849147824U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace BGM_LEVEL
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID PERFECTCOMBO = 1517363770U;
         static const AkUniqueID POLICEDISTANCE = 1887703654U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID WINDSPEED = 1726592700U;

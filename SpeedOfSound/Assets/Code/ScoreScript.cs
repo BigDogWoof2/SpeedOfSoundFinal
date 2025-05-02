@@ -74,7 +74,6 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] AK.Wwise.RTPC RPM = null;
     [SerializeField] AK.Wwise.RTPC PoliceDistance = null;
 
-
     void Start()
     {
         //initialise variables to base values
@@ -84,8 +83,9 @@ public class ScoreScript : MonoBehaviour
         currentScore = 0;
         gearLevel = 0;
         currentPhraseLevel = 1;
-          
+
         PoliceEffects();
+        AmbientEffects();
     }
 
     void Update()
@@ -185,11 +185,12 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff1Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 1;
+
                 //CHANGE TO LOW MUSIC TRACK
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHMute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWUnmute", gameObject);
+                AkSoundEngine.SetState("BGM_Level", "Low");
+
                 Debug.Log("LOW MUSIC TRACK PLAYING");
+                
                 
             }
 
@@ -218,10 +219,9 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff2Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 2;
+
                 //CHANGE TO MEDIUM MUSIC TRACK
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDUnmute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHMute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWMute", gameObject);
+                AkSoundEngine.SetState("BGM_Level", "Medium");
                 Debug.Log("MEDIUM MUSIC TRACK PLAYING");
             }
 
@@ -246,14 +246,13 @@ public class ScoreScript : MonoBehaviour
                 currentRoad.transform.position = new UnityEngine.Vector3(500, 0, 200);
 
                 diff3Road.transform.position = currentPosition;
-                //set current road to road1
+                //set current road to road1  
                 currentRoad = diff3Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 3;
+
                 //CHANGE TO HIGH MUSIC TRACK
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundHIGHUnmute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundMEDMute", gameObject);
-                AkSoundEngine.PostEvent("BGM_SpeedOfSoundLOWMute", gameObject);
+                AkSoundEngine.SetState("BGM_Level", "High");
                 Debug.Log("HIGH MUSIC TRACK PLAYING");
             }
         }

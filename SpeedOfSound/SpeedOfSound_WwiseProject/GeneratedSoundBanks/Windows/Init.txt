@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3727984986	BGM_Level			\Default Work Unit\BGM_Level	
+
+State	ID	Name	State Group			Notes
+	545371365	Low	BGM_Level			
+	748895195	None	BGM_Level			
+	2849147824	Medium	BGM_Level			
+	3550808449	High	BGM_Level			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

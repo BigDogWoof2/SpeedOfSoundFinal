@@ -13,10 +13,16 @@
 				</GameParameter>
 				<GameParameter Name="PoliceDistance" ID="{94E647E6-81E5-41EE-A894-891197D46C28}">
 					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="WindSpeed" ID="{F59B6F56-CE06-40B1-9374-E1F64B3AB14E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PerfectCombo" ID="{232ED3A9-0F86-4F36-BF9B-13F256070367}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
