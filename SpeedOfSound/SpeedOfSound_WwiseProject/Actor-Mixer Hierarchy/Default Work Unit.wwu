@@ -1569,6 +1569,42 @@
 								<ActiveSource Name="Wind, Designed, Phoebe Wind, Loop 01 SND76240" ID="{B35472D3-3F1F-46EF-A5D9-3E73B987A202}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="City" ID="{F8AD36D3-B02E-4A32-A78D-3124289E3890}" ShortID="1038228216">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-32</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66C5AAAE-BE66-4511-B998-CD487B0CC7BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{148513AA-D312-4E84-9BF0-997F504D44B0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Designed, Granular, Soundscape, Dark Ambience, City Of Dystopia 02 SND37443" ID="{36F8A3F3-78F6-44D9-B912-9E623869C245}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="10515.2"/>
+										<Property Name="LoopBegin" Type="Real64" Value="5.71914503816794"/>
+										<Property Name="LoopEnd" Type="Real64" Value="237.753029443839"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Designed, Granular, Soundscape, Dark Ambience, City Of Dystopia 02 SND37443.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="961266461"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Designed, Granular, Soundscape, Dark Ambience, City Of Dystopia 02 SND37443" ID="{36F8A3F3-78F6-44D9-B912-9E623869C245}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

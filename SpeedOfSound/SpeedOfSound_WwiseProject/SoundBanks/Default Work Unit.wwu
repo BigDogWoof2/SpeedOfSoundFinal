@@ -10,6 +10,7 @@
 						<ObjectRef Name="AMB_PoliceSiren" ID="{76E48C00-EA93-4275-A24A-AFB4BA4CCE80}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DebugBeep" ID="{D445E7C8-104F-43B5-9A32-3E0D7ED082F2}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX_NoteMiss" ID="{8B338F8F-BEFA-441A-96DD-C58ABAA26B3D}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_City" ID="{51B73281-75DA-443D-8498-98B36B43B5C2}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TitleScreenMusic" ID="{A1A3ADEB-E4EB-4449-9259-8AA0ACCD01E3}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_EngineStop" ID="{8DC6C949-CCE1-4473-B080-BC2F5F57B118}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_ButtonHover" ID="{F3AA7A81-F121-449B-863E-673B850C0456}" WorkUnitID="{8499D1CC-50FB-47D5-8061-961793EF505E}" Origin="Manual" Filter="7"/>

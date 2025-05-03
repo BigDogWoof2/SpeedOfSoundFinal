@@ -66,13 +66,13 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E09DEFF5-D679-BE3F-0021-94D5AC641C94}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E372176C-4DB7-0D19-2799-B3C68EB8D749}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="12831781" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switchlane2.wav</ShortName>
-					<CachePath>SFX/switchlane2_25A9C377.wem</CachePath>
+					<CachePath>SFX/switchlane2_C54F6C4C.wem</CachePath>
 				</File>
 				<File Id="38756479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TitleScreenVersion2Finished.wav</ShortName>
@@ -144,7 +144,7 @@
 				</File>
 				<File Id="592837917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switchlane1.wav</ShortName>
-					<CachePath>SFX/switchlane1_9A8CBF25.wem</CachePath>
+					<CachePath>SFX/switchlane1_71EDFD61.wem</CachePath>
 				</File>
 				<File Id="630400558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>notemiss2.wav</ShortName>
@@ -152,11 +152,11 @@
 				</File>
 				<File Id="630725894" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switchlane5.wav</ShortName>
-					<CachePath>SFX/switchlane5_0951AD99.wem</CachePath>
+					<CachePath>SFX/switchlane5_BEA7748A.wem</CachePath>
 				</File>
 				<File Id="654260003" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switchlane4.wav</ShortName>
-					<CachePath>SFX/switchlane4_36FA8825.wem</CachePath>
+					<CachePath>SFX/switchlane4_315AFCE4.wem</CachePath>
 				</File>
 				<File Id="658922471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Musical, Misc, Computer, OS Retro, Choppy Chord Melody, Short SND64219.wav</ShortName>
@@ -184,7 +184,7 @@
 				</File>
 				<File Id="897807038" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switchlane3.wav</ShortName>
-					<CachePath>SFX/switchlane3_4CB570D7.wem</CachePath>
+					<CachePath>SFX/switchlane3_1BCF39E1.wem</CachePath>
 				</File>
 				<File Id="920396653" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>noteperfect.wav</ShortName>
@@ -363,5 +363,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7D13111D-D2C4-8BB2-73B3-6826E0047937}</FileHash>
+	<FileHash>{E661F818-F50A-05F9-2E65-7548A364FFD4}</FileHash>
 </SoundBanksInfo>

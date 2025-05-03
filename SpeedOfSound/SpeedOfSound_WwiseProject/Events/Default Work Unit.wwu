@@ -204,6 +204,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AMB_City" ID="{51B73281-75DA-443D-8498-98B36B43B5C2}">
+							<ChildrenList>
+								<Action Name="" ID="{7727F95E-00D6-4E37-B2D9-670C8AA56651}" ShortID="687121737">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="City" ID="{F8AD36D3-B02E-4A32-A78D-3124289E3890}" WorkUnitID="{EFC7407F-CBD8-4625-8F79-BFE9D10C1AE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BBC9F5FC-02BE-429E-93A5-2B35B8856178}" ShortID="860659238">
