@@ -15,7 +15,7 @@ public class GameLoopClass : MonoBehaviour
         perfect
     }
     //hold the lane the car is currently in
-    private int carLaneNumber;
+    public int carLaneNumber;
     //holds the lane the current node is in
     public int noteLaneNumber;
     //holds the player's most recent strum value
@@ -189,7 +189,7 @@ public class GameLoopClass : MonoBehaviour
         //increase gear level, add perfect note score 
         scoreScriptRef.IncrementGearLevel(1);
         scoreScriptRef.AddPerfectNoteScore();
-        portrait.GetComponent<UIFunctionality>().PerfectNote();
+        portrait.GetComponent<SpriteFunctionality>().PerfectNote();
     }
 
     //Decent note behaviour
@@ -207,7 +207,7 @@ public class GameLoopClass : MonoBehaviour
         Instantiate(decentText, transform.position, Quaternion.identity);
         //add the base note score, no gear level bonus
         scoreScriptRef.AddNoteScore();
-        portrait.GetComponent<UIFunctionality>().OkayNote();
+        portrait.GetComponent<SpriteFunctionality>().OkayNote();
 
     }
 
@@ -225,7 +225,7 @@ public class GameLoopClass : MonoBehaviour
         Instantiate(missText, transform.position, Quaternion.identity);
         //Lose gear level for missing note
         scoreScriptRef.IncrementGearLevel(-2);
-        portrait.GetComponent<UIFunctionality>().MissedNote();
+        portrait.GetComponent<SpriteFunctionality>().MissedNote();
 
     }
 

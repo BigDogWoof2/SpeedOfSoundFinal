@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using AK.Wwise;
 using static ak;
-//Initial class created by Fraser Sutherland just to load level, all additional functionality by Lou Ling
+//Initial class created by Fraser Sutherland just to load level, additional functionality by Lou Ling & Fraser Welsh
 public class MenuManager : MonoBehaviour
 {
 
     public GameObject MainMenu;
     public GameObject Splash;
+    public GameObject Credits;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +38,19 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void OptionsClick()
+    public void OpenCredits()
     {
+        Credits.SetActive(true);
+        MainMenu.SetActive(false);
         AkSoundEngine.PostEvent("UI_ContextOpen", gameObject);
+    }
+
+    public void BackClick()
+    {
+        Credits.SetActive(false);
+        MainMenu.SetActive(true);
+        AkSoundEngine.PostEvent("UI_Quit", gameObject);
+
     }
 
     public void QuitClick()
@@ -53,7 +65,7 @@ public class MenuManager : MonoBehaviour
         Debug.Log("Quitting game...");
         if (Application.isEditor)
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         } else
         {
             Application.Quit();

@@ -6,41 +6,44 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 //Base class for handling score by Fraser Sutherland, additional work by Lou Ling and Fraser Welsh
 public class ScoreScript : MonoBehaviour
 {
    
     //UI text for various elements of the score
-    [SerializeField] private TextMeshProUGUI multText;
+    [SerializeField] private TextMeshProUGUI gearLevelText;
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    [SerializeField] private TextMeshProUGUI gearLevelText;
+    [SerializeField] private TextMeshProUGUI gearText;
+
+    [SerializeField] private TextMeshProUGUI upgradesHitText;
     //base amount note awards to the player
     [SerializeField] int baseNoteScore;
     //the gear the player is in, determines how much score the player gets for a perfect note. Also determines the difficulty of the next section the player is loaded into. higher gear = higher difficulty
-    [SerializeField] int gear;
+    [SerializeField] public int gear;
     //effecitvely incremental steps towards the next gear, once a threshold is reached, increase the players gear. Gained by hitting perfect notes
     [SerializeField] public int gearLevel;
-    //holds the players current total score
+
     public int currentScore;
-    //base score player gains passively for progressing in the level
+
     [SerializeField] private int baseDistanceScore;
-    //could be used to calculate percentage of notes hit potentially
+
     [SerializeField] private int notesThisSection;
 
     private int sectionNotesHit;
 
-    private int upgradesHit; 
+    public int upgradesHit; 
     
 
     [SerializeField] private int currentDifficulty;
 
     [SerializeField] private int nextDifficulty;
-    //holds which difficulty level of road the player is currently on
+
     [SerializeField] public int currentPhraseLevel;
 
-    //roads object references, diff1 is lowest diff, diff 3 is the highest. Code works by swapping one of these for the other when a new difficulty is to be loaded
+    //roads object references
     [SerializeField] private GameObject currentRoad;
 
     [SerializeField] private GameObject diff1Road;
@@ -74,28 +77,32 @@ public class ScoreScript : MonoBehaviour
     [SerializeField] AK.Wwise.RTPC RPM = null;
     [SerializeField] AK.Wwise.RTPC PoliceDistance = null;
 
+
+
     void Start()
     {
-        //initialise variables to base values
         baseNoteScore = 500;
         baseDistanceScore = 1;
         gear = 2;
         currentScore = 0;
         gearLevel = 0;
         currentPhraseLevel = 1;
+        upgradesHit = 1;
 
         PoliceEffects();
         AmbientEffects();
+
     }
 
     void Update()
     {
-        //update various UItext correctly based on current values
         scoreText.text = currentScore.ToString();
-        multText.text = gear.ToString();
+        gearText.text = gear.ToString();
         gearLevelText.text = gearLevel.ToString();
+        upgradesHitText.text = upgradesHit.ToString();
         //add the baseline passive distance score
         AddDistanceScore();
+        PoliceEffects();
         
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -104,34 +111,34 @@ public class ScoreScript : MonoBehaviour
     }
 
 
-    //adds some extra passive score constantly based on the current difficulty
+
     void AddDistanceScore()
     {
         currentScore+=baseDistanceScore * currentPhraseLevel;
     }
-    //adds note score for a decent note
+
     public void AddNoteScore()
     {
         currentScore += baseNoteScore;
     }
-    //called after hitting a perfect note
-    //adds note score for a perfect note based on gear level
+
+
     public void AddPerfectNoteScore()
     {
         currentScore += (gear * baseNoteScore);
     }
-    //called for hitting obstacle
+
     public void ObstacleHit()
     {
         currentScore -= 5000*gear; 
+        
     }
-    //called for hitting upgrade
-    //add to upgrade count when upgrade hit
+
     public void UpgradeHit()
     {
         upgradesHit +=1; 
     }
-    //adjust gear level based on perfect/fail note hits
+
     public void IncrementGearLevel(int value)
     {
 
@@ -156,12 +163,26 @@ public class ScoreScript : MonoBehaviour
         AmbientEffects();
     }
 
-    //needs to be called as a player calls a user defined threshold, to check how they're doing, and accordingly raise, lower or maintain difficulty
+    public void LostStreak()
+    {
+        Debug.Log("gear -1");
+        if (gear == 1)
+        {
+            gear = 1;
+        }
+        else
+        {
+            gear -= 1;
+        }        
+        gearLevel = 1;
+
+    }
+
+    //needs to be called as a player calls a user defined threshold
     public void AssessPerformance()
     {
+        
         Debug.Log("AssessPerformanceCalled");
-        PoliceEffects();
-        AmbientEffects();
 
         UnityEngine.Vector3 currentPosition = new UnityEngine.Vector3();
 
@@ -170,12 +191,13 @@ public class ScoreScript : MonoBehaviour
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -40;
             backBG.GetComponent<BackgroundMovement>().speed = -30;
-            clutter.GetComponent<BackgroundMovement>().speed = -40;
+            clutter.GetComponent<BackgroundMovement>().speed = -50;
             //change camera FOV
             cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearOneFOV, fovSpeed);
 
             if (currentPhraseLevel != 1)
             {
+                
                 //translate current road to placeholder xposition;
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(300, 0, 200);
@@ -185,12 +207,9 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff1Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 1;
-
                 //CHANGE TO LOW MUSIC TRACK
                 AkSoundEngine.SetState("BGM_Level", "Low");
-
                 Debug.Log("LOW MUSIC TRACK PLAYING");
-                
                 
             }
 
@@ -202,7 +221,7 @@ public class ScoreScript : MonoBehaviour
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -80;
             backBG.GetComponent<BackgroundMovement>().speed = -60;
-            clutter.GetComponent<BackgroundMovement>().speed = -40;
+            clutter.GetComponent<BackgroundMovement>().speed = -90;
 
             //change camera FOV
             cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearTwoFOV, fovSpeed);
@@ -211,6 +230,7 @@ public class ScoreScript : MonoBehaviour
 
             if (currentPhraseLevel != 2)
             {
+
                 currentPosition = currentRoad.transform.position;
                 currentRoad.transform.position = new UnityEngine.Vector3(400, 0, 200);
                 //translate road 1 to road xposition;
@@ -219,7 +239,6 @@ public class ScoreScript : MonoBehaviour
                 currentRoad = diff2Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 2;
-
                 //CHANGE TO MEDIUM MUSIC TRACK
                 AkSoundEngine.SetState("BGM_Level", "Medium");
                 Debug.Log("MEDIUM MUSIC TRACK PLAYING");
@@ -228,12 +247,12 @@ public class ScoreScript : MonoBehaviour
             //diff2Road.transform.position.x == 
         }
 
-        if (gear == 3)
+        if (gear ==3)
         {
             //change speed of BG
             frontBG.GetComponent<BackgroundMovement>().speed = -100;
             backBG.GetComponent<BackgroundMovement>().speed = -80;
-            clutter.GetComponent<BackgroundMovement>().speed = -40;
+            clutter.GetComponent<BackgroundMovement>().speed = -120;
 
             //change camera FOV
             cameraObj.fieldOfView = Mathf.Lerp(cameraObj.fieldOfView, gearThreeFOV, fovSpeed);
@@ -242,23 +261,24 @@ public class ScoreScript : MonoBehaviour
             if (currentPhraseLevel != 3)
             {
                 currentPosition = currentRoad.transform.position;
-                //translate current road xposition far away so it can't be seen or interfere with gameplay
+                //translate road 1 to road xposition;
                 currentRoad.transform.position = new UnityEngine.Vector3(500, 0, 200);
 
                 diff3Road.transform.position = currentPosition;
-                //set current road to road1  
+                //set current road to road1
                 currentRoad = diff3Road;
                 //set currentPhraseLevel to 1
                 currentPhraseLevel = 3;
-
                 //CHANGE TO HIGH MUSIC TRACK
                 AkSoundEngine.SetState("BGM_Level", "High");
                 Debug.Log("HIGH MUSIC TRACK PLAYING");
             }
+
         }
+
+        
     }
 
-    
     void AmbientEffects()
     {
         WindSpeed.SetGlobalValue(gearLevel + (gear - 1) * 8 + (currentPhraseLevel - 1) * 24);

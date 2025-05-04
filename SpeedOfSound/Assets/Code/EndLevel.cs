@@ -2,31 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-//Base Class by Fraser Sutherland
+using UnityEngine.SceneManagement;
+//Base Class by Fraser Sutherland and UI/grade by Fraser Welsh
 public class EndLevel : MonoBehaviour
 {
 
     [SerializeField] ScoreScript scoreScriptRef;
-    // Start is called before the first frame update
+    [SerializeField] GameLoopClass gameLoopRef;
     [SerializeField] GameObject scoreScreen;
-
+    [SerializeField] int totalScore;
     [SerializeField] TextMeshProUGUI totalScoreText;
+    [SerializeField] TextMeshProUGUI highestGearText;
+    [SerializeField] TextMeshProUGUI runGrade;
     
 
     
-    //called when car volume collides with end level trigger prefa
-    public void EndLevelTriggered()
+    //called when car collides with EndTrigger obj in scene.
+    void OnTriggerEnter()
     {
         //Set active score screen UI element
         CreateScoreScreen();
 
     }
-    //creates score screen at the end of the level, right now just sets the score equal to the current score
+    //Creates score screen at the end of the level.
     void CreateScoreScreen()
     {
         scoreScreen.SetActive(true);
 
-        totalScoreText.text = scoreScriptRef.currentScore.ToString();
+        //Multiplies score by upgrades hit and shows on scorescreen as final score.
+        totalScore = scoreScriptRef.currentScore * scoreScriptRef.upgradesHit;
+        totalScoreText.text = totalScore.ToString();
+
+        //Don´t have a variable for Highest Gear on UI Elements, just posts the current gear for now.
+        highestGearText.text = scoreScriptRef.gear.ToString();
+
+        //Rudimentary grade system. Scores should be tweaked.
+        if (totalScore > 4500000) {runGrade.text = "S";}
+        else if (totalScore > 4000000) {runGrade.text = "A";}
+        else if (totalScore > 3000000) {runGrade.text = "B";}
+        else if (totalScore > 2000000) {runGrade.text = "C";}
+        else if (totalScore > 0) {runGrade.text = "F";}
+
+    }
+
+    //Returns player to first scene. Audio continues playing, needs updated.
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 
